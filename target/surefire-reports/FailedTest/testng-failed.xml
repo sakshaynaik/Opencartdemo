@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FailedTest]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.opencart.utilities.ExtentListener"/>
+  </listeners>
+  <test thread-count="5" name="Run(failed)" verbose="0">
+    <classes>
+      <class name="com.opencart.testcase.TC031_LFpaswrdinpagesouretest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginForPasswordVisibiltyInPageSource" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC031_LFpaswrdinpagesouretest -->
+      <class name="com.opencart.testcase.TC011_RFinvalidphonenumtest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="registeringWithInvalidPhoneNumber" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC011_RFinvalidphonenumtest -->
+      <class name="com.opencart.testcase.TC033_LFloginandbrowserexittest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginAndExitBrowser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC033_LFloginandbrowserexittest -->
+    </classes>
+  </test> <!-- Run(failed) -->
+</suite> <!-- Failed suite [FailedTest] -->

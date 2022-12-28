@@ -1,0 +1,58 @@
+[INFO ] 2022-12-29 00:11:51.519 [main] BaseClass - Test Started For The Given Features
+[INFO ] 2022-12-29 00:11:53.616 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:12:09.402 [main] BaseClass - Test Passed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:12:10.031 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:12:35.092 [main] BaseClass - Test Passed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:12:35.792 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:13:13.515 [main] BaseClass - Test Passed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:13:16.761 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:13:29.690 [main] BaseClass - Test Passed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:13:32.060 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:13:44.121 [main] BaseClass - Test Passed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:13:46.355 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:13:56.426 [main] BaseClass - Test Passed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:13:56.876 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:14:09.119 [main] BaseClass - Test Failed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:14:09.639 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:14:21.871 [main] BaseClass - Test Passed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:14:24.165 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:14:34.987 [main] BaseClass - Test Passed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:14:35.398 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:14:45.004 [main] BaseClass - Test Passed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:14:45.498 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:15:00.387 [main] BaseClass - Test Failed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:15:02.804 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:15:14.210 [main] BaseClass - Test Failed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:15:14.720 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:15:23.785 [main] BaseClass - Test Passed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:15:24.226 [main] BaseClass - Test Started For:registeringWithAllFileds
+[INFO ] 2022-12-29 00:15:32.327 [main] BaseClass - Test Passed:registeringWithAllFileds
+[INFO ] 2022-12-29 00:15:32.958 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:15:41.091 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:15:41.514 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:15:49.822 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:15:50.349 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:16:03.202 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:16:05.583 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:16:16.091 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:16:18.260 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:16:29.097 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:16:31.207 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:16:38.887 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:16:39.389 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:16:46.710 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:16:47.159 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:16:58.964 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:01.151 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:08.620 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:09.073 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:17.495 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:17.941 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:30.426 [main] BaseClass - Test Failed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:32.814 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:40.727 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:41.150 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:49.504 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:49.926 [main] BaseClass - Test Started For:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:56.593 [main] BaseClass - Test Passed:loginWithValidCredentials
+[INFO ] 2022-12-29 00:17:56.967 [main] BaseClass - Test Completed For The Given Features

@@ -1,0 +1,95 @@
+{
+	"TestData": "LoginTest",
+	"validcredentials": [
+		{
+			"Browser": "Chrome",
+			"email": "kishore8@gmail.com",
+			"password": "12345"
+		}
+	],
+	"invaidcredentials": [
+		{
+			"Browser": "Firefox",
+			"email": "xyz123@gmail.com",
+			"password": "561234"
+		}
+	],
+	"invaidemailvalidpassword": [
+		{
+			"Browser": "Edge",
+			"email": "cde123@gmail.com",
+			"password": "12345"
+		}
+	],
+	"vaidemailinvalidpassword": [
+		{
+			"Browser": "Chrome",
+			"email": "akshaysnaik1111@gmail.com",
+			"password": "561234"
+		}
+	],
+	"withoutcredentials": [
+		{
+			"Browser": "Firefox",
+			"email": " ",
+			"password": " "
+		}
+	],
+	"onlyemailcredential": [
+		{
+			"Browser": "Edge",
+			"email": "akshaysnaik1111@gmail.com",
+			"password": " "
+		}
+	],
+	"onlypasswordcredential": [
+		{
+			"Browser": "Chrome",
+			"email": " ",
+			"password": "12345"
+		}
+	],
+	"passwordvisiblity": [
+		{
+			"password": "12345"
+		}
+	],
+	"unsuccessfulatempt": [
+		{
+			"Browser": "Chrome",
+			"email": "akshaysnaik30@gmail.com",
+			"password": "1111",
+			"Expectres": "success"
+		},
+		{
+			"Browser": "Chrome",
+			"email": "akshaysnaik30@gmail.com",
+			"password": "1111",
+			"Expectres": "success"
+		},
+		{
+			"Browser": "Chrome",
+			"email": "akshaysnaik30@gmail.com",
+			"password": "1111",
+			"Expectres": "success"
+		},
+		{
+			"Browser": "Chrome",
+			"email": "akshaysnaik30@gmail.com",
+			"password": "1111",
+			"Expectres": "success"
+		},
+		{
+			"Browser": "Chrome",
+			"email": "akshaysnaik30@gmail.com",
+			"password": "1111",
+			"Expectres": "success"
+		},
+		{
+			"Browser": "Chrome",
+			"email": "akshaysnaik30@gmail.com",
+			"password": "1111",
+			"Expectres": "Failure"
+		}
+	]
+}

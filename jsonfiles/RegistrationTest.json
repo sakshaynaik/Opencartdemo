@@ -1,0 +1,118 @@
+{
+	"TestData": "RegistrationTest",
+	"MandatoryFieldTest": [
+		{
+			"Browser": "Firefox",
+			"FirstName": "Praveen",
+			"LastName": "Sharma",
+			"E-Mail": "Praveen208@gmail.com",
+			"Telephone": "9876543210",
+			"Password": "A12345",
+			"ConPasword": "A12345"
+		}
+	],
+	"DifferentPasswords": [
+		{
+			"Browser": "Chrome",
+			"FirstName": "Ravindra",
+			"LastName": "Varma",
+			"E-Mail": "ravindra105@gmail.com",
+			"Telephone": "1234567890",
+			"Password": "54321",
+			"ConPasword": "1234"
+		}
+	],
+	"RegisteredEmail": [
+		{
+			"Browser": "Chrome",
+			"FirstName": "Ravi",
+			"LastName": "Kiran",
+			"E-Mail": "ravi11@gmail.com",
+			"Telephone": "1234567890",
+			"Password": "123456",
+			"ConPasword": "123456"
+		}
+	],
+	"WithPassandEmptyPass": [
+		{
+			"Browser": "Firefox",
+			"FirstName": "Reshma",
+			"LastName": "Priya",
+			"E-Mail": "reshma11@gmail.com",
+			"Telephone": "1234567890",
+			"Password": "123456",
+			"ConPasword": " "
+		}
+	],
+	"LeadAndTrailSpace": [
+		{
+			"Browser": "Chrome",
+			"FirstName": "   Ravi   ",
+			"LastName": "    Kiran   ",
+			"E-Mail": "     akshaysnaik1111@gmail.com     ",
+			"Telephone": "   1234567890   ",
+			"Password": "    123456    ",
+			"ConPasword": "    123456    "
+		}
+	],
+	"Emptyspace": [
+		{
+			"Browser": "Chrome",
+			"FirstName": "    ",
+			"LastName": "    ",
+			"E-Mail": "     ",
+			"Telephone": "  ",
+			"Password": "  ",
+			"ConPasword": "  "
+		}
+	],
+	"InvalidEmail": [
+		{
+			"Browser": "edge",
+			"FirstName": "Ravi",
+			"LastName": "Kiran",
+			"E-Mail": "akshaysnaik12",
+			"Telephone": "1234567890",
+			"Password": "123456",
+			"ConPasword": "123456"
+		},
+		{
+			"Browser": "Firefox",
+			"FirstName": "Suraj",
+			"LastName": "Varma",
+			"E-Mail": "akshaysnaik121@",
+			"Telephone": "1234567890",
+			"Password": "123456",
+			"ConPasword": "123456"
+		},
+		{
+			"Browser": "Edge",
+			"FirstName": "Sam",
+			"LastName": "Sharma",
+			"E-Mail": "akshaysnaik101@gmail",
+			"Telephone": "1234567890",
+			"Password": "123456",
+			"ConPasword": "123456"
+		}
+	],
+	"InvalidPhoneNumber": [
+		{
+			"Browser": "Chrome",
+			"FirstName": "Sham",
+			"LastName": "Kiran",
+			"E-Mail": "sham12@gmail.com",
+			"Telephone": "111",
+			"Password": "123456",
+			"ConPasword": "123456"
+		},
+		{
+			"Browser": "Firefox",
+			"FirstName": "Suraj",
+			"LastName": "Kiran",
+			"E-Mail": "suraj12@gmail.com",
+			"Telephone": "abcd12",
+			"Password": "123456",
+			"ConPasword": "123456"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="opencart">
+	<listeners>
+		<listener class-name="com.opencart.zdatadriven.Extentlistenerdatadriven"></listener>
+	</listeners>
+	<test thread-count="5" name="Testdatadriventest">
+		<classes>
+			<class name="com.opencart.zdatadriven.TC01_DDRegisterFunctionTest" />
+			<class name="com.opencart.zdatadriven.TC02_DDLoginFunctionTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

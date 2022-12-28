@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="opencart">
+	<listeners>
+		<listener class-name="com.opencart.utilities.ExtentListener" />
+	</listeners>
+	<test thread-count="5" name="RegisterFunctionality">
+		<classes>
+			<class name="com.opencart.testcase.TC001_RFmndtrydatatest" />
+			<class name="com.opencart.testcase.TC003_RFallfielddatatest" />
+			<class name="com.opencart.testcase.TC004_RFwithoutdatatest" />
+			<class name="com.opencart.testcase.TC005_RFnewsletterfieldtest" />
+			<class name="com.opencart.testcase.TC006_RFnewletternotest" />
+			<class name="com.opencart.testcase.TC007_RFnavigatingtoregistertest" />
+			<class name="com.opencart.testcase.TC008_RFdifferentpasswordtest" />
+			<class name="com.opencart.testcase.TC009_RFexistingemailtest" />
+			<class name="com.opencart.testcase.TC010_RFinvalidemailtest" />
+			<class name="com.opencart.testcase.TC011_RFinvalidphonenumtest" />
+			<class name="com.opencart.testcase.TC012_RFkeyboardactiontest" />
+			<class name="com.opencart.testcase.TC013_RFplaceholdertest" />
+			<class name="com.opencart.testcase.TC014_RFleadtrailspacetest" />
+			<class name="com.opencart.testcase.TC015_RFemptyspacejsontest" />
+			<class name="com.opencart.testcase.TC016_RFprivercypolicytest" />
+			<class name="com.opencart.testcase.TC017_RFpasswordtest" />
+			<class name="com.opencart.testcase.TC018_RFhightwidthtest" />
+			<class name="com.opencart.testcase.TC019_RFrandomactivitytest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="LoginFunctionality">
+		<classes>
+			<class name="com.opencart.testcase.TC020_LFinvalidcredentialtest" />
+			<class name="com.opencart.testcase.TC021_LFvalidcredentialtest" />
+			<class name="com.opencart.testcase.TC022_LFinvalidemailtest" />
+			<class name="com.opencart.testcase.TC023_LFinvalidpasswordtest" />
+			<class name="com.opencart.testcase.TC024_LFemptytextfieldtest" />
+			<class name="com.opencart.testcase.TC025_LFforgatpasswordtest" />
+			<class name="com.opencart.testcase.TC026_LFkeyboardactiontest" />
+			<class name="com.opencart.testcase.TC027_LFloginplaceholdertest" />
+			<class name="com.opencart.testcase.TC028_LFloginandbrowsebacktest" />
+			<class name="com.opencart.testcase.TC029_LFlogoutbrowserbacktest" />
+			<class name="com.opencart.testcase.TC030_logininvalidattempttest" />
+			<class name="com.opencart.testcase.TC031_LFpaswrdinpagesouretest" />
+			<class name="com.opencart.testcase.TC032_LFrandomactivitytest" />
+			<class name="com.opencart.testcase.TC033_LFloginandbrowserexittest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="LogoutFunctionality">
+		<classes>
+			<class name="com.opencart.testcase.TC034_LOloggingouttest" />
+			<class name="com.opencart.testcase.TC035_LOfromrightcolumntest" />
+			<class name="com.opencart.testcase.TC036_LOisnotdisplayedtest" />
+			<class name="com.opencart.testcase.TC037_LOandagainlogintest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="ForgotPasswordFunctionality">
+		<classes>
+			<class name="com.opencart.testcase.TC038_FPresetpaswrdunregistrdtest" />
+			<class name="com.opencart.testcase.TC039_FPwithblankspacetest" />
+			<class name="com.opencart.testcase.TC040_FPinvalidemailidtest" />
+			<class name="com.opencart.testcase.TC041_FPandnavigatebacktest" />
+			<class name="com.opencart.testcase.TC042_FPvalueattributetest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

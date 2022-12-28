@@ -1,0 +1,40 @@
+{
+	"TestData": "SearchTest",
+	"validsearch": [
+		{
+			"Browser": "Firefox",
+			"productname": "iMac"
+		}
+	],
+	"invalidsearch": [
+		{
+			"Browser": "Chrome",
+			"productname": "Fitbit"
+		}
+	],
+	"multisearch": [
+		{
+			"Browser": "Chrome",
+			"productname": "Mac"
+		}
+	],
+	"descriptionsearch": [
+		{
+			"Browser": "Edge",
+			"Productdescription": "iLife"
+		}
+	],
+	"searchbycategory": [
+		{
+			"Productname": "iMac",
+			"CorrectCategryName": "Mac",
+			"WrongCategryName": "PC"
+		}
+	],
+	"searchbysubcategory": [
+		{
+			"Productname": "iMac",
+			"ParentCategryName": "Desktops"
+		}
+	]
+}
