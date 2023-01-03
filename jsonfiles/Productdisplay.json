@@ -1,0 +1,41 @@
+{
+	"TestData": "Productdisplay",
+	"SelectQty": [
+		{
+			"browser": "Chrome",
+			"product": "iMac",
+			"qtynos": "5"
+		}
+	],
+	"invalidqty": [
+		{
+			"browser": "Edge",
+			"product": "iMac",
+			"qtynos": "-1",
+			"warnmsg": "Quantity Should be a positive number"
+		}
+	],
+	"reviewtest": [
+		{
+			"browser": "Edge",
+			"product": "iMac",
+			"expres": "success",
+			"name": "Praveen Raj",
+			"review": "The Quality Of The Product Is Good Only Issue Is With Battery BackUp"
+		},
+		{
+			"browser": "Edge",
+			"product": "iMac",
+			"expres": "failure",
+			"name": " ",
+			"review": " "
+		},
+		{
+			"browser": "Edge",
+			"product": "iMac",
+			"expres": "failure",
+			"name": "A",
+			"review": "B"
+		}
+	]
+}

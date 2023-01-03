@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.opencart.testcase.TC045_SFemptysearchtest">
+      <class name="com.opencart.testcase.TC100_COnewregisterforcheckouttest">
         <methods>
           <include name="setUp"/>
-          <include name="SearchWithEmptyTextField"/>
+          <include name="tearDown"/>
+          <include name="checkOutWithNewRegistration" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.opencart.testcase.TC045_SFemptysearchtest -->
+      </class> <!-- com.opencart.testcase.TC100_COnewregisterforcheckouttest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

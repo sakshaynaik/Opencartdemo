@@ -36,27 +36,19 @@ public class TC032_LFrandomactivitytest extends BaseClass {
 		loginpg.clickOnRandomListGroupOption(listgrp);
 		loginpg.navigateBack();
 		log.info("User Navigated From Random ListGroup Option To Login Page: " + loginpg.getLoginPageTitle());
+		
+		int bedcrum = getRandomIntValue(loginpg.getSizeOfBedcrumOption());
+		loginpg.clickOnRandomBedcrumOption(bedcrum);
+		log.info("User Navigated From Random Bedcrum Option To Login Page: " + loginpg.getLoginPageTitle());
 
-		int navpulr = getRandomIntValue(loginpg.getSizeOfNavPulRight());
-		loginpg.clickOnRandomNavPulRight(navpulr);
-		loginpg.navigateBack();
+		int navpulr = getRandomIntValue(hmpg.getSizeOfNavPulRight());
+		hmpg.clickOnRandomNavPulRight(navpulr);
 		log.info(
 				"User Navigated From Random Navigation Pul Right Option To Login Page: " + loginpg.getLoginPageTitle());
 
-		int bedcrum = getRandomIntValue(loginpg.getSizeOfBedcrumOption());
-		loginpg.clickOnRandomBedcrumOption(bedcrum);
-		loginpg.navigateBack();
-		log.info("User Navigated From Random Bedcrum Option To Login Page: " + loginpg.getLoginPageTitle());
-
-		int navibar = getRandomIntValue(loginpg.getSizeOfNavigationBarOption());
-		loginpg.clickOnRandomNavigationOption(navibar);
-		loginpg.navigateBack();
-		log.info("User Navigated From Random NavigationBar Option To Login Page: " + loginpg.getLoginPageTitle());
-
-		int footer = getRandomIntValue(loginpg.getSizeOfFooterOption());
-		loginpg.clickOnRandomFooterOption(footer);
-		loginpg.navigateBack();
-		log.info("User Navigated From Random Footer Option To Login Page: " + loginpg.getLoginPageTitle());
+		int navibar = getRandomIntValue(hmpg.getSizeOfNavigationBarOption());
+		hmpg.clickOnRandomNavigationOption(navibar);
+		log.info("User Navigated From Random NavigationBar Option To Login Page" + loginpg.getLoginPageTitle());
 
 	}
 }

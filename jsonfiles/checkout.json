@@ -1,0 +1,27 @@
+{
+	"testdata": "checkout",
+	"newbilldetails": [
+		{
+			"browser": "Firefox",
+			"product": "HP LP",
+			"email": "kishore8@gmail.com",
+			"password": "12345",
+			"frstname": "Kiran",
+			"lstname": "Nair",
+			"company": "InfoTech",
+			"address1": "Sony Circle",
+			"address2": "Koramangala",
+			"country": "India",
+			"zone": "Bangalore",
+			"pstalcode": "560034"
+		}
+	],
+	"regbilldetils": [
+		{
+			"browser": "Firefox",
+			"email": "kishore8@gmail.com",
+			"password": "12345",
+			"product": "HP LP"
+		}
+	]
+}

@@ -100,6 +100,12 @@ public class BaseClass {
 		return (RandomStringUtils.randomAlphabetic(number));
 	}
 
+	// Get Random String Numeric Data
+	public String getRandomStringNumericValue(int number) {
+
+		return (RandomStringUtils.randomNumeric(number));
+	}
+
 	// Get Random Integer Value
 	public int getRandomIntValue(int number) {
 

@@ -60,14 +60,14 @@ public class TC021_LFvalidcredentialtest extends BaseClass {
 		Object object = null;
 
 		try {
-			String filepath = System.getProperty("user.dir") + "//jsonfiles//Login.json";
+			String filepath = System.getProperty("user.dir") + "//jsonfiles//Search.json";
 			FileReader reader = new FileReader(filepath);
 			object = parser.parse(reader);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		JSONObject jsonobject = (JSONObject) object;
-		JSONArray jsonarray = (JSONArray) jsonobject.get("validcredentials");
+		JSONArray jsonarray = (JSONArray) jsonobject.get("loginsearch");
 		Object[] arr = new Object[jsonarray.size()];
 
 		for (int i = 0; i < jsonarray.size(); i++) {
@@ -76,8 +76,9 @@ public class TC021_LFvalidcredentialtest extends BaseClass {
 			Object brows = data.get("Browser");
 			Object email = data.get("email");
 			Object passw = data.get("password");
+			Object prdna = data.get("productname");
 
-			arr[i] = brows + "," + email + "," + passw;
+			arr[i] = brows + "," + email + "," + passw + "," + prdna;
 		}
 		return arr;
 	}

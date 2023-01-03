@@ -12,10 +12,26 @@
 			"productname": "Fitbit"
 		}
 	],
+	"loginsearch": [
+		{
+			"Browser": "Chrome",
+			"email": "kishore8@gmail.com",
+			"password": "12345",
+			"productname": "iMac"
+		}
+	],
 	"multisearch": [
 		{
 			"Browser": "Chrome",
 			"productname": "Mac"
+		}
+	],
+	"randomactivty": [
+		{
+			"Browser": "Chrome",
+			"productname": "Mac",
+			"sortby": "Rating (Highest)",
+			"showby": "2"
 		}
 	],
 	"descriptionsearch": [
@@ -26,15 +42,16 @@
 	],
 	"searchbycategory": [
 		{
-			"Productname": "iMac",
-			"CorrectCategryName": "Mac",
-			"WrongCategryName": "PC"
+			"Browser": "Firefox",
+			"productname": "iMac",
+			"correctCategryName": "3",
+			"wrongCategryName": "2"
 		}
 	],
 	"searchbysubcategory": [
 		{
-			"Productname": "iMac",
-			"ParentCategryName": "Desktops"
+			"productname": "iMac",
+			"parentCategryName": "Desktops"
 		}
 	]
 }

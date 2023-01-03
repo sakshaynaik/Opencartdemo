@@ -1,0 +1,64 @@
+{
+	"TestData": "shoppingcart",
+	"existprd": [
+		{
+			"browser": "Chrome",
+			"product": "iMac",
+			"qtynos": "2"
+		}
+	],
+	"invalidqty": [
+		{
+			"browser": "Edge",
+			"product": "iMac",
+			"qtynos": "-1",
+			"warnmsg": "Quantity Should be a positive number"
+		}
+	],
+	"giftcertificate": [
+		{
+			"browser": "Edge",
+			"product": "iMac",
+			"giftcrt": "abcd123"
+		}
+	],
+	"shippingstatus": [
+		{
+			"browser": "Edge",
+			"product": "iMac",
+			"country": "Turkey",
+			"state": "8",
+			"postalcode": "12345"
+		}
+	],
+	"reviewtest": [
+		{
+			"browser": "Edge",
+			"product": "iMac",
+			"expres": "success",
+			"name": "Praveen Raj",
+			"review": "The Quality Of The Product Is Good Only Issue Is With Battery BackUp"
+		},
+		{
+			"browser": "Edge",
+			"product": "iMac",
+			"expres": "failure",
+			"name": " ",
+			"review": " "
+		},
+		{
+			"browser": "Edge",
+			"product": "iMac",
+			"expres": "failure",
+			"name": "A",
+			"review": "B"
+		}
+	],
+	"invalidcoupen": [
+		{
+			"browser": "Edge",
+			"product": "iMac",
+			"coupen": "xyz123"
+		}
+	]
+}

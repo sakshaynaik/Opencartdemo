@@ -14,7 +14,6 @@ public class TC045_SFemptysearchtest extends BaseClass {
 		log.info("***** TC045_SFemptysearchtest Started *****");
 
 		Homepage hmpg = new Homepage(driver);
-		hmpg.enterSearchTextField("");
 		Searchpage srchpg = hmpg.clickOnSearchButton();
 
 		Assert.assertTrue(srchpg.isDispalyedSearchNoProductMsg());

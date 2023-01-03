@@ -31,7 +31,7 @@ public class TC043_SFexistingproducttest extends BaseClass {
 		log.info("User Navigated To Search Page Title: " + srchpg.getSearchPageTitle());
 
 		Assert.assertTrue(srchpg.isDispalyedIMacProductThumb());
-		log.info("User Searched Product Was Displayed On Search Page");
+		log.info("User Searched Product Was Displayed On Search Page: " + srchpg.getIMacProductThumb());
 
 		log.info("***** TC043_SFexistingproducttest Completed *****");
 

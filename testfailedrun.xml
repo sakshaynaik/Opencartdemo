@@ -6,7 +6,7 @@
 	</listeners>
 	<test thread-count="5" name="Run">
 		<classes>
-			<class name="com.opencart.testcase.TC044_SFnonexistingproducttest" />
+			<class name="com.opencart.testcase.TC088_SCupdatewthnegativeqtytest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

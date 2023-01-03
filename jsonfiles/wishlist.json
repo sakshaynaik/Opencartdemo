@@ -1,0 +1,25 @@
+{
+	"testdata": "wishlisttest",
+	"loginaddtowishlist": [
+		{
+			"Browser": "Chrome",
+			"email": "kishore8@gmail.com",
+			"password": "12345",
+			"productname": "iMac"
+		}
+	],
+	"randomactivty": [
+		{
+			"Browser": "Chrome",
+			"productname": "Mac",
+			"sortby": "Rating (Highest)",
+			"showby": "2"
+		}
+	],
+	"multisearch": [
+		{
+			"Browser": "Chrome",
+			"productname": "Mac"
+		}
+	]
+}

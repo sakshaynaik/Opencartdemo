@@ -44,55 +44,14 @@ public class Loginpage {
 	@FindBy(xpath = "//div[text()=' Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.']")
 	private WebElement unsucesfulmsg;
 
-	@FindBy(xpath = "//ul[@class='nav navbar-nav']/li")
-	private List<WebElement> navigbaroption;
-
 	@FindBy(xpath = "//div[@class='list-group']/a")
 	private List<WebElement> listgroup;
 
 	@FindBy(xpath = "//ul[@class='breadcrumb']/li")
 	private List<WebElement> bedcrumoptions;
 
-	@FindBy(xpath = "//ul[@class='list-inline']/li")
-	private List<WebElement> navigpulright;
-
-	@FindBy(xpath = "//div[@class='row']//div[@class='col-sm-3']//li[1]")
-	private List<WebElement> allfooteroption;
-
 	//////////////////////////////////////////////////////
-
-	public void refreshPage() {
-
-		ldriver.navigate().refresh();
-	}
-
-	public void navigateBack() {
-		ldriver.navigate().back();
-	}
-
-	public void clickOnRandomFooterOption(int randopt) {
-
-		WebElement option = ldriver.findElement(By.xpath(
-				"//div[@class='row']//div[@class='col-sm-3'][" + (randopt + 1) + "]//li[" + (randopt + 1) + "]"));
-		option.click();
-	}
-
-	public int getSizeOfFooterOption() {
-
-		return (allfooteroption.size());
-	}
-
-	public void clickOnRandomNavPulRight(int randopt) {
-
-		WebElement option = ldriver.findElement(By.xpath("//ul[@class='list-inline']/li[" + (randopt + 1) + "]"));
-		option.click();
-	}
-
-	public int getSizeOfNavPulRight() {
-
-		return (navigpulright.size());
-	}
-
+	
 	public void clickOnRandomBedcrumOption(int randopt) {
 
 		WebElement option = ldriver.findElement(By.xpath("//ul[@class='breadcrumb']/li[" + (randopt + 1) + "]"));
@@ -102,6 +61,15 @@ public class Loginpage {
 	public int getSizeOfBedcrumOption() {
 
 		return (bedcrumoptions.size());
+	}
+
+	public void refreshPage() {
+
+		ldriver.navigate().refresh();
+	}
+
+	public void navigateBack() {
+		ldriver.navigate().back();
 	}
 
 	public void clickOnRandomListGroupOption(int randopt) {
@@ -115,15 +83,6 @@ public class Loginpage {
 		return (listgroup.size());
 	}
 
-	public void clickOnRandomNavigationOption(int randopt) {
-
-		ldriver.findElement(By.xpath("//ul[@class='nav navbar-nav']/li[" + (randopt + 1) + "]"));
-	}
-
-	public int getSizeOfNavigationBarOption() {
-
-		return (navigbaroption.size());
-	}
 
 	public String getUnsuccessfulAttemptMsgForLogin() {
 

@@ -122,4 +122,75 @@ public class ReadConfig {
 			throw new RuntimeException("SearchPageTitle Not Found In Properties File");
 	}
 
+	public String getCompareProductPageTitle() {
+
+		String comprd = prop.getProperty("ComapreProdutTitle");
+		if (comprd != null)
+			return comprd;
+		else
+			throw new RuntimeException("ComapreProdutPageTitle Not Found In Properties File");
+	}
+
+	public String getSiteMapPageTitle() {
+
+		String sitemap = prop.getProperty("siteMapTitle");
+		if (sitemap != null)
+			return sitemap;
+		else
+			throw new RuntimeException("siteMapPageTitle Not Found In Properties File");
+	}
+
+	public String getDesktopsPageTitle() {
+
+		String desktop = prop.getProperty("DesktopsPageTitle");
+		if (desktop != null)
+			return desktop;
+		else
+			throw new RuntimeException("DesktopsPageTitle Not Found In Properties File");
+	}
+
+	public String getWishlistPageTitle() {
+
+		String wshlst = prop.getProperty("WishlistPageTitle");
+		if (wshlst != null)
+			return wshlst;
+		else
+			throw new RuntimeException("WishlistPageTitle Not Found In Properties File");
+	}
+
+	public String getShoppingCartPageTitle() {
+
+		String scpg = prop.getProperty("ShoppingCartPagTitle");
+		if (scpg != null)
+			return scpg;
+		else
+			throw new RuntimeException("ShoppingCartPageTitle Not Found In Properties File");
+	}
+	
+	public String getPCPageTitle() {
+
+		String pcpg = prop.getProperty("PCPageTitle");
+		if (pcpg != null)
+			return pcpg;
+		else
+			throw new RuntimeException("PCPageTitle Not Found In Properties File");
+	}
+
+	public String getCheckoutPageTitle() {
+
+		String ckpg = prop.getProperty("CheckoutpPageTitle");
+		if (ckpg != null)
+			return ckpg;
+		else
+			throw new RuntimeException("CheckoutPageTitle Not Found In Properties File");
+	}
+	
+	public String getOrderPlacedPageTitle() {
+
+		String odrpg = prop.getProperty("OrderPlacedPageTitle");
+		if (odrpg != null)
+			return odrpg;
+		else
+			throw new RuntimeException("OrderPlacedPageTitle Not Found In Properties File");
+	}
 }

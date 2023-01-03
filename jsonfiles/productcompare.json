@@ -1,0 +1,33 @@
+{
+	"testdata": "productcomapre",
+	"existingproduct": [
+		{
+			"browser": "Chrome",
+			"product": "iMac"
+		}
+	],
+	"twoproduct": [
+		{
+			"browser": "Firefox",
+			"firstproduct": "iMac",
+			"secondproduct": "iPhone"
+		}
+	],
+	"threeproduct": [
+		{
+			"browser": "Edge",
+			"firstproduct": "iMac",
+			"secondproduct": "iPhone",
+			"thirdproduct": "MacBook Air"
+		}
+	],
+	"fourproduct": [
+		{
+			"browser": "Edge",
+			"firstproduct": "iMac",
+			"secondproduct": "iPhone",
+			"thirdproduct": "MacBook Air",
+			"fourtproduct": "MacBook"
+		}
+	]
+}

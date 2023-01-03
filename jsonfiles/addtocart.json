@@ -1,0 +1,38 @@
+{
+	"testdata": "addtowishlist",
+	"addbyprdpage": [
+		{
+			"browser": "Firefox",
+			"product": "Apple Cinema 30"
+		}
+	],
+	"addbysrchpage": [
+		{
+			"browser": "Firefox",
+			"email": "kishore8@gmail.com",
+			"password": "12345",
+			"product": "iMac"
+		}
+	],
+	"addtocart": [
+		{
+			"browser": "Firefox",
+			"email": "kishore8@gmail.com",
+			"password": "12345",
+			"product": "HP LP3065"
+		}
+	],
+	"addapplecinema30": [
+		{
+			"browser": "Firefox",
+			"product": "Apple Cinema 30",
+			"textfld": "Purchased Apple Product",
+			"selectcolour": "1",
+			"textbox": "Purchased AppleCinema30",
+			"deskktopfile": "C:\Users\User\Downloads\Screenshot_2019-11-20-19-50-46-153_com.whatsapp.jpg",
+			"deliverydate": "12-March 2014",
+			"deliverytime": "20:30",
+			"Qty": "3"
+		}
+	]
+}

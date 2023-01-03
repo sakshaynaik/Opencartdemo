@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Run(failed)">
     <classes>
-      <class name="com.opencart.testcase.TC044_SFnonexistingproducttest">
+      <class name="com.opencart.testcase.TC088_SCupdatewthnegativeqtytest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="seachForNonExistingProduct" invocation-numbers="0"/>
+          <include name="shopCartByAddingNegativeQtyNumber" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.opencart.testcase.TC044_SFnonexistingproducttest -->
+      </class> <!-- com.opencart.testcase.TC088_SCupdatewthnegativeqtytest -->
     </classes>
   </test> <!-- Run(failed) -->
 </suite> <!-- Failed suite [FailedTest] -->

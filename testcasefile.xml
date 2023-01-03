@@ -61,4 +61,49 @@
 			<class name="com.opencart.testcase.TC042_FPvalueattributetest" />
 		</classes>
 	</test> <!-- Test -->
+	<test thread-count="5" name="SearchFunctionality">
+		<classes>
+			<class name="com.opencart.testcase.TC043_SFexistingproducttest" />
+			<class name="com.opencart.testcase.TC044_SFnonexistingproducttest" />
+			<class name="com.opencart.testcase.TC045_SFemptysearchtest" />
+			<class name="com.opencart.testcase.TC046_SFloginandsearchtest" />
+			<class name="com.opencart.testcase.TC047_SFmultisearchtest" />
+			<class name="com.opencart.testcase.TC048_SFplaceholdertest" />
+			<class name="com.opencart.testcase.TC049_SFsearchcriteriatest" />
+			<class name="com.opencart.testcase.TC050_SFbyproductdiscrpttest" />
+			<class name="com.opencart.testcase.TC051_SFcriteriafieldtest" />
+			<class name="com.opencart.testcase.TC052_SFmaincategorysearchtest" />
+			<class name="com.opencart.testcase.TC053_SFlistgridviewsingleprodttest" />
+			<class name="com.opencart.testcase.TC054_SFlistgridmultiprotest" />
+			<class name="com.opencart.testcase.TC055_SFproductcomparetest" />
+			<class name="com.opencart.testcase.TC056_SFrandomactivitytest" />
+			<class name="com.opencart.testcase.TC057_SFnavigatebysitemaptest" />
+			<class name="com.opencart.testcase.TC058_SFsearchbykeyboardtest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="ProductCompareFunctionality">
+		<classes>
+			<class name="com.opencart.testcase.TC059_PCfromdisplaypagetest" />
+			<class name="com.opencart.testcase.TC060_PCbylistviewtest" />
+			<class name="com.opencart.testcase.TC061_PCbygridviewtest" />
+			<class name="com.opencart.testcase.TC062_PCsubcategorytest" />
+			<class name="com.opencart.testcase.TC063_PCsubcatgrygridtest" />
+			<class name="com.opencart.testcase.TC065_PCfromhomepagetest" />
+			<class name="com.opencart.testcase.TC066_PCproductcomparetest" />
+			<class name="com.opencart.testcase.TC067_PCproductcomparehometest" />
+			<class name="com.opencart.testcase.TC068_PCnavigatehometest" />
+			<class name="com.opencart.testcase.TC069_PCtwoproducttest" />
+			<class name="com.opencart.testcase.TC070_PCremovefrompctest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="ProductDisplayFunctionality">
+		<classes>
+			<class name="com.opencart.testcase.TC071_PDimagethumnailtest" />
+			<class name="com.opencart.testcase.TC072_PDproductdetailstest" />
+			<class name="com.opencart.testcase.TC073_PDwithnegativeqtytest" />
+			<class name="com.opencart.testcase.TC074_PDvalidatereviewtabtest" />
+			<class name="com.opencart.testcase.TC075_PDaddtowishlisttest" />
+			<class name="com.opencart.testcase.TC076_PDaddtocarttest" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
