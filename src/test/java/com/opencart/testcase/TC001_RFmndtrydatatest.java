@@ -40,7 +40,6 @@ public class TC001_RFmndtrydatatest extends BaseClass {
 		respg.enterConfirmPasswordTextField(data[6]);
 		respg.clickOnPriveryPolicyField();
 		Successpage sucespg = respg.clickOnContinueButton();
-
 		Assert.assertEquals(sucespg.getSuccessPageTitle(), config.getSuccessPageTitle());
 		log.info("User Logged Into AccountSuccess Page: " + sucespg.getSuccessPageTitle());
 

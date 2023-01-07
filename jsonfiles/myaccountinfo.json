@@ -1,0 +1,39 @@
+{
+	"TestData": "myaccountinfo",
+	"updtedetails": [
+		{
+			"Browser": "Chrome",
+			"email": "pratap8@gmail.com",
+			"password": "12345",
+			"fname": "kishan",
+			"lname": "sharma",
+			"newemail": "prajwal8@gmail.com",
+			"Telephone": "8907654324"
+		}
+	],
+		"emptydetails": [
+		{
+			"Browser": "Chrome",
+			"email": "kishore8@gmail.com",
+			"password": "12345",
+			"fname": " ",
+			"lname": " ",
+			"newemail": " ",
+			"Telephone": " "
+		}
+	],
+	"invaidcredentials": [
+		{
+			"Browser": "Firefox",
+			"email": "xyz123@gmail.com",
+			"password": "561234"
+		}
+	],
+	"invaidemailvalidpassword": [
+		{
+			"Browser": "Edge",
+			"email": "cde123@gmail.com",
+			"password": "12345"
+		}
+	]
+}

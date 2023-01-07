@@ -21,7 +21,16 @@ public class NewsletterSubscriptionpage {
 	@FindBy(xpath = "//input[@value='0']")
 	private WebElement newsletterradiono;
 
+	@FindBy(xpath = "//input[@value='Continue']")
+	private WebElement continuebttn;
+	
 	//////////////////////////////////////////////////
+	
+	public Accountpage clickOnContinueButton() {
+
+		continuebttn.click();
+		return (new Accountpage(ldriver));
+	}
 	
 	public boolean isSelectedNewsletterRadioOptionForNo() {
 

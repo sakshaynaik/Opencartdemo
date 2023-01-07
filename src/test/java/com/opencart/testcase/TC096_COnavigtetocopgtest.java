@@ -86,33 +86,12 @@ public class TC096_COnavigtetocopgtest extends BaseClass {
 		Assert.assertEquals(chckoutpg.getCheckoutPageTitle(), config.getCheckoutPageTitle());
 		log.info("Check Out Page Title: " + chckoutpg.getCheckoutPageTitle());
 
-		try {
-			chckoutpg.enterFirstName(hMap.get("FirstName"));
-			chckoutpg.enterLastName(hMap.get("LastName"));
-			chckoutpg.enterCompanyName(hMap.get("Companyname"));
-			chckoutpg.enterAddress1(hMap.get("Address1"));
-			chckoutpg.enterAddress2(hMap.get("Address2"));
-			chckoutpg.enterCityName(hMap.get("Cityname"));
-			chckoutpg.enterPostalCode(hMap.get("Postcode"));
-			chckoutpg.selectCountry(hMap.get("countryoption"));
-			chckoutpg.selectZone(Integer.parseInt(hMap.get("Zoneoption")));
-			log.info("User Has Successfully Updated Billing Details");
-		} catch (Exception e) {
-
-			log.info("Billing Details Already Stored In Site");
-		}
 		chckoutpg.clickOnBillContinueButton();
 		chckoutpg.clickOnShippingAddressContinueButton();
 		chckoutpg.clickOnShippingMethodContinueButton();
 		chckoutpg.clickOnAgreeCheckBox();
 		chckoutpg.clickOnPaymentButtonContinueButton();
 		Orderplacedpage orderconpg = chckoutpg.clickOnOrderConfirmButton();
-
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 
 		Assert.assertEquals(orderconpg.getOrderplacedPageTitle(), config.getOrderPlacedPageTitle());
 		log.info("Order Confirmation Page Title: " + orderconpg.getOrderplacedPageTitle());

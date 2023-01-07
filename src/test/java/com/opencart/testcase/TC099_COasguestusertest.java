@@ -46,7 +46,7 @@ public class TC099_COasguestusertest extends BaseClass {
 		prdtpg.clickOnAddToCartButton();
 		Assert.assertTrue(prdtpg.isDispalyedOfWhishlistMsg());
 		log.info("Success Added To Wish-List Message Displayed: " + prdtpg.getTexOfWhishlistMsg());
-		
+
 		Shoppingcartpage shopcart = prdtpg.clickOnShopCartMsgLink();
 		Assert.assertEquals(shopcart.getShoppingCartPageTitle(), config.getShoppingCartPageTitle());
 		log.info("ShopCart Page Title: " + shopcart.getShoppingCartPageTitle());
@@ -60,26 +60,20 @@ public class TC099_COasguestusertest extends BaseClass {
 
 		chckoutpg.clickOnGuestCheckoutRadioButton();
 		chckoutpg.clickOnGuestCheckoutContinueButton();
+		chckoutpg.enterFirstName(hMap.get("FirstName"));
+		chckoutpg.enterLastName(hMap.get("LastName"));
+		chckoutpg.enterCompanyName(hMap.get("Companyname"));
+		chckoutpg.enterAddress1(hMap.get("Address1"));
+		chckoutpg.enterAddress2(hMap.get("Address2"));
+		chckoutpg.enterCityName(hMap.get("Cityname"));
+		chckoutpg.enterPostalCode(hMap.get("Postcode"));
+		chckoutpg.selectCountry(hMap.get("countryoption"));
+		chckoutpg.selectZone(Integer.parseInt(hMap.get("Zoneoption")));
+		chckoutpg.enterEmailForPayment(hMap.get("Email"));
+		chckoutpg.enterTelephoneForPayment(hMap.get("Telephone"));
+		chckoutpg.clickOnGuestContinueButton();
+		log.info("User Has Successfully Updated As Guest Details");
 
-		try {
-			chckoutpg.enterFirstName(hMap.get("FirstName"));
-			chckoutpg.enterLastName(hMap.get("LastName"));
-			chckoutpg.enterCompanyName(hMap.get("Companyname"));
-			chckoutpg.enterAddress1(hMap.get("Address1"));
-			chckoutpg.enterAddress2(hMap.get("Address2"));
-			chckoutpg.enterCityName(hMap.get("Cityname"));
-			chckoutpg.enterPostalCode(hMap.get("Postcode"));
-			chckoutpg.selectCountry(hMap.get("countryoption"));
-			chckoutpg.selectZone(Integer.parseInt(hMap.get("Zoneoption")));
-			chckoutpg.enterEmailForPayment(hMap.get("Email"));
-			chckoutpg.enterTelephoneForPayment(hMap.get("Telephone"));
-			chckoutpg.clickOnGuestContinueButton();
-			log.info("User Has Successfully Updated As Guest Details");
-		} catch (Exception e) {
-
-			log.info("Billing Details Already Stored In Site");
-		}
-		
 		chckoutpg.clickOnShippingMethodContinueButton();
 		chckoutpg.clickOnAgreeCheckBox();
 		chckoutpg.clickOnPaymentButtonContinueButton();
@@ -91,6 +85,10 @@ public class TC099_COasguestusertest extends BaseClass {
 		Assert.assertTrue(orderconpg.isDisplayedSuccessOnBedcrum());
 		Assert.assertTrue(orderconpg.isDisplayedOrderplacedMessage());
 		log.info("Order Confirmation Success Message: " + orderconpg.getOrderplacedMessage());
+
+		orderconpg.clickOnContinueButton();
+		Assert.assertEquals(hmpg.getHomePageTitle(), config.getHomePageTitle());
+		log.info("User Navigated Back To Home Page: " + hmpg.getHomePageTitle());
 
 		log.info("***** TC099_COasguestusertest Completed *****");
 

@@ -24,7 +24,25 @@ public class Orderplacedpage {
 	@FindBy(xpath = "//a[normalize-space()='Continue']")
 	private WebElement continuebttn;
 
+	@FindBy(linkText = "my account")
+	private WebElement myaccountlink;
+
+	@FindBy(linkText = "store owner")
+	private WebElement storeownerlink;
+
 	/////////////////////////////////////////////////////////////////
+
+	public Contactuspage clickOnStoreOwnerLink() {
+
+		storeownerlink.click();
+		return (new Contactuspage(ldriver));
+	}
+
+	public Accountpage clickOnMyAccountLink() {
+
+		myaccountlink.click();
+		return (new Accountpage(ldriver));
+	}
 
 	public Homepage clickOnContinueButton() {
 

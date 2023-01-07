@@ -12,6 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.opencart.utilities.ReadAction;
 import com.opencart.utilities.ReadJavascriptExecutor;
 
 public class Registerationpage {
@@ -84,7 +85,70 @@ public class Registerationpage {
 	@FindBy(xpath = "//div[@class='list-group']/a")
 	private List<WebElement> listgroup;
 
+	@FindBy(linkText = "Address Book")
+	private WebElement addressbooklink;
+
+	@FindBy(linkText = "Order History")
+	private WebElement orderhistrylink;
+
+	@FindBy(linkText = "Downloads")
+	private WebElement downloadlink;
+
+	@FindBy(linkText = "Reward Points")
+	private WebElement rewardpointlink;
+
+	@FindBy(linkText = "Transactions")
+	private WebElement transactionlink;
+
+	@FindBy(linkText = "Recurring payments")
+	private WebElement recuringpay;
+
+	@FindBy(linkText = "Newsletter")
+	private WebElement newletterlink;
+
 	/////////////////////////////////////////////
+
+	public NewsletterSubscriptionpage clickOnNewsLetterLinkRightOption() {
+
+		newletterlink.click();
+		return (new NewsletterSubscriptionpage(ldriver));
+	}
+
+	public Recurringpaymentpage clickOnRecurringPaymentLinkOnLeftSide() {
+
+		recuringpay.click();
+		return (new Recurringpaymentpage(ldriver));
+	}
+
+	public Transactionhistorypage clickOnTransactionLink() {
+
+		transactionlink.click();
+		return (new Transactionhistorypage(ldriver));
+	}
+
+	public Rewardspointpage clickOnRewardPointsLink() {
+
+		rewardpointlink.click();
+		return (new Rewardspointpage(ldriver));
+	}
+
+	public Downloadspage clickOnDownloadsLink() {
+
+		downloadlink.click();
+		return (new Downloadspage(ldriver));
+	}
+
+	public Orderhistorypage clickOnOrderHistoryLink() {
+
+		ReadAction.JSClick(ldriver, orderhistrylink);
+		return (new Orderhistorypage(ldriver));
+	}
+
+	public Addressbookpage clickOnAddressBookLink() {
+
+		ReadAction.JSClick(ldriver, addressbooklink);
+		return (new Addressbookpage(ldriver));
+	}
 
 	public void highletTelephonTextField() {
 
@@ -136,6 +200,13 @@ public class Registerationpage {
 
 		Dimension hght = email.getSize();
 		return (hght.height);
+	}
+
+	public void getBorderForTelephoneTxtField(String telephn) {
+
+		ReadJavascriptExecutor.drawBorder(telephone, ldriver);
+		telephone.clear();
+		telephone.sendKeys(telephn);
 	}
 
 	public boolean isSelectedForPrivercyPolicy() {
@@ -245,31 +316,37 @@ public class Registerationpage {
 
 	public void enterFirstNameTextField(String fname) {
 
+		firstname.clear();
 		firstname.sendKeys(fname);
 	}
 
 	public void enterLastNameTextField(String lname) {
 
+		lastname.clear();
 		lastname.sendKeys(lname);
 	}
 
 	public void enterEmialTextField(String emil) {
 
+		email.clear();
 		email.sendKeys(emil);
 	}
 
 	public void enterTelephoneTextField(String tphone) {
 
+		telephone.clear();
 		telephone.sendKeys(tphone);
 	}
 
 	public void enterPasswordTextField(String pass) {
 
+		password.clear();
 		password.sendKeys(pass);
 	}
 
 	public void enterConfirmPasswordTextField(String conpass) {
 
+		confirmpassword.clear();
 		confirmpassword.sendKeys(conpass);
 	}
 

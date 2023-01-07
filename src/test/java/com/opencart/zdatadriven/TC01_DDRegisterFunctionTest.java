@@ -53,11 +53,8 @@ public class TC01_DDRegisterFunctionTest extends Baseclassdatadriven {
 		boolean convertedexptres = false;
 
 		if (expectedresult.equalsIgnoreCase("Success")) {
-
 			convertedexptres = true;
-
 		} else if (expectedresult.equalsIgnoreCase("Failure")) {
-
 			convertedexptres = false;
 		}
 
@@ -112,7 +109,7 @@ public class TC01_DDRegisterFunctionTest extends Baseclassdatadriven {
 		try {
 			String filepath = System.getProperty("user.dir") + "//testdata//datadrivenfile.xlsx";
 			xlsreader = new MyXlsReader(filepath);
-			data = ReadXlsxFile.getTestData(xlsreader, "RegisterTest", "Data");
+			data = ReadXlsxFile.getTestData(xlsreader, "registerdata", "Data");
 		} catch (Exception e) {
 
 			e.printStackTrace();

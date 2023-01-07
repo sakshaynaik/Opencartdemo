@@ -1,0 +1,29 @@
+{
+	"testdata": "orderinfo",
+	"validsearch": [
+		{
+			"Browser": "Firefox",
+			"productname": "iMac"
+		}
+	],
+	"invalidsearch": [
+		{
+			"Browser": "Chrome",
+			"productname": "Fitbit"
+		}
+	],
+	"loginsearch": [
+		{
+			"Browser": "Chrome",
+			"email": "kishore8@gmail.com",
+			"password": "12345",
+			"productname": "iMac"
+		}
+	],
+	"multisearch": [
+		{
+			"Browser": "Chrome",
+			"productname": "Mac"
+		}
+	]
+}

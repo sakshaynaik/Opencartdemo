@@ -1,0 +1,32 @@
+{
+	"TestData": "LoginTest",
+	"validcredentials": [
+		{
+			"Browser": "Chrome",
+			"email": "kishore8@gmail.com",
+			"password": "12345"
+		}
+	],
+	"invaidcredentials": [
+		{
+			"Browser": "Firefox",
+			"email": "xyz123@gmail.com",
+			"password": "561234"
+		}
+	],
+	"editaddressbok": [
+		{
+			"browser": "Firefox",
+			"email": "kishore8@gmail.com",
+			"password": "12345",
+			"frstname": "Kiran",
+			"lstname": "Nair",
+			"company": "InfoTech",
+			"address1": "Sony Circle",
+			"address2": "Koramangala",
+			"country": "India",
+			"zone": "4",
+			"pstalcode": "560034"
+		}
+	]
+}

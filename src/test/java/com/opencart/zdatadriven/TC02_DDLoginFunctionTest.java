@@ -49,11 +49,8 @@ public class TC02_DDLoginFunctionTest extends Baseclassdatadriven {
 		boolean convexpresult = false;
 
 		if (expresult.equals("Success")) {
-
 			convexpresult = true;
-
 		} else if (expresult.equals("Failure")) {
-
 			convexpresult = false;
 		}
 
@@ -84,7 +81,7 @@ public class TC02_DDLoginFunctionTest extends Baseclassdatadriven {
 			log.info("User Login Failed Due To Invalid Credentials");
 		}
 
-		Assert.assertEquals(convexpresult, convactualresult);
+		Assert.assertEquals(convactualresult, convexpresult);
 
 		log.info("***** TC02_DDLoginFunctionTest Completed *****");
 
@@ -98,7 +95,7 @@ public class TC02_DDLoginFunctionTest extends Baseclassdatadriven {
 		try {
 			String filepath = System.getProperty("user.dir") + "//testdata//datadrivenfile.xlsx";
 			xlsreader = new MyXlsReader(filepath);
-			data = ReadXlsxFile.getTestData(xlsreader, "LoginTest", "Data");
+			data = ReadXlsxFile.getTestData(xlsreader, "logindata", "Data");
 		} catch (Exception e) {
 
 			e.printStackTrace();

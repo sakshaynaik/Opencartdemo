@@ -1,0 +1,25 @@
+{
+		"TestData": "giftcertificate",
+		"validcredentials": [
+			{
+				"Browser": "Chrome",
+				"receptname": "kishore",
+				"receptemail": "kishore8@gmail.com",
+				"sendername": "Akshay",
+				"senderemail": "akshaysnaik1111@gmail.com",
+				"gftcerttheme": "Christmas",
+				"amount": "10"
+			}
+		],
+		"invaidcredentials": [
+			{
+				"Browser": "Chrome",
+				"receptname": "kishore",
+				"receptemail": "kishore8@gmail.com",
+				"sendername": "Akshay",
+				"senderemail": "akshaysnaik1111@gmail.com",
+				"gftcerttheme": "Birthday",
+				"amount": "1001"
+			}
+		]
+	}

@@ -69,12 +69,6 @@ public class TC098_COnaviagtetocheckouttest extends BaseClass {
 		chckoutpg.clickOnPaymentButtonContinueButton();
 		Orderplacedpage orderconpg = chckoutpg.clickOnOrderConfirmButton();
 
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-
 		Assert.assertEquals(orderconpg.getOrderplacedPageTitle(), config.getOrderPlacedPageTitle());
 		log.info("Order Confirmation Page Title: " + orderconpg.getOrderplacedPageTitle());
 

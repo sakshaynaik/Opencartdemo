@@ -36,7 +36,7 @@ public class TC011_RFinvalidphonenumtest extends BaseClass {
 		respg.enterFirstNameTextField(hMap.get("FirstName"));
 		respg.enterLastNameTextField(hMap.get("LastName"));
 		respg.enterEmialTextField(getRandomStringValue(4) + "@gmail.com");
-		respg.enterTelephoneTextField(hMap.get("Telephone"));
+		respg.getBorderForTelephoneTxtField(hMap.get("Telephone"));
 		respg.enterPasswordTextField(hMap.get("Password"));
 		respg.enterConfirmPasswordTextField(hMap.get("ConfirmPassword"));
 		respg.clickOnNewsLetterRadioButton();
@@ -46,12 +46,11 @@ public class TC011_RFinvalidphonenumtest extends BaseClass {
 		try {
 		Assert.assertEquals(respg.getRegPageTitle(), config.getRegisterationPageTitle());
 		Assert.assertTrue(respg.isDisplayedWarnTelephonemsg());
-		log.info("User Still In Registration Page Due To Invaild Phone Number :" + respg.getWarnTelephonemsg());
+		log.info("User Still In Registration Page Due To Invaild Telephone Number :" + respg.getWarnTelephonemsg());
 		
 		}catch(Throwable e ) {
-			
-			log.info("User Was Able To Register Even With Invalid Telehone Number and Test Case Failed");
-			Assert.fail();
+	
+			Assert.fail("User Was Able To Register Even With Invalid Telehone Number");
 		}
 
 		log.info("***** TC011_RFinvalidphonenumtest Completed *****");

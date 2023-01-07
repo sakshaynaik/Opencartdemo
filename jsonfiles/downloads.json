@@ -1,0 +1,17 @@
+{
+	"testdata": "downloads",
+	"validcredentials": [
+		{
+			"Browser": "Chrome",
+			"email": "kishore8@gmail.com",
+			"password": "12345"
+		}
+	],
+	"invaidcredentials": [
+		{
+			"Browser": "Firefox",
+			"email": "xyz123@gmail.com",
+			"password": "561234"
+		}
+	]
+}

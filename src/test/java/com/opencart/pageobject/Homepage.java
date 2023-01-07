@@ -1,7 +1,7 @@
 package com.opencart.pageobject;
 
 import java.util.List;
-import java.util.Set;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -11,6 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.opencart.utilities.ReadAction;
 import com.opencart.utilities.ReadJavascriptExecutor;
 
 public class Homepage {
@@ -91,18 +92,132 @@ public class Homepage {
 
 	@FindBy(xpath = "//a[normalize-space()='PC (0)']")
 	private WebElement pc0link;
-	
+
 	@FindBy(xpath = "//a[@title='Checkout']")
 	private WebElement chckoption;
-	
+
+	@FindBy(linkText = "My Account")
+	private WebElement myaccountlink;
+
+	@FindBy(xpath = "//*[@id='top-links']/ul/li[1]/a")
+	private WebElement telecontatus;
+
+	@FindBy(linkText = "Contact Us")
+	private WebElement contactuslink;
+
+	@FindBy(linkText = "Gift Certificates")
+	private WebElement giftcertificatelink;
+
+	@FindBy(linkText = "Specials")
+	private WebElement specialslink;
+
+	@FindBy(linkText = "About Us")
+	private WebElement aboutuslink;
+
+	@FindBy(linkText = "Delivery Information")
+	private WebElement delivryinfolink;
+
+	@FindBy(linkText = "Privacy Policy")
+	private WebElement privercypolicylink;
+
+	@FindBy(linkText = "Terms & Conditions")
+	private WebElement termandcondlink;
+
+	@FindBy(xpath = "//nav[@id='top']//ul[@class='list-inline']/li/a")
+	private List<WebElement> headrandomtoplinks;
+
+	@FindBy(xpath = "//ul[@class='nav navbar-nav']/li/a[1]")
+	private List<WebElement> headrandomnavbar;
+
+	@FindBy(xpath = "//footer//div[@class='row']/div[1]//li")
+	private List<WebElement> footerrandominfolink;
+
+	@FindBy(xpath = "//footer//div[@class='row']/div[2]//li")
+	private List<WebElement> footercustmerservicelink;
+
+	@FindBy(xpath = "//footer//div[@class='row']/div[3]//li")
+	private List<WebElement> footerextraslink;
+
+	@FindBy(xpath = "//footer//div[@class='row']/div[4]//li")
+	private List<WebElement> footermyaccountlink;
+
 	//////////////////////////////////////////////////////////////////
-	
+
+	public void clickOnRandomHeaderNavigationBarLink() {
+
+		for (int i = 0; i < 10; i++) {
+
+			Random random = new Random();
+			int num = random.nextInt(headrandomnavbar.size());
+			WebElement navlink = ldriver
+					.findElement(By.xpath("//ul[@class='nav navbar-nav']/li[" + (num + 1) + "]/a[1]"));
+			navlink.click();
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public void clickOnRandomTopHeaderLink() {
+
+		for (int i = 0; i < 10; i++) {
+
+			Random random = new Random();
+			int num = random.nextInt(headrandomtoplinks.size());
+			WebElement toplink = ldriver
+					.findElement(By.xpath("//nav[@id='top']//ul[@class='list-inline']/li[" + (num + 1) + "]/a[1]"));
+			toplink.click();
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public Specialofferspage clickOnSpecialsLink() {
+
+		specialslink.click();
+		return (new Specialofferspage(ldriver));
+	}
+
+	public Giftcertificatepage clickOnGiftCertificateLink() {
+
+		giftcertificatelink.click();
+		return (new Giftcertificatepage(ldriver));
+	}
+
+	public Contactuspage clickOnContactUsLink() {
+
+		contactuslink.click();
+		return (new Contactuspage(ldriver));
+	}
+
+	public Contactuspage clickOnTelephoneOption() {
+
+		telecontatus.click();
+		return (new Contactuspage(ldriver));
+	}
+
+	public Accountpage clickOnMyAccountLink() {
+
+		myaccountlink.click();
+		return (new Accountpage(ldriver));
+	}
+
+	public void adhockTest() {
+
+		ReadJavascriptExecutor.attack(ldriver);
+	}
+
 	public Shoppingcartpage clickOnCheckoutHeaderOption() {
 
 		chckoption.click();
 		return (new Shoppingcartpage(ldriver));
 	}
-	
+
 	public PCpage clickOnPCLink() {
 
 		pc0link.click();
@@ -119,17 +234,20 @@ public class Homepage {
 
 		Actions action = new Actions(ldriver);
 		action.keyDown(Keys.CONTROL).click(wishlisheaderlink).keyUp(Keys.CONTROL).build().perform();
-		Set<String> twowindow = ldriver.getWindowHandles();
 
-		for (String windowid : twowindow) {
+		ReadAction.switchToNewWindow(ldriver);
 
-			ldriver.switchTo().window(windowid);
-
-			if (ldriver.getTitle().equalsIgnoreCase("Account Login")) {
-
-				break;
-			}
-		}
+		/*
+		 * Set<String> twowindow = ldriver.getWindowHandles();
+		 * 
+		 * for (String windowid : twowindow) {
+		 * 
+		 * ldriver.switchTo().window(windowid);
+		 * 
+		 * if (ldriver.getTitle().equalsIgnoreCase("Account Login")) {
+		 * 
+		 * break; } }
+		 */
 	}
 
 	public Wishlistpage clickOnWishlistHeaderLink() {
@@ -146,6 +264,74 @@ public class Homepage {
 	public void clickOnWishlistButton() {
 
 		clickonwishlistbutton.click();
+	}
+
+	public void clickOnRandomFooterMyAccountLinks() {
+
+		for (int i = 0; i < 10; i++) {
+
+			Random random = new Random();
+			int num = random.nextInt(footermyaccountlink.size());
+			WebElement footeropton = ldriver
+					.findElement(By.xpath("//footer//div[@class='row']/div[1]//li[" + (num + 1) + "]"));
+			footeropton.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public void clickOnRandomFooterExtrasLinks() {
+
+		for (int i = 0; i < 10; i++) {
+
+			Random random = new Random();
+			int num = random.nextInt(footerextraslink.size());
+			WebElement footeropton = ldriver
+					.findElement(By.xpath("//footer//div[@class='row']/div[1]//li[" + (num + 1) + "]"));
+			footeropton.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public void clickOnRandomFooterCustomerServiceLinks() {
+
+		for (int i = 0; i < 10; i++) {
+
+			Random random = new Random();
+			int num = random.nextInt(footercustmerservicelink.size());
+			WebElement footeropton = ldriver
+					.findElement(By.xpath("//footer//div[@class='row']/div[1]//li[" + (num + 1) + "]"));
+			footeropton.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public void clickOnRandomFooterInfoLinks() {
+
+		for (int i = 0; i < 10; i++) {
+
+			Random random = new Random();
+			int num = random.nextInt(footerrandominfolink.size());
+			WebElement footeropton = ldriver
+					.findElement(By.xpath("//footer//div[@class='row']/div[1]//li[" + (num + 1) + "]"));
+			footeropton.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 	public Homepage clickOnYourStoreLogo() {
@@ -233,6 +419,46 @@ public class Homepage {
 		return (allfooteroption.size());
 	}
 
+	public void clickOnAboutUsLink() {
+
+		aboutuslink.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickOnDeliveryInfoLink() {
+
+		delivryinfolink.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickOnPrivercyAndPolicyLinkLink() {
+
+		privercypolicylink.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickOnTermsAndConditionLink() {
+
+		termandcondlink.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
 	public void clickOnRandomNavPulRight(int randopt) {
 
 		WebElement option = ldriver.findElement(By.xpath("//ul[@class='list-inline']/li[" + (randopt + 1) + "]"));
@@ -266,6 +492,11 @@ public class Homepage {
 		return (new Searchpage(ldriver));
 	}
 
+	public String getPageTitle() {
+
+		return (ldriver.getTitle());
+	}
+	
 	public void clearSearchTextField() {
 
 		searchtxtfld.clear();

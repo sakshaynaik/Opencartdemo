@@ -114,19 +114,32 @@ public class Shoppingcartpage {
 
 	@FindBy(css = "div[id='content'] p")
 	private WebElement shopcartpageemptymsg;
-	
+
 	@FindBy(xpath = "//a[normalize-space()='Continue']")
 	private WebElement continuebttn;
-	
-	
+
+	@FindBy(xpath = "//*[@id='content']/form/div/table/tbody/tr/td[1]/a/img")
+	private WebElement imgonshopcart;
+
 	///////////////////////////////////////////////////////////////////////////////
-	
+
+	public Productpage clickOnOrderedProductImage() {
+
+		imgonshopcart.click();
+		return (new Productpage(ldriver));
+	}
+
+	public boolean isDisplayedOrderedProductImage() {
+
+		return (imgonshopcart.isDisplayed());
+	}
+
 	public Homepage clickOnContinueButton() {
 
 		continuebttn.click();
 		return (new Homepage(ldriver));
 	}
-	
+
 	public String getShopcartEmptyMsg() {
 
 		return (shopcartpageemptymsg.getText());

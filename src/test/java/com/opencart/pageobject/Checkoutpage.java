@@ -101,6 +101,11 @@ public class Checkoutpage {
 	public void clickOnRegisterContinueButton() {
 
 		continueregbttn.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void clickOnPrivercyPolicy() {
@@ -110,11 +115,13 @@ public class Checkoutpage {
 
 	public void enterPasswordInTextField(String pass) {
 
+		password.clear();
 		password.sendKeys(pass);
 	}
 
 	public void enteConfirmPasswordInTextField(String conpass) {
 
+		conpassword.clear();
 		conpassword.sendKeys(conpass);
 	}
 
@@ -125,22 +132,34 @@ public class Checkoutpage {
 
 	public void enterEmailForPayment(String payemail) {
 
+		emalpaymnt.clear();
 		emalpaymnt.sendKeys(payemail);
 	}
 
 	public void enterTelephoneForPayment(String paytele) {
 
+		telepaymnt.clear();
 		telepaymnt.sendKeys(paytele);
 	}
 
 	public void clickOnGuestContinueButton() {
 
 		guestcontinuebttn.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void clickOnGuestCheckoutContinueButton() {
 
 		guestcheckoutcontinuebttn.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void clickOnGuestCheckoutRadioButton() {
@@ -151,12 +170,17 @@ public class Checkoutpage {
 	public void clickOnLoginButton() {
 
 		buttonlogin.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public Orderplacedpage clickOnOrderConfirmButton() {
 
+		orderconfrmbuttom.click();
 		try {
-			orderconfrmbuttom.click();
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -172,8 +196,8 @@ public class Checkoutpage {
 
 	public void clickOnPaymentButtonContinueButton() {
 
+		paymentbutton.click();
 		try {
-			paymentbutton.click();
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -182,8 +206,8 @@ public class Checkoutpage {
 
 	public void clickOnShippingMethodContinueButton() {
 
+		shipmethodbutton.click();
 		try {
-			shipmethodbutton.click();
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -192,8 +216,8 @@ public class Checkoutpage {
 
 	public void clickOnShippingAddressContinueButton() {
 
+		shippaddresbutton.click();
 		try {
-			shippaddresbutton.click();
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -202,8 +226,8 @@ public class Checkoutpage {
 
 	public void clickOnBillContinueButton() {
 
+		billdetailscontinuebttn.click();
 		try {
-			billdetailscontinuebttn.click();
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -224,36 +248,43 @@ public class Checkoutpage {
 
 	public void enterPostalCode(String pcode) {
 
+		postcode.clear();
 		postcode.sendKeys(pcode);
 	}
 
 	public void enterCityName(String cname) {
 
+		cityname.clear();
 		cityname.sendKeys(cname);
 	}
 
 	public void enterAddress2(String add2) {
 
+		addres2.clear();
 		addres2.sendKeys(add2);
 	}
 
 	public void enterAddress1(String add1) {
 
+		addres1.clear();
 		addres1.sendKeys(add1);
 	}
 
 	public void enterCompanyName(String cmyname) {
 
+		compnyname.clear();
 		compnyname.sendKeys(cmyname);
 	}
 
 	public void enterLastName(String lname) {
 
+		lastname.clear();
 		lastname.sendKeys(lname);
 	}
 
 	public void enterFirstName(String fname) {
 
+		firstname.clear();
 		firstname.sendKeys(fname);
 	}
 

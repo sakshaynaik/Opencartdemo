@@ -21,7 +21,7 @@ public class TC100_COnewregisterforcheckouttest extends BaseClass {
 	@Test(dataProvider = "existdata")
 	public void checkOutWithNewRegistration(HashMap<String, String> hMap) {
 
-		log.info("***** TC099_COasguestusertest Started *****");
+		log.info("***** TC100_COnewregisterforcheckouttest Started *****");
 
 		if (!ReadXlsxFile.isRunnable(xlsreader, "Checkout", "Testcases") || hMap.get("Runmode").equals("N")) {
 
@@ -62,28 +62,23 @@ public class TC100_COnewregisterforcheckouttest extends BaseClass {
 		chckoutpg.clickOnGuestCheckoutContinueButton();
 
 		String value = getRandomStringNumericValue(5);
-		
-		try {
-			chckoutpg.enterFirstName(hMap.get("FirstName"));
-			chckoutpg.enterLastName(hMap.get("LastName"));
-			chckoutpg.enterCompanyName(hMap.get("Companyname"));
-			chckoutpg.enterAddress1(hMap.get("Address1"));
-			chckoutpg.enterAddress2(hMap.get("Address2"));
-			chckoutpg.enterCityName(hMap.get("Cityname"));
-			chckoutpg.enterPostalCode(hMap.get("Postcode"));
-			chckoutpg.selectCountry(hMap.get("countryoption"));
-			chckoutpg.selectZone(Integer.parseInt(hMap.get("Zoneoption")));
-			chckoutpg.enterEmailForPayment(getRandomStringValue(4) + "@gmail.com");
-			chckoutpg.enterTelephoneForPayment(hMap.get("Telephone"));
-			chckoutpg.enterPasswordInTextField(value);
-			chckoutpg.enteConfirmPasswordInTextField(value);
-			chckoutpg.clickOnPrivercyPolicy();
-			chckoutpg.clickOnRegisterContinueButton();
-			log.info("User Has Successfully Updated As A New Registering Details");
-		} catch (Exception e) {
 
-			log.info("Billing Details Already Stored In Site");
-		}
+		chckoutpg.enterFirstName(hMap.get("FirstName"));
+		chckoutpg.enterLastName(hMap.get("LastName"));
+		chckoutpg.enterCompanyName(hMap.get("Companyname"));
+		chckoutpg.enterAddress1(hMap.get("Address1"));
+		chckoutpg.enterAddress2(hMap.get("Address2"));
+		chckoutpg.enterCityName(hMap.get("Cityname"));
+		chckoutpg.enterPostalCode(hMap.get("Postcode"));
+		chckoutpg.selectCountry(hMap.get("countryoption"));
+		chckoutpg.selectZone(Integer.parseInt(hMap.get("Zoneoption")));
+		chckoutpg.enterEmailForPayment(getRandomStringValue(4) + "@gmail.com");
+		chckoutpg.enterTelephoneForPayment(hMap.get("Telephone"));
+		chckoutpg.enterPasswordInTextField(value);
+		chckoutpg.enteConfirmPasswordInTextField(value);
+		chckoutpg.clickOnPrivercyPolicy();
+		chckoutpg.clickOnRegisterContinueButton();
+		log.info("User Has Successfully Updated As A New Registering Details");
 
 		chckoutpg.clickOnShippingAddressContinueButton();
 		chckoutpg.clickOnShippingMethodContinueButton();
@@ -98,7 +93,7 @@ public class TC100_COnewregisterforcheckouttest extends BaseClass {
 		Assert.assertTrue(orderconpg.isDisplayedOrderplacedMessage());
 		log.info("Order Confirmation Success Message: " + orderconpg.getOrderplacedMessage());
 
-		log.info("***** TC099_COasguestusertest Completed *****");
+		log.info("***** TC100_COnewregisterforcheckouttest Completed *****");
 
 	}
 

@@ -474,11 +474,13 @@ public class Productpage {
 
 	public void enterReviewBoxField(String name) {
 
+		reviewboxfield.clear();
 		reviewboxfield.sendKeys(name);
 	}
 
 	public void enterReviewNameField(String name) {
 
+		reviewnameboxfield.clear();
 		reviewnameboxfield.sendKeys(name);
 	}
 

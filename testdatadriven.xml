@@ -6,8 +6,9 @@
 	</listeners>
 	<test thread-count="5" name="Testdatadriventest">
 		<classes>
-			<class name="com.opencart.zdatadriven.TC01_DDRegisterFunctionTest" />
-			<class name="com.opencart.zdatadriven.TC02_DDLoginFunctionTest" />
+	 		<class name="com.opencart.zdatadriven.TC01_DDRegisterFunctionTest" />
+			<class name="com.opencart.zdatadriven.TC02_DDLoginFunctionTest" />       
+			<class name="com.opencart.zdatadriven.TC03_DDCheckoutFunctionTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

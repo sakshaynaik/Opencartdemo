@@ -69,6 +69,7 @@ public class Loginpage {
 	}
 
 	public void navigateBack() {
+		
 		ldriver.navigate().back();
 	}
 
@@ -137,11 +138,13 @@ public class Loginpage {
 
 	public void enterRegisteredPassword(String regpass) {
 
+		loginpassword.clear();
 		loginpassword.sendKeys(regpass);
 	}
 
 	public void enterRegisteredEmail(String regemail) {
 
+		loginemail.clear();
 		loginemail.sendKeys(regemail);
 	}
 

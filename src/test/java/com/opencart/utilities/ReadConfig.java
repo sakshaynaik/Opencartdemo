@@ -166,7 +166,7 @@ public class ReadConfig {
 		else
 			throw new RuntimeException("ShoppingCartPageTitle Not Found In Properties File");
 	}
-	
+
 	public String getPCPageTitle() {
 
 		String pcpg = prop.getProperty("PCPageTitle");
@@ -184,7 +184,7 @@ public class ReadConfig {
 		else
 			throw new RuntimeException("CheckoutPageTitle Not Found In Properties File");
 	}
-	
+
 	public String getOrderPlacedPageTitle() {
 
 		String odrpg = prop.getProperty("OrderPlacedPageTitle");
@@ -192,5 +192,131 @@ public class ReadConfig {
 			return odrpg;
 		else
 			throw new RuntimeException("OrderPlacedPageTitle Not Found In Properties File");
+	}
+
+	public String getMyAccountInfoPageTitle() {
+
+		String myinfopf = prop.getProperty("MyAccountInfoPageTle");
+		if (myinfopf != null)
+			return myinfopf;
+		else
+			throw new RuntimeException("MyAccountInfoPageTitle Not Found In Properties File");
+	}
+
+	public String getChangePasswordPageTitle() {
+
+		String cppg = prop.getProperty("ChangePaswrdPageTlte");
+		if (cppg != null)
+			return cppg;
+		else
+			throw new RuntimeException("ChangePasswordPageTilte Not Found In Properties File");
+	}
+
+	public String getAddressBookPageTitle() {
+
+		String addbkpg = prop.getProperty("AddressBookPageTitle");
+		if (addbkpg != null)
+			return addbkpg;
+		else
+			throw new RuntimeException("AddressBookPageTitle Not Found In Properties File");
+	}
+
+	public String getOrderHistoryPageTitle() {
+
+		String ohpg = prop.getProperty("OrderHistoryPageTle");
+		if (ohpg != null)
+			return ohpg;
+		else
+			throw new RuntimeException("OrderHistoryPageTitle Not Found In Properties File");
+	}
+
+	public String getOrderInfoPageTitle() {
+
+		String oipg = prop.getProperty("OrderInfoPageTitle");
+		if (oipg != null)
+			return oipg;
+		else
+			throw new RuntimeException("OrderInfoPageTitle Not Found In Properties File");
+	}
+
+	public String getProductReturnPageTitle() {
+
+		String prpg = prop.getProperty("ProductReturnPagetle");
+		if (prpg != null)
+			return prpg;
+		else
+			throw new RuntimeException("ProductReturnPagetitle Not Found In Properties File");
+	}
+
+	public String getDownloadsPageTitle() {
+
+		String dwnpg = prop.getProperty("DownloadsPageTitle");
+		if (dwnpg != null)
+			return dwnpg;
+		else
+			throw new RuntimeException("DownloadsPageTitle Not Found In Properties File");
+	}
+
+	public String getRewardsPointPageTitle() {
+
+		String rwpg = prop.getProperty("RewardsPointPageTle");
+		if (rwpg != null)
+			return rwpg;
+		else
+			throw new RuntimeException("RewardsPointPageTitle Not Found In Properties File");
+	}
+
+	public String getReturnInformationPageTitle() {
+
+		String ripg = prop.getProperty("ReturnInfoPageTitle");
+		if (ripg != null)
+			return ripg;
+		else
+			throw new RuntimeException("ReturnInfoPageTitle Not Found In Properties File");
+	}
+
+	public String getTransactionHistoryPageTitle() {
+
+		String trspg = prop.getProperty("TransactionPageTitle");
+		if (trspg != null)
+			return trspg;
+		else
+			throw new RuntimeException("TransactionPageTitle Not Found In Properties File");
+	}
+
+	public String getRecurringPaymentPageTitle() {
+
+		String recpg = prop.getProperty("RecurringPageTitle");
+		if (recpg != null)
+			return recpg;
+		else
+			throw new RuntimeException("RecurringPageTitle Not Found In Properties File");
+	}
+
+	public String getContactUsPageTitle() {
+
+		String contpg = prop.getProperty("ContactUsPageTitle");
+		if (contpg != null)
+			return contpg;
+		else
+			throw new RuntimeException("ContactUsPageTitle Not Found In Properties File");
+	}
+
+	public String getGiftCertificatePageTitle() {
+
+		String gftpg = prop.getProperty("GiftCertificatePgTle");
+		if (gftpg != null)
+			return gftpg;
+		else
+			throw new RuntimeException("GiftCertificatePageTitle Not Found In Properties File");
+	}
+
+	public String getSpecialOffersPageTitle() {
+
+		String spofpg = prop.getProperty("SpecialOfferPageTitl");
+		if (spofpg != null)
+			return spofpg;
+		else
+			throw new RuntimeException("SpecialOfferPageTitle Not Found In Properties File");
 	}
 }

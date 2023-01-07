@@ -1,0 +1,45 @@
+{
+	"testdata": "contactus",
+	"validsearch": [
+		{
+			"Browser": "Firefox",
+			"productname": "iMac"
+		}
+	],
+	"newaccounttest": [
+		{
+			"Browser": "Chrome",
+			"email": "kishore8@gmail.com",
+			"password": "12345",
+			"productname": "iMac"
+		}
+	],
+	"enquirycredentials": [
+		{
+			"Browser": "Chrome",
+			"email": "akshaysnaik1111@gmail.com",
+			"password": "12345",
+			"name": "Akshay",
+			"Enquiry": "Greatings I Have Purchased iMAC Product Id 3079 But Still Not Delivered",
+			"productname": "iMac"
+		}
+	],
+	"invalidenquirycredentials": [
+		{
+			"Browser": "Chrome",
+			"email": "akshaysnaik.com",
+			"password": "12345",
+			"name": "Akshay",
+			"Enquiry": "Greatings I Have Purchased iMAC Product Id 3079 But Still Not Delivered",
+			"productname": "iMac"
+		},
+		{
+			"Browser": "Chrome",
+			"email": "akshaysnaik@gmial",
+			"password": "12345",
+			"name": "Akshay",
+			"Enquiry": "Greatings I Have Purchased iMAC Product Id 3079 But Still Not Delivered",
+			"productname": "iMac"
+		}
+	]
+}

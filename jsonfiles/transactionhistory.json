@@ -1,0 +1,25 @@
+{
+	"testdata": "transactionhistorydata",
+	"validsearch": [
+		{
+			"Browser": "Firefox",
+			"productname": "iMac"
+		}
+	],
+	"newaccounttest": [
+		{
+			"Browser": "Chrome",
+			"email": "kishore8@gmail.com",
+			"password": "12345",
+			"productname": "iMac"
+		}
+	],
+	"logincredentials": [
+		{
+			"Browser": "Chrome",
+			"email": "akshaysnaik1111@gmail.com",
+			"password": "12345",
+			"productname": "iMac"
+		}
+	]
+}
