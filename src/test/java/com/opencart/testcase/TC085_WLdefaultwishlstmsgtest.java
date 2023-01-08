@@ -75,7 +75,7 @@ public class TC085_WLdefaultwishlstmsgtest extends BaseClass {
 		try {
 			String file = System.getProperty("user.dir") + "//testdata//testdatafile.xlsx";
 			xlsreader = new MyXlsReader(file);
-			data = ReadXlsxFile.getTestData(xlsreader, "loginaddwishlist", "Data");
+			data = ReadXlsxFile.getTestData(xlsreader, "newaccntwith_0wishlist", "Data");
 
 		} catch (Exception e) {
 			e.printStackTrace();

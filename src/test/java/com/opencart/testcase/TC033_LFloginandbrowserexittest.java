@@ -66,8 +66,8 @@ public class TC033_LFloginandbrowserexittest extends BaseClass {
 		} catch (Throwable e) {
 
 			hmpg2.highletLoginOptionDefect();
-			log.info("User Logged Out From Application After Closing The Browser");
-			Assert.fail();
+			Assert.fail("User Logged-Into Application And Closed Browser Without "
+					+ "Logging-Out But User Was Logged-Out Of Application Once The User Re-Opened The Browser");
 		}
 
 		log.info("***** TC033_LFloginandbrowserexittest Completed *****");

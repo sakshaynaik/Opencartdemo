@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import com.opencart.pageobject.Homepage;
 import com.opencart.pageobject.Loginpage;
+import com.opencart.pageobject.Orderhistorypage;
 import com.opencart.pageobject.Registerationpage;
 import com.opencart.pageobject.Rewardspointpage;
 
@@ -45,7 +46,9 @@ public class TC126_RPrewardproductstest extends BaseClass {
 		Assert.assertEquals(rewrdpg.getRewardsPointPageTitle(), rewrdpg.getRewardsPointPageTitle());
 		log.info("RewardsPoint Page Title: " + rewrdpg.getRewardsPointPageTitle());
 
-		Assert.fail("Order Placed Are Not Getting Approved And Hence Not Able To Test");
+		Orderhistorypage ordehispg = rewrdpg.clickOnOrderHistoryLink();
+		ordehispg.drawBorderForStatusOfProduct();
+		Assert.fail("Order Placed Are Not Getting Approved And Hence Not Able To Test Rewards Point Feature");
 
 		log.info("***** TC126_RPrewardproductstest Completed *****");
 	}

@@ -76,6 +76,9 @@ public class TC02_DDLoginFunctionTest extends Baseclassdatadriven {
 			log.info("User Logged Out From MyAccounts Page");
 
 		} catch (Throwable e) {
+			
+			Assert.assertEquals(loginpg.getLoginPageTitle(), config.getLoginPageTitle());
+			log.info("User Still In Login Page Due To Invalid Credentials: " + loginpg.getLoginPageTitle());
 
 			convactualresult = false;
 			log.info("User Login Failed Due To Invalid Credentials");

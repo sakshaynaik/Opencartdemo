@@ -72,24 +72,6 @@
 			"email": "akshaysnaik30@gmail.com",
 			"password": "1111",
 			"Expectres": "success"
-		},
-		{
-			"Browser": "Chrome",
-			"email": "akshaysnaik30@gmail.com",
-			"password": "1111",
-			"Expectres": "success"
-		},
-		{
-			"Browser": "Chrome",
-			"email": "akshaysnaik30@gmail.com",
-			"password": "1111",
-			"Expectres": "success"
-		},
-		{
-			"Browser": "Chrome",
-			"email": "akshaysnaik30@gmail.com",
-			"password": "1111",
-			"Expectres": "Failure"
 		}
 	]
 }

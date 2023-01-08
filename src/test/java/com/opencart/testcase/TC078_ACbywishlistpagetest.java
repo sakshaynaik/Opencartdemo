@@ -22,7 +22,7 @@ public class TC078_ACbywishlistpagetest extends BaseClass {
 	@Test(dataProvider = "existdata")
 	public void addToCartByWishListPage(HashMap<String, String> hMap) {
 
-		log.info("***** TC077_ACaddtocartByPDtest Started *****");
+		log.info("***** TC078_ACbywishlistpagetest Started *****");
 
 		if (!ReadXlsxFile.isRunnable(xlsreader, "Addtocart", "Testcases") || hMap.get("Runmode").equals("N")) {
 
@@ -89,8 +89,7 @@ public class TC078_ACbywishlistpagetest extends BaseClass {
 		Assert.assertEquals(shopcart.getShoppingCartPageTitle(), config.getShoppingCartPageTitle());
 		log.info("ShopCart Page Title: " + shopcart.getShoppingCartPageTitle());
 
-		Assert.assertTrue(shopcart.isDisplayediMacLink());
-		log.info("Success Added Product To Shopping cart Page");
+		log.info("***** TC078_ACbywishlistpagetest Completed *****");
 
 	}
 

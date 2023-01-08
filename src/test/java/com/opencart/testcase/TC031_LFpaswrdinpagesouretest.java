@@ -35,8 +35,16 @@ public class TC031_LFpaswrdinpagesouretest extends BaseClass {
 		loginpg.enterRegisteredPassword(data[0]);
 		loginpg.clickLoginButton();
 
+		try {
+			
 		Assert.assertTrue(loginpg.getAttributeOfPasswordField("value") == null);
-		log.info("Password Is Not Visible On Page Source And Test Passed");
+		log.info("Password Text Is Not Visible On Page Source And Test Passed");
+		
+		}catch (Throwable e) {
+			
+			Assert.fail("Password Text Is Visible In The Page Source");
+		}
+		
 
 		log.info("***** TC031_LFpaswrdinpagesouretest Completed *****");
 

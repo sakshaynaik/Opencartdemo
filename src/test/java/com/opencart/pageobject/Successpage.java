@@ -29,8 +29,17 @@ public class Successpage {
 
 	@FindBy(linkText = "Success")
 	private WebElement successonbedcrum;
+	
+	@FindBy(linkText = "Edit Account")
+	private WebElement editaccntlink;
 
 	////////////////////////////////////////
+	
+	public Myaccountinfopage clickOnEditAccountLink() {
+
+		editaccntlink.click();
+		return (new Myaccountinfopage(ldriver));
+	}
 
 	public boolean isDisplayedLogoutOption() {
 

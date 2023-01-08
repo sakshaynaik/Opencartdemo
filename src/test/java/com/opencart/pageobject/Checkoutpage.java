@@ -1,11 +1,13 @@
 package com.opencart.pageobject;
 
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.opencart.utilities.ReadAction;
 import com.opencart.utilities.ReadJavascriptExecutor;
 
 public class Checkoutpage {
@@ -236,14 +238,18 @@ public class Checkoutpage {
 
 	public void selectZone(int in) {
 
-		Select select = new Select(zoneoption);
-		select.selectByIndex(in);
+		ReadAction.selectByIndex(zoneoption, in);
 	}
 
 	public void selectCountry(String txt) {
 
-		Select select = new Select(contryoption);
-		select.selectByVisibleText(txt);
+		try {
+			Select select = new Select(contryoption);
+			select.selectByVisibleText(txt);
+		} catch (StaleElementReferenceException e) {
+			Select select = new Select(contryoption);
+			select.selectByVisibleText(txt);
+		}
 	}
 
 	public void enterPostalCode(String pcode) {

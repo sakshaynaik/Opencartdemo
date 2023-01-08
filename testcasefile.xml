@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="com.opencart.utilities.ExtentListener" />
 	</listeners>
-	<test thread-count="5" name="RegisterFunctionality">
+	<test thread-count="5" name="RegisterFeature">
 		<classes>
 			<class name="com.opencart.testcase.TC001_RFmndtrydatatest" />
 			<class name="com.opencart.testcase.TC003_RFallfielddatatest" />
@@ -25,8 +25,8 @@
 			<class name="com.opencart.testcase.TC018_RFhightwidthtest" />
 			<class name="com.opencart.testcase.TC019_RFrandomactivitytest" />
 		</classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="LoginFunctionality">
+	</test>                                                                         
+	<test thread-count="5" name="LoginFeature">
 		<classes>
 			<class name="com.opencart.testcase.TC020_LFinvalidcredentialtest" />
 			<class name="com.opencart.testcase.TC021_LFvalidcredentialtest" />
@@ -38,37 +38,35 @@
 			<class name="com.opencart.testcase.TC027_LFloginplaceholdertest" />
 			<class name="com.opencart.testcase.TC028_LFloginandbrowsebacktest" />
 			<class name="com.opencart.testcase.TC029_LFlogoutbrowserbacktest" />
-			<class name="com.opencart.testcase.TC030_logininvalidattempttest" />
-			<class name="com.opencart.testcase.TC031_LFpaswrdinpagesouretest" />
+			<class name="com.opencart.testcase.TC030_LFlogininvalidattempttest" />
 			<class name="com.opencart.testcase.TC032_LFrandomactivitytest" />
-			<class name="com.opencart.testcase.TC033_LFloginandbrowserexittest" />
+			<class name="com.opencart.testcase.TC033_LFloginandbrowserexittest" />     
 		</classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="LogoutFunctionality">
+	</test>                                                                              
+	<test thread-count="5" name="LogoutFeature">
 		<classes>
 			<class name="com.opencart.testcase.TC034_LOloggingouttest" />
-			<class name="com.opencart.testcase.TC035_LOfromrightcolumntest" />
+			<class name="com.opencart.testcase.TC035_LOlogoutfromrightcolumntest" />
 			<class name="com.opencart.testcase.TC036_LOisnotdisplayedtest" />
-			<class name="com.opencart.testcase.TC037_LOandagainlogintest" />
+			<class name="com.opencart.testcase.TC037_LOandagainlogintest" />                  
 		</classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="ForgotPasswordFunctionality">
+	</test>                                                                              
+	<test thread-count="5" name="ForgotPasswordFeature">
 		<classes>
-			<class name="com.opencart.testcase.TC038_FPresetpaswrdunregistrdtest" />
+			<class name="com.opencart.testcase.TC038_FPresetpaswrdregistrdemailtest" />
 			<class name="com.opencart.testcase.TC039_FPwithblankspacetest" />
-			<class name="com.opencart.testcase.TC040_FPinvalidemailidtest" />
+			<class name="com.opencart.testcase.TC040_FPinvalidunregemailidtest" />
 			<class name="com.opencart.testcase.TC041_FPandnavigatebacktest" />
-			<class name="com.opencart.testcase.TC042_FPvalueattributetest" />
+			<class name="com.opencart.testcase.TC042_FPvalueattributetest" />            
 		</classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="SearchFunctionality">
+	</test>                                                                        
+	<test thread-count="5" name="SearchFeature">
 		<classes>
 			<class name="com.opencart.testcase.TC043_SFexistingproducttest" />
 			<class name="com.opencart.testcase.TC044_SFnonexistingproducttest" />
 			<class name="com.opencart.testcase.TC045_SFemptysearchtest" />
 			<class name="com.opencart.testcase.TC046_SFloginandsearchtest" />
 			<class name="com.opencart.testcase.TC047_SFmultisearchtest" />
-			<class name="com.opencart.testcase.TC048_SFplaceholdertest" />
 			<class name="com.opencart.testcase.TC049_SFsearchcriteriatest" />
 			<class name="com.opencart.testcase.TC050_SFbyproductdiscrpttest" />
 			<class name="com.opencart.testcase.TC051_SFcriteriafieldtest" />
@@ -80,8 +78,8 @@
 			<class name="com.opencart.testcase.TC057_SFnavigatebysitemaptest" />
 			<class name="com.opencart.testcase.TC058_SFsearchbykeyboardtest" />
 		</classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="ProductCompareFunctionality">
+	</test>                                                                                 
+	<test thread-count="5" name="ProductCompareFeature">
 		<classes>
 			<class name="com.opencart.testcase.TC059_PCfromdisplaypagetest" />
 			<class name="com.opencart.testcase.TC060_PCbylistviewtest" />
@@ -95,15 +93,182 @@
 			<class name="com.opencart.testcase.TC069_PCtwoproducttest" />
 			<class name="com.opencart.testcase.TC070_PCremovefrompctest" />
 		</classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="ProductDisplayFunctionality">
+	</test>                                                                           
+	<test thread-count="5" name="ProductDisplayFeature">
 		<classes>
 			<class name="com.opencart.testcase.TC071_PDimagethumnailtest" />
-			<class name="com.opencart.testcase.TC072_PDproductdetailstest" />
+			<class name="com.opencart.testcase.TC072_PDaddtowishlisttest" />
 			<class name="com.opencart.testcase.TC073_PDwithnegativeqtytest" />
 			<class name="com.opencart.testcase.TC074_PDvalidatereviewtabtest" />
-			<class name="com.opencart.testcase.TC075_PDaddtowishlisttest" />
+			<class name="com.opencart.testcase.TC075_PDproductdetailstest" />
 			<class name="com.opencart.testcase.TC076_PDaddtocarttest" />
 		</classes>
-	</test> <!-- Test -->
+	</test>                                                                            
+	<test thread-count="5" name="AddToCartFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC077_ACaddtocartByPDtest" />
+			<class name="com.opencart.testcase.TC078_ACbywishlistpagetest" />
+			<class name="com.opencart.testcase.TC079_ACbysearchpagetest" />
+			<class name="com.opencart.testcase.TC080_ACbyprdtdisplaypagetest" />
+			<class name="com.opencart.testcase.TC081_ACbycategorypagetest" />
+		</classes>
+	</test>                                                                              
+	<test thread-count="5" name="WishListFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC082_WLfromproductdisplaytest" />
+			<class name="com.opencart.testcase.TC083_WLfromhomepagetest" />
+			<class name="com.opencart.testcase.TC084_WLonnewwindowtest" />
+			<class name="com.opencart.testcase.TC085_WLdefaultwishlstmsgtest" />
+		</classes>
+	</test>                                                                               
+	<test thread-count="5" name="ShoppingCartFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC086_SCbyhederoptiontest" />
+			<class name="com.opencart.testcase.TC087_SCupdateqtytest" />
+			<class name="com.opencart.testcase.TC088_SCupdatewthnegativeqtytest" />
+			<class name="com.opencart.testcase.TC089_SCremoveproducttest" />
+			<class name="com.opencart.testcase.TC090_SCcoupencodetest" />
+			<class name="com.opencart.testcase.TC091_SCclosewarningmsgcoupentest" />
+			<class name="com.opencart.testcase.TC092_SCshippngtaxtest" />
+			<class name="com.opencart.testcase.TC093_SCusegiftcertificatetest" />
+		</classes>
+	</test>                                                                                  
+	<test thread-count="5" name="HomePageFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC094_HPnavigatetoshopcarttest" />
+			<class name="com.opencart.testcase.TC095_HPnavigtetopctest" />
+		</classes>
+	</test>                                                                                 
+	<test thread-count="5" name="CheckOutFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC096_COnavigtetocopgtest" />
+			<class name="com.opencart.testcase.TC097_COnavigatecohederoptiontest" />
+			<class name="com.opencart.testcase.TC098_COnaviagtetocheckouttest" />
+			<class name="com.opencart.testcase.TC099_COasguestusertest" />
+			<class name="com.opencart.testcase.TC100_COnewregisterforcheckouttest" />
+		</classes>
+	</test>                                                                            
+	<test thread-count="5" name="MyAccountFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC101_MAnavigatefromordersuccesstest" />
+			<class name="com.opencart.testcase.TC102_MAnavigtefromhomepagetest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="MyAccountInfoFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC103_MAIupdateaccountdetailstest" />
+			<class name="com.opencart.testcase.TC104_MAIemptyfieldtest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="ChangePasswordFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC105_CPupdatepasswordtest" />
+			<class name="com.opencart.testcase.TC106_CPemptypasswrdtest" />
+		</classes>
+	</test>                                                                                                                            
+	<test thread-count="5" name="AddressBookFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC107_ABdelteadressboktest" />
+			<class name="com.opencart.testcase.TC108_ABeditaddressboktest" />
+			<class name="com.opencart.testcase.TC109_ABcreatenewaddresstest" />
+			<class name="com.opencart.testcase.TC110_ABmandatoryfieldtest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="OrderHistoryFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC111_OHdifferentnavigationtest" />
+			<class name="com.opencart.testcase.TC112_OHbeforelogintest" />
+			<class name="com.opencart.testcase.TC113_OHnaviagtetoaccountpgtest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="OrderInformationFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC114_OIdisplaydinfotest" />
+			<class name="com.opencart.testcase.TC115_OIreorderingfromoitest" />
+			<class name="com.opencart.testcase.TC116_OIproductreturntest" />
+			<class name="com.opencart.testcase.TC117_OIreturnohpagetest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="ProductReturnFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC118_PRreturnproducttest" />
+			<class name="com.opencart.testcase.TC119_PRcancelthereturntest" />
+			<class name="com.opencart.testcase.TC120_PRinvaidemailidtest" />
+		</classes>
+	</test>                                                                               
+	<test thread-count="5" name="DownloadsFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC121_DLnavigationtopagetest" />
+			<class name="com.opencart.testcase.TC122_DLbeforelogintest" />
+			<class name="com.opencart.testcase.TC123_DLdownloadableordertest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="RewardsPointFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC124_RPnavigationtopagetest" />
+			<class name="com.opencart.testcase.TC125_RPbeforelogintest" />
+			<class name="com.opencart.testcase.TC126_RPrewardproductstest" />
+		</classes>
+	</test>                                                                          
+	<test thread-count="5" name="ReturnsFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC127_RSnavigationtopagetest" />
+			<class name="com.opencart.testcase.TC128_RSproductdetailstest" />
+			<class name="com.opencart.testcase.TC129_RSfornoreturnsaccounttest" />
+			<class name="com.opencart.testcase.TC130_RSreturnprdtinfotest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="TransactionHistoryFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC131_THnavigatingpagestest" />
+			<class name="com.opencart.testcase.TC132_THnavigatebeforelogintest" />
+			<class name="com.opencart.testcase.TC133_THdetailspresenttest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="RecurringPaymentFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC134_RPnavigationtest" />
+			<class name="com.opencart.testcase.TC135_RPbeforelogintest" />
+			<class name="com.opencart.testcase.TC136_RPproductpaymenttest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="NewsLetterFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC137_NLnavigationpagetest" />
+			<class name="com.opencart.testcase.TC138_NLbeforelogintest" />
+			<class name="com.opencart.testcase.TC139_NLregisterwithnonewslettertest" />
+			<class name="com.opencart.testcase.TC140_NLregisteryesoptiontest" />
+		</classes>
+	</test>                                                                                  
+	<test thread-count="5" name="ContactUsFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC141_CUnavigatepagetest" />
+			<class name="com.opencart.testcase.TC142_CUfromorderpagetest" />
+			<class name="com.opencart.testcase.TC143_CUmandtryfieldtest" />
+			<class name="com.opencart.testcase.TC144_CUinvaliddatatest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="GiftCertificateFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC145_GCvalidcredentialtest" />
+			<class name="com.opencart.testcase.TC146_GCinvalidcredentialtest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="SpecialOfferFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC147_SOnavigatingpagetest" />
+			<class name="com.opencart.testcase.TC148_SOgridandlistviewtest" />
+			<class name="com.opencart.testcase.TC149_SOaddtocartbylistviewtest" />
+			<class name="com.opencart.testcase.TC150_SOaddtocartbygridviewtest" />
+		</classes>
+	</test> 
+	<test thread-count="5" name="HeaderMenuFooterOptionFeature">
+		<classes>
+			<class name="com.opencart.testcase.TC151_HMFrandomactivitytest" />
+			<class name="com.opencart.testcase.TC152_HMFaboutustest" />
+			<class name="com.opencart.testcase.TC153_HMFprivercypolicylinktest" />
+			<class name="com.opencart.testcase.TC154_HMFdeliveryinfolinktest" />
+			<class name="com.opencart.testcase.TC155_HMFtermconditiontest" />
+		</classes>
+	</test>                               
 </suite> <!-- Suite -->

@@ -346,7 +346,7 @@ public class Productpage {
 			screen.wait(filenamefield, 20);
 			screen.type(filenamepath, path);
 			screen.click(openbutton);
-			Thread.sleep(6000);
+			Thread.sleep(5000);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -499,6 +499,12 @@ public class Productpage {
 		return (whishlistmsg.getText());
 	}
 
+	public void drawBorderWishlistMsg() {
+
+		ReadJavascriptExecutor.drawBorder(whishlistmsg, ldriver);
+
+	}
+
 	public void clickOnAddToCartButton() {
 
 		addtocart.click();
@@ -508,6 +514,12 @@ public class Productpage {
 
 		qtybox.clear();
 		qtybox.sendKeys(txt);
+	}
+
+	public void drawBorderForProductInQtyTextField() {
+
+		ReadJavascriptExecutor.scrollIntoView(qtybox, ldriver);
+		ReadJavascriptExecutor.drawBorder(qtybox, ldriver);
 	}
 
 	public boolean isDispalyedOfProductAvailabity() {

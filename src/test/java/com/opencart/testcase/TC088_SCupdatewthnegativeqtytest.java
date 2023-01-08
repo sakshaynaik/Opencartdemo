@@ -54,9 +54,18 @@ public class TC088_SCupdatewthnegativeqtytest extends BaseClass {
 
 		shopcart.enterQtyField(data[2]);
 		shopcart.clickOnQtyUpdateButton();
-		shopcart.getBorderNoProductAddedMsgFromShopCartPage();
+		
+		try {
+			
 		Assert.assertEquals(shopcart.getNoProductAddedMsgFromShopCartPage(), data[3]);
 		log.info("Is Displayed Message For Quantity Number Modified: " + shopcart.getNoProductAddedMsgFromShopCartPage());
+		
+		}catch(Throwable e) {
+			
+			shopcart.getBorderNoProductAddedMsgFromShopCartPage();
+			Assert.fail("Proper Warning Message Is Not Getting Displayed Informing "
+					+ "The User To Provide A Positive Number For Quantity Text Field");
+		}
 
 		log.info("***** TC088_SCupdatewthnegativeqtytest Completed *****");
 	}

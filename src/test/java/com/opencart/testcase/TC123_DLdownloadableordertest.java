@@ -50,7 +50,7 @@ public class TC123_DLdownloadableordertest extends BaseClass{
 		Assert.assertEquals(downloadpg.getDownloadsPageTitle(), config.getDownloadsPageTitle());
 		log.info("Downloads Page Title: " + downloadpg.getDownloadsPageTitle());
 		
-		Assert.fail("There Are No Downloadable Orders Present In Downloads Page And Hence Cannot Test");
+		Assert.fail("There Are No Products In The Website To Place The Downloadable Orders And Hence Cannot Test");
 		
 		log.info("***** TC123_DLdownloadableordertest Completed *****");
 	}

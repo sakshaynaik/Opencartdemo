@@ -10,6 +10,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.opencart.utilities.ReadJavascriptExecutor;
+
 public class Loginpage {
 
 	WebDriver ldriver;
@@ -50,8 +52,11 @@ public class Loginpage {
 	@FindBy(xpath = "//ul[@class='breadcrumb']/li")
 	private List<WebElement> bedcrumoptions;
 
+	@FindBy(xpath = "//div[text()=' An email with a confirmation link has been sent your email address.']")
+	private WebElement forgotpasssuccesmsg;
+
 	//////////////////////////////////////////////////////
-	
+
 	public void clickOnRandomBedcrumOption(int randopt) {
 
 		WebElement option = ldriver.findElement(By.xpath("//ul[@class='breadcrumb']/li[" + (randopt + 1) + "]"));
@@ -69,7 +74,7 @@ public class Loginpage {
 	}
 
 	public void navigateBack() {
-		
+
 		ldriver.navigate().back();
 	}
 
@@ -83,7 +88,6 @@ public class Loginpage {
 
 		return (listgroup.size());
 	}
-
 
 	public String getUnsuccessfulAttemptMsgForLogin() {
 
@@ -134,6 +138,21 @@ public class Loginpage {
 
 		loginbttn.click();
 		return (new Accountpage(ldriver));
+	}
+	
+	public void drawBorderEmailSentMsgForFP() {
+
+		ReadJavascriptExecutor.drawBorder(forgotpasssuccesmsg, ldriver);
+	}
+
+	public String getEmailSentMsgForFP() {
+
+		return (forgotpasssuccesmsg.getText());
+	}
+
+	public boolean isDisplayedEmailSentMsgForFP() {
+
+		return (forgotpasssuccesmsg.isDisplayed());
 	}
 
 	public void enterRegisteredPassword(String regpass) {

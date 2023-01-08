@@ -2,54 +2,31 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-08T05:02:14 IST" name="Default suite" finished-at="2023-01-08T05:02:33 IST" duration-ms="19652">
+  <suite started-at="2023-01-09T03:06:53 IST" name="FailedTest" finished-at="2023-01-09T03:07:14 IST" duration-ms="20362">
     <groups>
     </groups>
-    <test started-at="2023-01-08T05:02:14 IST" name="Default test" finished-at="2023-01-08T05:02:33 IST" duration-ms="19652">
-      <class name="com.opencart.testcase.TC151_HMFrandomactivitytest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC151_HMFrandomactivitytest@1c3b9394]" started-at="2023-01-08T05:02:14 IST" name="setUp" finished-at="2023-01-08T05:02:22 IST" duration-ms="8681" status="PASS">
+    <test started-at="2023-01-09T03:06:53 IST" name="Run" finished-at="2023-01-09T03:07:14 IST" duration-ms="20362">
+      <class name="com.opencart.testcase.TC123_DLdownloadableordertest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC123_DLdownloadableordertest@7e276594]" started-at="2023-01-09T03:06:54 IST" name="setUp" finished-at="2023-01-09T03:07:05 IST" duration-ms="10717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="headerMenuRandomActivity()[pri:0, instance:com.opencart.testcase.TC151_HMFrandomactivitytest@1c3b9394]" started-at="2023-01-08T05:02:22 IST" name="headerMenuRandomActivity" finished-at="2023-01-08T05:02:33 IST" duration-ms="10261" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="downloadValidateDownloadableOrders(java.util.HashMap)[pri:0, instance:com.opencart.testcase.TC123_DLdownloadableordertest@7e276594]" started-at="2023-01-09T03:07:08 IST" name="downloadValidateDownloadableOrders" data-provider="existdata" finished-at="2023-01-09T03:07:12 IST" duration-ms="4058" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Runmode=Y, Email=akshaysnaik1111@gmail.com, ExpectedResult=Success, Browser=Chrome, Password=12345}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='row']//div[@class='col-sm-3'][5]//li[5]"}
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ee472250c3928c4f50b4ceecfa973f61, findElement {using=xpath, value=//div[@class='row']//div[@class='col-sm-3'][5]//li[5]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55653}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55653/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ee472250c3928c4f50b4ceecfa973f61]]>
+              <![CDATA[There Are No Products In The Website To Place The Downloadable Orders And Hence Cannot Test]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='row']//div[@class='col-sm-3'][5]//li[5]"}
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ee472250c3928c4f50b4ceecfa973f61, findElement {using=xpath, value=//div[@class='row']//div[@class='col-sm-3'][5]//li[5]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55653}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55653/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ee472250c3928c4f50b4ceecfa973f61
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at com.opencart.pageobject.Homepage.clickOnRandomFooterOption(Homepage.java:412)
-at com.opencart.testcase.TC151_HMFrandomactivitytest.headerMenuRandomActivity(TC151_HMFrandomactivitytest.java:17)
+              <![CDATA[java.lang.AssertionError: There Are No Products In The Website To Place The Downloadable Orders And Hence Cannot Test
+at org.testng.Assert.fail(Assert.java:110)
+at com.opencart.testcase.TC123_DLdownloadableordertest.downloadValidateDownloadableOrders(TC123_DLdownloadableordertest.java:53)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -78,15 +55,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- headerMenuRandomActivity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC151_HMFrandomactivitytest@1c3b9394]" started-at="2023-01-08T05:02:33 IST" name="tearDown" finished-at="2023-01-08T05:02:33 IST" duration-ms="599" status="PASS">
+        </test-method> <!-- downloadValidateDownloadableOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC123_DLdownloadableordertest@7e276594]" started-at="2023-01-09T03:07:12 IST" name="tearDown" finished-at="2023-01-09T03:07:14 IST" duration-ms="1312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.opencart.testcase.TC151_HMFrandomactivitytest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.opencart.testcase.TC123_DLdownloadableordertest -->
+    </test> <!-- Run -->
+  </suite> <!-- FailedTest -->
 </testng-results>

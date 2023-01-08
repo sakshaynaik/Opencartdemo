@@ -67,12 +67,12 @@ public class TC03_DDCheckoutFunctionTest extends Baseclassdatadriven {
 		}
 		boolean convactualres = false;
 
-		try {
-			loginpg.enterRegisteredEmail(hMap.get("Email"));
-			loginpg.enterRegisteredPassword(hMap.get("Password"));
-			chckoutpg.clickOnLoginButton();
-			log.info("User Logged In CheckOut Page ");
+		loginpg.enterRegisteredEmail(hMap.get("Email"));
+		loginpg.enterRegisteredPassword(hMap.get("Password"));
+		chckoutpg.clickOnLoginButton();
+		log.info("User Logged In CheckOut Page ");
 
+		try {
 			chckoutpg.clickOnBillContinueButton();
 			chckoutpg.clickOnShippingAddressContinueButton();
 			chckoutpg.clickOnShippingMethodContinueButton();

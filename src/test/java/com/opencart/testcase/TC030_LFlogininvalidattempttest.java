@@ -53,14 +53,7 @@ public class TC030_LFlogininvalidattempttest extends BaseClass {
 		boolean actualexptres;
 
 		try {
-
-			Assert.assertTrue(loginpg.isDisplayedUnsuccessfulAttemptMsgForLogin());
-			log.info(
-					"Unsuccessful Attempt Message For Login Displayed: " + loginpg.getUnsuccessfulAttemptMsgForLogin());
-			actualexptres = false;
 			
-		} catch (Throwable e) {
-
 			Assert.assertEquals(loginpg.getLoginPageTitle(), config.getLoginPageTitle());
 			log.info("User Still In Loginpage Due To Invalid Credentials: " + loginpg.getLoginPageTitle());
 
@@ -68,6 +61,13 @@ public class TC030_LFlogininvalidattempttest extends BaseClass {
 			log.info("Warn Message Displayed For Invalid Credentials: " + loginpg.getWarnInvalidLoginCredential());
 
 			actualexptres = loginpg.isDisplayedWarnInvalidLoginCredential();
+			
+		} catch (Throwable e) {
+			
+			Assert.assertTrue(loginpg.isDisplayedUnsuccessfulAttemptMsgForLogin());
+			log.info(
+					"Unsuccessful Attempt Message For Login Displayed: " + loginpg.getUnsuccessfulAttemptMsgForLogin());
+			actualexptres = false;
 		}
 
 		Assert.assertEquals(convertexptres, actualexptres);

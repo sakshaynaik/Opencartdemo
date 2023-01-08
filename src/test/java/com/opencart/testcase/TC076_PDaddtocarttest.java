@@ -17,7 +17,7 @@ import com.opencart.pageobject.Shoppingcartpage;
 public class TC076_PDaddtocarttest extends BaseClass {
 
 	@Test(dataProvider = "validcredentials")
-	public void productDisplayAddToWishList(String validdata) {
+	public void productDisplayAddToCartTest(String validdata) {
 
 		log.info("***** TC076_PDaddtocarttest Started *****");
 
@@ -43,7 +43,7 @@ public class TC076_PDaddtocarttest extends BaseClass {
 
 		prdtpg.clickOnAddToCartButton();
 		Assert.assertTrue(prdtpg.isDispalyedOfWhishlistMsg());
-		log.info("Success Added To Wish-List Message Displayed: " + prdtpg.getTexOfWhishlistMsg());
+		log.info("Success Added To Cart Message Displayed: " + prdtpg.getTexOfWhishlistMsg());
 
 		Shoppingcartpage shopcart = hmpg.clickOnShopCartLink();
 		Assert.assertEquals(shopcart.getShoppingCartPageTitle(), config.getShoppingCartPageTitle());

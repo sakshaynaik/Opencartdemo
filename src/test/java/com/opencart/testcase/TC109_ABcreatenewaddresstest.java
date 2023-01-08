@@ -17,7 +17,7 @@ import com.opencart.utilities.ReadXlsxFile;
 public class TC109_ABcreatenewaddresstest extends BaseClass{
 
 	@Test(dataProvider = "existdata")
-	public void addressBookDeleteAddress(HashMap<String, String> hMap) {
+	public void addressBookNewAddress(HashMap<String, String> hMap) {
 
 		log.info("***** TC109_ABcreatenewaddresstest Started *****");
 
@@ -49,7 +49,7 @@ public class TC109_ABcreatenewaddresstest extends BaseClass{
 		Addressbookpage addresspg = new Addressbookpage(driver);
 		Assert.assertEquals(addresspg.getAddressBookPageTitle(), config.getAddressBookPageTitle());
 		log.info("AddressBook Page Title: " + addresspg.getAddressBookPageTitle());
-
+		
 		addresspg.clickOnDeleteButton();
 		Assert.assertTrue(addresspg.isDisplayedDeleteWarnMsg());
 		log.info("Warn Message Default Address Cannot Be Deleted: " + addresspg.getDeleteWarnMsg());

@@ -29,6 +29,7 @@ public class Forgotyourpasswordpage {
 
 	@FindBy(xpath = "//div[contains(text(),' Warning: The E-Mail Address was not found in our records')]")
 	private WebElement registedemailwarnmsg;
+	
 
 	///////////////////////////////////////////////////////////////////
 	
@@ -47,9 +48,10 @@ public class Forgotyourpasswordpage {
 		return (registedemailwarnmsg.isDisplayed());
 	}
 
-	public void clickOnContinueButton() {
+	public Loginpage clickOnContinueButton() {
 
 		continuebtn.click();
+		return (new Loginpage(ldriver));
 	}
 
 	public void enterEmailOfForgotenPassword(String email) {

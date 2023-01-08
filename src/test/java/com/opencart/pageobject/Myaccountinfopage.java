@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.opencart.utilities.ReadJavascriptExecutor;
+
 public class Myaccountinfopage {
 
 	WebDriver ldriver;
@@ -32,15 +34,20 @@ public class Myaccountinfopage {
 
 	@FindBy(xpath = "//div[text()='E-Mail Address does not appear to be valid!']")
 	private WebElement emailinvaildmsg;
-	
+
 	@FindBy(xpath = "//div[text()='First Name must be between 1 and 32 characters!']")
 	private WebElement fnameinvaildmsg;
-	
+
 	@FindBy(xpath = "//div[text()='Last Name must be between 1 and 32 characters!']")
 	private WebElement lnameinvaildmsg;
-	
+
 	///////////////////////////////////////////////////////////////////////////
-	
+
+	public void drawBorderForTelephoneTextField() {
+
+		ReadJavascriptExecutor.drawBorder(newtelephone, ldriver);
+	}
+
 	public boolean isDisplayedInvalidFirstNameMsg() {
 
 		return (fnameinvaildmsg.isDisplayed());
@@ -50,7 +57,7 @@ public class Myaccountinfopage {
 
 		return (fnameinvaildmsg.getText());
 	}
-	
+
 	public boolean isDisplayedInvalidLastNameMsg() {
 
 		return (lnameinvaildmsg.isDisplayed());
@@ -60,7 +67,7 @@ public class Myaccountinfopage {
 
 		return (lnameinvaildmsg.getText());
 	}
-	
+
 	public boolean isDisplayedInvalidEmailMsg() {
 
 		return (emailinvaildmsg.isDisplayed());

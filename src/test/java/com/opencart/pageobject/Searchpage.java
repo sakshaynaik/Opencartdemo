@@ -172,7 +172,7 @@ public class Searchpage {
 
 	public Productcomparisionpage clickOnCompareProductLink() {
 
-		compareprdlink.click();
+		ReadJavascriptExecutor.clickElementByJavaScript(compareprdlink, ldriver);
 		return (new Productcomparisionpage(ldriver));
 	}
 

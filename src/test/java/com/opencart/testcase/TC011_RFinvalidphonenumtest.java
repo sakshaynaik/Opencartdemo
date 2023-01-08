@@ -8,7 +8,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.opencart.pageobject.Homepage;
+import com.opencart.pageobject.Myaccountinfopage;
 import com.opencart.pageobject.Registerationpage;
+import com.opencart.pageobject.Successpage;
 import com.opencart.utilities.MyXlsReader;
 import com.opencart.utilities.ReadXlsxFile;
 
@@ -36,12 +38,12 @@ public class TC011_RFinvalidphonenumtest extends BaseClass {
 		respg.enterFirstNameTextField(hMap.get("FirstName"));
 		respg.enterLastNameTextField(hMap.get("LastName"));
 		respg.enterEmialTextField(getRandomStringValue(4) + "@gmail.com");
-		respg.getBorderForTelephoneTxtField(hMap.get("Telephone"));
+		respg.enterTelephoneTextField(hMap.get("Telephone"));
 		respg.enterPasswordTextField(hMap.get("Password"));
 		respg.enterConfirmPasswordTextField(hMap.get("ConfirmPassword"));
 		respg.clickOnNewsLetterRadioButton();
 		respg.clickOnPriveryPolicyField();
-		respg.clickOnContinueButton();
+		Successpage succpg = respg.clickOnContinueButton();
 
 		try {
 		Assert.assertEquals(respg.getRegPageTitle(), config.getRegisterationPageTitle());
@@ -50,7 +52,12 @@ public class TC011_RFinvalidphonenumtest extends BaseClass {
 		
 		}catch(Throwable e ) {
 	
-			Assert.fail("User Was Able To Register Even With Invalid Telehone Number");
+			Myaccountinfopage editinfopg = succpg.clickOnEditAccountLink();
+			Assert.assertEquals(editinfopg.getMyAccountInfoPageTitle(), config.getMyAccountInfoPageTitle());
+			log.info("My Account Info Page Title " + editinfopg.getMyAccountInfoPageTitle());
+			
+			editinfopg.drawBorderForTelephoneTextField();
+			Assert.fail("User Was Able To Register With The Application With Invalid TelephoneNumber");
 		}
 
 		log.info("***** TC011_RFinvalidphonenumtest Completed *****");

@@ -36,7 +36,7 @@ public class Wishlistpage {
 	@FindBy(linkText = "iMac")
 	private WebElement iMaclink;
 
-	@FindBy(xpath = "//img[@title='iPhone']")
+	@FindBy(xpath = "//body[1]/div[2]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]")
 	private WebElement iphoneimg;
 
 	@FindBy(xpath = "//p[normalize-space()='Your wish list is empty.']")

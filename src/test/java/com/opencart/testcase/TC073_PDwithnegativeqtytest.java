@@ -43,8 +43,18 @@ public class TC073_PDwithnegativeqtytest extends BaseClass {
 		prdtpg.enterNumberOfProductInQtyTextField(data[2]);
 		prdtpg.clickOnAddToCartButton();
 
-		Assert.assertEquals(prdtpg.getTexOfWhishlistMsg(), data[3]);
-		log.info("Warning Message Of WhishList Was Displayed On Product Page: " + prdtpg.getTexOfWhishlistMsg());
+		try {
+
+			Assert.assertEquals(prdtpg.getTexOfWhishlistMsg(), data[3]);
+			log.info("Warning Message Of WhishList Was Displayed On Product Page: " + prdtpg.getTexOfWhishlistMsg());
+
+		} catch (Throwable e) {
+			
+			prdtpg.drawBorderForProductInQtyTextField();
+			prdtpg.drawBorderWishlistMsg();
+			Assert.fail("Warning Message 'Quantity Should Be A Positive Number' "
+					+ "Is Not Getting Displayed For The Applied Negative Value For Quantity");
+		}
 
 		log.info("***** TC073_PDwithnegativeqtytest Completed *****");
 	}

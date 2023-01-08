@@ -17,7 +17,7 @@ import com.opencart.utilities.ReadXlsxFile;
 public class TC083_WLfromhomepagetest extends BaseClass {
 
 	@Test(dataProvider = "existdata")
-	public void wishListFromProductDisplayPage(HashMap<String, String> hMap) {
+	public void wishListFromHomePageProduct(HashMap<String, String> hMap) {
 
 		log.info("***** TC083_WLfromhomepagetest Started *****");
 

@@ -350,14 +350,14 @@ public class Homepage {
 
 	public Shoppingcartpage clickOnShopCartLink() {
 
-		clickonshopcart.click();
+		ReadJavascriptExecutor.clickElementByJavaScript(clickonshopcart, ldriver);
 		return (new Shoppingcartpage(ldriver));
 
 	}
 
 	public Productcomparisionpage clickOnProductCompareLink() {
 
-		prdtcomplink.click();
+		ReadJavascriptExecutor.clickElementByJavaScript(prdtcomplink, ldriver);
 		return (new Productcomparisionpage(ldriver));
 	}
 

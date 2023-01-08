@@ -18,7 +18,16 @@ public class Rewardspointpage {
 	@FindBy(xpath = "//a[normalize-space()='Continue']")
 	private WebElement continuebttn;
 
+	@FindBy(linkText = "Order History")
+	private WebElement orderhistorylink;
+	
 	///////////////////////////////////////////////////////////////////////////////////
+	
+	public Orderhistorypage clickOnOrderHistoryLink() {
+
+		orderhistorylink.click();
+		return (new Orderhistorypage(ldriver));
+	}
 
 	public Accountpage clickOnContinueButton() {
 

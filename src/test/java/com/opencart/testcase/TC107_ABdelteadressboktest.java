@@ -17,7 +17,7 @@ import com.opencart.utilities.ReadXlsxFile;
 public class TC107_ABdelteadressboktest extends BaseClass {
 
 	@Test(dataProvider = "existdata")
-	public void addressBookBeforeLoggingIn(HashMap<String, String> hMap) {
+	public void addressBookDeleteTest(HashMap<String, String> hMap) {
 
 		log.info("***** TC107_ABeditaddresstest Started *****");
 

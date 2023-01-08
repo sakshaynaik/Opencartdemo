@@ -8,7 +8,7 @@ import com.opencart.pageobject.Homepage;
 public class TC155_HMFtermconditiontest extends BaseClass{
 
 	@Test
-	public void headerMenuAndFooterDeliveryInfoLinkTest() {
+	public void headerMenuAndFooterTermsAndConditionLinkTest() {
 
 		log.info("***** TC155_HMFtermconditiontest Started *****");
 

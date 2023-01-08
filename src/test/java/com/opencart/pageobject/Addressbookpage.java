@@ -17,7 +17,7 @@ public class Addressbookpage {
 		PageFactory.initElements(rdriver, this);
 	}
 
-	@FindBy(xpath = "//a[normalize-space()='Delete']")
+	@FindBy(xpath = "//*[@id='content']/div[1]/table/tbody/tr[1]/td[2]/a[2]")
 	private WebElement deletebttn;
 
 	@FindBy(linkText = "Edit")

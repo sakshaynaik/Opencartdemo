@@ -58,7 +58,7 @@ public class TC029_LFlogoutbrowserbacktest extends BaseClass {
 
 		accntlogoutpg.navigateBack();
 		accntlogoutpg.refreshByJavascript();
-
+		
 		Assert.assertEquals(loginpg.getLoginPageTitle(), config.getLoginPageTitle());
 		log.info("User was Not Able To Login After Navigating Back But Directed To Login Page :"
 				+ loginpg.getLoginPageTitle());

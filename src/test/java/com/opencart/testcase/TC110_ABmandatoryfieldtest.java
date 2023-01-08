@@ -17,7 +17,7 @@ import com.opencart.utilities.ReadXlsxFile;
 public class TC110_ABmandatoryfieldtest extends BaseClass {
 
 	@Test(dataProvider = "existdata")
-	public void addressBookDeleteAddress(HashMap<String, String> hMap) {
+	public void addressBookMandatoryAddressField(HashMap<String, String> hMap) {
 
 		log.info("***** TC110_ABmandatoryfieldtest Started *****");
 

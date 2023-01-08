@@ -4,11 +4,13 @@
 	<listeners>
 		<listener class-name="com.opencart.zdatadriven.Extentlistenerdatadriven"></listener>
 	</listeners>
-	<test thread-count="5" name="Testdatadriventest">
+	<test thread-count="5" name="Testdatadriven">
 		<classes>
 	 		<class name="com.opencart.zdatadriven.TC01_DDRegisterFunctionTest" />
 			<class name="com.opencart.zdatadriven.TC02_DDLoginFunctionTest" />       
 			<class name="com.opencart.zdatadriven.TC03_DDCheckoutFunctionTest" />
+			<class name="com.opencart.zdatadriven.TC04_DDProductreturnFunctionTest" />
+			<class name="com.opencart.zdatadriven.TC05_DDMyAccontAdressChangesTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

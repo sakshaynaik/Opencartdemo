@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.opencart.testcase.TC151_HMFrandomactivitytest">
+      <class name="com.opencart.testcase.TC109_ABcreatenewaddresstest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="headerMenuRandomActivity"/>
+          <include name="addressBookNewAddress" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.opencart.testcase.TC151_HMFrandomactivitytest -->
+      </class> <!-- com.opencart.testcase.TC109_ABcreatenewaddresstest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

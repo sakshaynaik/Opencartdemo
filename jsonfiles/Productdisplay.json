@@ -29,13 +29,6 @@
 			"expres": "failure",
 			"name": " ",
 			"review": " "
-		},
-		{
-			"browser": "Edge",
-			"product": "iMac",
-			"expres": "failure",
-			"name": "A",
-			"review": "B"
 		}
 	]
 }

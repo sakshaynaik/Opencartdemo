@@ -51,13 +51,20 @@ public class TC028_LFloginandbrowsebacktest extends BaseClass {
 
 		accntpg.naviagteBack();
 		accntpg.naviagteBack();
-		accntpg.refreshByJavascript();
 		
+		try {
+			
 		accntpg.clickOnMyAccountDropMenu();
 		log.info("Clicked On MyAccount Drop Menu");
 
 		Assert.assertTrue(accntpg.isDisplayedLogoutOption());
 		log.info("Logout Option Displayed Even After Navigating Back Without Loggingout");
+		
+		}catch(Throwable e) {
+			
+			hmpg.highletLoginOptionDefect();
+			Assert.fail("User Logged-In And Was Logged Out From The Application After Clicking On Navigation Back Button");
+		}
 
 		log.info("***** TC028_LFloginandbrowsebacktest Completed *****");
 

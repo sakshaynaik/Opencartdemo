@@ -6,7 +6,7 @@
 	</listeners>
 	<test thread-count="5" name="Run">
 		<classes>
-			<class name="com.opencart.testcase.TC143_CUmandtryfieldtest" />
+			<class name="com.opencart.testcase.TC123_DLdownloadableordertest" /> 
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

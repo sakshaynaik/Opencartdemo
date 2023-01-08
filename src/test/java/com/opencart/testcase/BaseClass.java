@@ -17,6 +17,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.asserts.SoftAssert;
 
 import com.opencart.utilities.MyXlsReader;
 import com.opencart.utilities.ReadConfig;
@@ -31,6 +32,7 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	public static MyXlsReader xlsreader;
+	public static SoftAssert asert;
 	public static Logger log = LogManager.getLogger(BaseClass.class.getName());
 
 	@BeforeClass(groups = { "Smoke", "Regression" })
