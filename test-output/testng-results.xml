@@ -1,17 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-09T03:06:53 IST" name="FailedTest" finished-at="2023-01-09T03:07:14 IST" duration-ms="20362">
+  <suite started-at="2023-01-09T16:37:31 IST" name="opencart" finished-at="2023-01-09T16:41:20 IST" duration-ms="229458">
     <groups>
     </groups>
-    <test started-at="2023-01-09T03:06:53 IST" name="Run" finished-at="2023-01-09T03:07:14 IST" duration-ms="20362">
-      <class name="com.opencart.testcase.TC123_DLdownloadableordertest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC123_DLdownloadableordertest@7e276594]" started-at="2023-01-09T03:06:54 IST" name="setUp" finished-at="2023-01-09T03:07:05 IST" duration-ms="10717" status="PASS">
+    <test started-at="2023-01-09T16:37:31 IST" name="AddressBookFeature" finished-at="2023-01-09T16:40:24 IST" duration-ms="173702">
+      <class name="com.opencart.testcase.TC109_ABcreatenewaddresstest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC109_ABcreatenewaddresstest@2f4205be]" started-at="2023-01-09T16:39:15 IST" name="setUp" finished-at="2023-01-09T16:39:23 IST" duration-ms="8026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="downloadValidateDownloadableOrders(java.util.HashMap)[pri:0, instance:com.opencart.testcase.TC123_DLdownloadableordertest@7e276594]" started-at="2023-01-09T03:07:08 IST" name="downloadValidateDownloadableOrders" data-provider="existdata" finished-at="2023-01-09T03:07:12 IST" duration-ms="4058" status="FAIL">
+        <test-method signature="addressBookNewAddress(java.util.HashMap)[pri:0, instance:com.opencart.testcase.TC109_ABcreatenewaddresstest@2f4205be]" started-at="2023-01-09T16:39:23 IST" name="addressBookNewAddress" data-provider="existdata" finished-at="2023-01-09T16:39:38 IST" duration-ms="14922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{countryoption=Botswana, Email=akshaysnaik1111@gmail.com, FirstName=Kishore, Address2=Koremangala, Runmode=Y, Address1=Kings Vinue, Postcode=560034, Companyname=Aptek Ltd, ExpectedResult=Success, LastName=Sharma, Cityname=Bangalore, Zoneoption=8, Browser=Firefox, Password=12345}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookNewAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC109_ABcreatenewaddresstest@2f4205be]" started-at="2023-01-09T16:39:38 IST" name="tearDown" finished-at="2023-01-09T16:39:39 IST" duration-ms="572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcase.TC109_ABcreatenewaddresstest -->
+      <class name="com.opencart.testcase.TC110_ABmandatoryfieldtest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC110_ABmandatoryfieldtest@54e22bdd]" started-at="2023-01-09T16:39:39 IST" name="setUp" finished-at="2023-01-09T16:40:09 IST" duration-ms="30329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addressBookMandatoryAddressField(java.util.HashMap)[pri:0, instance:com.opencart.testcase.TC110_ABmandatoryfieldtest@54e22bdd]" started-at="2023-01-09T16:40:10 IST" name="addressBookMandatoryAddressField" data-provider="existdata" finished-at="2023-01-09T16:40:24 IST" duration-ms="13630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{countryoption=Botswana, Email=akshaysnaik1111@gmail.com, FirstName=Kishore, Address2=Koremangala, Runmode=Y, Address1=Kings Vinue, Postcode=560034, Companyname=Aptek Ltd, ExpectedResult=Success, LastName=Sharma, Cityname=Bangalore, Zoneoption=8, Browser=Firefox, Password=12345}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookMandatoryAddressField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC110_ABmandatoryfieldtest@54e22bdd]" started-at="2023-01-09T16:40:24 IST" name="tearDown" finished-at="2023-01-09T16:40:24 IST" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcase.TC110_ABmandatoryfieldtest -->
+      <class name="com.opencart.testcase.TC108_ABeditaddressboktest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC108_ABeditaddressboktest@4c5474f5]" started-at="2023-01-09T16:38:52 IST" name="setUp" finished-at="2023-01-09T16:39:03 IST" duration-ms="10985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addressBookEditAddress(java.util.HashMap)[pri:0, instance:com.opencart.testcase.TC108_ABeditaddressboktest@4c5474f5]" started-at="2023-01-09T16:39:03 IST" name="addressBookEditAddress" data-provider="existdata" finished-at="2023-01-09T16:39:14 IST" duration-ms="10502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{countryoption=Botswana, Email=akshaysnaik1111@gmail.com, FirstName=Kishore, Address2=Koremangala, Runmode=Y, Address1=Kings Vinue, Postcode=560034, Companyname=Aptek Ltd, ExpectedResult=Success, LastName=Sharma, Cityname=Bangalore, Zoneoption=6, Browser=Firefox, Password=12345}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookEditAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC108_ABeditaddressboktest@4c5474f5]" started-at="2023-01-09T16:39:14 IST" name="tearDown" finished-at="2023-01-09T16:39:15 IST" duration-ms="747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcase.TC108_ABeditaddressboktest -->
+      <class name="com.opencart.testcase.TC107_ABdelteadressboktest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC107_ABdelteadressboktest@58ffcbd7]" started-at="2023-01-09T16:37:32 IST" name="setUp" finished-at="2023-01-09T16:38:20 IST" duration-ms="47930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addressBookDeleteTest(java.util.HashMap)[pri:0, instance:com.opencart.testcase.TC107_ABdelteadressboktest@58ffcbd7]" started-at="2023-01-09T16:38:31 IST" name="addressBookDeleteTest" data-provider="existdata" finished-at="2023-01-09T16:38:48 IST" duration-ms="17114" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -19,51 +82,100 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[There Are No Products In The Website To Place The Downloadable Orders And Hence Cannot Test]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: There Are No Products In The Website To Place The Downloadable Orders And Hence Cannot Test
-at org.testng.Assert.fail(Assert.java:110)
-at com.opencart.testcase.TC123_DLdownloadableordertest.downloadValidateDownloadableOrders(TC123_DLdownloadableordertest.java:53)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloadValidateDownloadableOrders -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC123_DLdownloadableordertest@7e276594]" started-at="2023-01-09T03:07:12 IST" name="tearDown" finished-at="2023-01-09T03:07:14 IST" duration-ms="1312" status="PASS">
+        </test-method> <!-- addressBookDeleteTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC107_ABdelteadressboktest@58ffcbd7]" started-at="2023-01-09T16:38:49 IST" name="tearDown" finished-at="2023-01-09T16:38:52 IST" duration-ms="2971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.opencart.testcase.TC123_DLdownloadableordertest -->
-    </test> <!-- Run -->
-  </suite> <!-- FailedTest -->
+      </class> <!-- com.opencart.testcase.TC107_ABdelteadressboktest -->
+    </test> <!-- AddressBookFeature -->
+    <test started-at="2023-01-09T16:40:26 IST" name="NewsLetterFeature" finished-at="2023-01-09T16:41:20 IST" duration-ms="54185">
+      <class name="com.opencart.testcase.TC137_NLnavigationpagetest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC137_NLnavigationpagetest@1a45193b]" started-at="2023-01-09T16:40:26 IST" name="setUp" finished-at="2023-01-09T16:40:38 IST" duration-ms="11758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newsLetterNavigationToPage(java.util.HashMap)[pri:0, instance:com.opencart.testcase.TC137_NLnavigationpagetest@1a45193b]" started-at="2023-01-09T16:40:38 IST" name="newsLetterNavigationToPage" data-provider="existdata" finished-at="2023-01-09T16:40:42 IST" duration-ms="4044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=akshaysnaik1111@gmail.com, ExpectedResult=Success, Runmode=Y, Product=iMac, Browser=Chrome, Password=12345}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newsLetterNavigationToPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC137_NLnavigationpagetest@1a45193b]" started-at="2023-01-09T16:40:42 IST" name="tearDown" finished-at="2023-01-09T16:40:43 IST" duration-ms="496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcase.TC137_NLnavigationpagetest -->
+      <class name="com.opencart.testcase.TC138_NLbeforelogintest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC138_NLbeforelogintest@38f116f6]" started-at="2023-01-09T16:40:43 IST" name="setUp" finished-at="2023-01-09T16:40:48 IST" duration-ms="5884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newsLetterBeforeLogin(java.util.HashMap)[pri:0, instance:com.opencart.testcase.TC138_NLbeforelogintest@38f116f6]" started-at="2023-01-09T16:40:49 IST" name="newsLetterBeforeLogin" data-provider="existdata" finished-at="2023-01-09T16:40:54 IST" duration-ms="4715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=akshaysnaik1111@gmail.com, ExpectedResult=Success, Runmode=Y, Product=iMac, Browser=Chrome, Password=12345}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newsLetterBeforeLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC138_NLbeforelogintest@38f116f6]" started-at="2023-01-09T16:40:54 IST" name="tearDown" finished-at="2023-01-09T16:40:54 IST" duration-ms="471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcase.TC138_NLbeforelogintest -->
+      <class name="com.opencart.testcase.TC139_NLregisterwithnonewslettertest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC139_NLregisterwithnonewslettertest@5286c33a]" started-at="2023-01-09T16:40:54 IST" name="setUp" finished-at="2023-01-09T16:41:00 IST" duration-ms="5314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registeringWithNoNewsLetterOption(java.util.HashMap)[pri:0, instance:com.opencart.testcase.TC139_NLregisterwithnonewslettertest@5286c33a]" started-at="2023-01-09T16:41:00 IST" name="registeringWithNoNewsLetterOption" data-provider="NewsLetterData" finished-at="2023-01-09T16:41:07 IST" duration-ms="6848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=kishore150@gmail.com, ExpectedResult=Success, Telephone=1234567890, FirstName=Kishore, Runmode=Y, LastName=Sharma, Browser=Firefox, Password=12345, ConfirmPassword=12345}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registeringWithNoNewsLetterOption -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC139_NLregisterwithnonewslettertest@5286c33a]" started-at="2023-01-09T16:41:07 IST" name="tearDown" finished-at="2023-01-09T16:41:07 IST" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcase.TC139_NLregisterwithnonewslettertest -->
+      <class name="com.opencart.testcase.TC140_NLregisteryesoptiontest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC140_NLregisteryesoptiontest@6e6d5d29]" started-at="2023-01-09T16:41:07 IST" name="setUp" finished-at="2023-01-09T16:41:13 IST" duration-ms="5271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registeringWithYesNewsLetter(java.util.HashMap)[pri:0, instance:com.opencart.testcase.TC140_NLregisteryesoptiontest@6e6d5d29]" started-at="2023-01-09T16:41:13 IST" name="registeringWithYesNewsLetter" data-provider="NewsLetterData" finished-at="2023-01-09T16:41:20 IST" duration-ms="6671" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=kishore150@gmail.com, ExpectedResult=Success, Telephone=1234567890, FirstName=Kishore, Runmode=Y, LastName=Sharma, Browser=Firefox, Password=12345, ConfirmPassword=12345}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registeringWithYesNewsLetter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC140_NLregisteryesoptiontest@6e6d5d29]" started-at="2023-01-09T16:41:20 IST" name="tearDown" finished-at="2023-01-09T16:41:20 IST" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcase.TC140_NLregisteryesoptiontest -->
+    </test> <!-- NewsLetterFeature -->
+  </suite> <!-- opencart -->
 </testng-results>

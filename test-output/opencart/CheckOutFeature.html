@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 09 00:28:09 IST 2023</td>
+<td>Started on:</td><td>Mon Jan 09 15:52:00 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>137 seconds (137344 ms)</td>
+<tr><td>Total time:</td><td>117 seconds (117178 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,16 +77,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.opencart.testcase.TC099_COasguestusertest.checkOutAsGuestUser()'><b>checkOutAsGuestUser</b><br>Test class: com.opencart.testcase.TC099_COasguestusertest<br>Parameters: {countryoption=Botswana, Email=surava8@gmail.com, Telephone=8678954321, FirstName=Kishore, Address2=Koremangala, Runmode=Y, Product=HP LP3065, Address1=Kings Vinue, Postcode=560034, Companyname=Aptek Ltd, ExpectedResult=Success, LastName=Sharma, Cityname=Bangalore, Zoneoption=8, Browser=Firefox, Password=12345}</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#button\-shipping\-method&quot;}
   (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17600602ef1ef0f472fe6ccb8281fe58, getElementAttribute {id=82f3adcf-8104-4d6e-a77b-bc965414518a, name=index}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54352}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54352/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on WINDOWS (17600602ef1ef0f472fe6ccb8281fe58)] -&gt; id: input-payment-zone]] -&gt; tag name: option]
-Session ID: 17600602ef1ef0f472fe6ccb8281fe58
+Command: [fd49247c84f34412cb7962978c94b58e, findElement {using=id, value=button-shipping-method}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57342/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd49247c84f34412cb7962978c94b58e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -94,24 +93,26 @@ Session ID: 17600602ef1ef0f472fe6ccb8281fe58
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:158)
-	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:300)
-	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
-	at com.opencart.pageobject.Checkoutpage.selectZone(Checkoutpage.java:240)
-	at com.opencart.testcase.TC099_COasguestusertest.checkOutAsGuestUser(TC099_COasguestusertest.java:71)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at com.opencart.pageobject.Checkoutpage.clickOnShippingMethodContinueButton(Checkoutpage.java:211)
+	at com.opencart.testcase.TC099_COasguestusertest.checkOutAsGuestUser(TC099_COasguestusertest.java:77)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace799150815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace799150815'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace853608027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace853608027'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#button\-shipping\-method&quot;}
   (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17600602ef1ef0f472fe6ccb8281fe58, getElementAttribute {id=82f3adcf-8104-4d6e-a77b-bc965414518a, name=index}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54352}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54352/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on WINDOWS (17600602ef1ef0f472fe6ccb8281fe58)] -&gt; id: input-payment-zone]] -&gt; tag name: option]
-Session ID: 17600602ef1ef0f472fe6ccb8281fe58
+Command: [fd49247c84f34412cb7962978c94b58e, findElement {using=id, value=button-shipping-method}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57342/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd49247c84f34412cb7962978c94b58e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -122,12 +123,15 @@ Session ID: 17600602ef1ef0f472fe6ccb8281fe58
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:158)
-	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:300)
-	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
-	at com.opencart.pageobject.Checkoutpage.selectZone(Checkoutpage.java:240)
-	at com.opencart.testcase.TC099_COasguestusertest.checkOutAsGuestUser(TC099_COasguestusertest.java:71)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at com.opencart.pageobject.Checkoutpage.clickOnShippingMethodContinueButton(Checkoutpage.java:211)
+	at com.opencart.testcase.TC099_COasguestusertest.checkOutAsGuestUser(TC099_COasguestusertest.java:77)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -155,8 +159,8 @@ Session ID: 17600602ef1ef0f472fe6ccb8281fe58
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>12</td>
-<td>com.opencart.testcase.TC099_COasguestusertest@544820b7</td></tr>
+<td>23</td>
+<td>com.opencart.testcase.TC099_COasguestusertest@75f5fd58</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -167,25 +171,25 @@ Session ID: 17600602ef1ef0f472fe6ccb8281fe58
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.opencart.testcase.TC096_COnavigtetocopgtest.checkOutNavigationFromHomePage()'><b>checkOutNavigationFromHomePage</b><br>Test class: com.opencart.testcase.TC096_COnavigtetocopgtest<br>Parameters: {countryoption=Botswana, Email=ravi8@gmail.com, FirstName=Kishore, Address2=Koremangala, Runmode=Y, Product=HP LP3065, Address1=Kings Vinue, Postcode=560034, Companyname=Aptek Ltd, ExpectedResult=Success, LastName=Sharma, Cityname=Bangalore, Zoneoption=8, Browser=Firefox, Password=12345}</td>
+<td></td>
+<td>15</td>
+<td>com.opencart.testcase.TC096_COnavigtetocopgtest@7446d8d5</td></tr>
+<tr>
 <td title='com.opencart.testcase.TC098_COnaviagtetocheckouttest.checkOutNavigationByItemBox()'><b>checkOutNavigationByItemBox</b><br>Test class: com.opencart.testcase.TC098_COnaviagtetocheckouttest<br>Parameters: {countryoption=Botswana, Email=ravi8@gmail.com, FirstName=Kishore, Address2=Koremangala, Runmode=Y, Product=HP LP3065, Address1=Kings Vinue, Postcode=560034, Companyname=Aptek Ltd, ExpectedResult=Success, LastName=Sharma, Cityname=Bangalore, Zoneoption=8, Browser=Firefox, Password=12345}</td>
 <td></td>
 <td>15</td>
-<td>com.opencart.testcase.TC098_COnaviagtetocheckouttest@3bd418e4</td></tr>
+<td>com.opencart.testcase.TC098_COnaviagtetocheckouttest@4fbda97b</td></tr>
 <tr>
 <td title='com.opencart.testcase.TC097_COnavigatecohederoptiontest.checkOutByHomePageHeaderOption()'><b>checkOutByHomePageHeaderOption</b><br>Test class: com.opencart.testcase.TC097_COnavigatecohederoptiontest</td>
 <td></td>
 <td>1</td>
-<td>com.opencart.testcase.TC097_COnavigatecohederoptiontest@54e22bdd</td></tr>
+<td>com.opencart.testcase.TC097_COnavigatecohederoptiontest@5c3b6c6e</td></tr>
 <tr>
 <td title='com.opencart.testcase.TC100_COnewregisterforcheckouttest.checkOutWithNewRegistration()'><b>checkOutWithNewRegistration</b><br>Test class: com.opencart.testcase.TC100_COnewregisterforcheckouttest<br>Parameters: {countryoption=Botswana, Email=surava8@gmail.com, Telephone=8678954321, FirstName=Kishore, Address2=Koremangala, Runmode=Y, Product=HP LP3065, Address1=Kings Vinue, Postcode=560034, Companyname=Aptek Ltd, ExpectedResult=Success, LastName=Sharma, COConfirmpassword=12345, Cityname=Bangalore, COPassword=12345, Zoneoption=8, Browser=Firefox, Password=12345}</td>
 <td></td>
-<td>19</td>
-<td>com.opencart.testcase.TC100_COnewregisterforcheckouttest@6b98a075</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC096_COnavigtetocopgtest.checkOutNavigationFromHomePage()'><b>checkOutNavigationFromHomePage</b><br>Test class: com.opencart.testcase.TC096_COnavigtetocopgtest<br>Parameters: {countryoption=Botswana, Email=ravi8@gmail.com, FirstName=Kishore, Address2=Koremangala, Runmode=Y, Product=HP LP3065, Address1=Kings Vinue, Postcode=560034, Companyname=Aptek Ltd, ExpectedResult=Success, LastName=Sharma, Cityname=Bangalore, Zoneoption=8, Browser=Firefox, Password=12345}</td>
-<td></td>
 <td>22</td>
-<td>com.opencart.testcase.TC096_COnavigtetocopgtest@6bb2d00b</td></tr>
+<td>com.opencart.testcase.TC100_COnewregisterforcheckouttest@37b70343</td></tr>
 </table><p>
 </body>
 </html>

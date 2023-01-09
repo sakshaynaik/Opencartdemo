@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>19/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jan 08 15:53:29 IST 2023</td>
+<td>Started on:</td><td>Mon Jan 09 15:30:14 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>279 seconds (279377 ms)</td>
+<tr><td>Total time:</td><td>283 seconds (283569 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,13 +77,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.opencart.testcase.TC011_RFinvalidphonenumtest.registeringWithInvalidPhoneNumber()'><b>registeringWithInvalidPhoneNumber</b><br>Test class: com.opencart.testcase.TC011_RFinvalidphonenumtest<br>Parameters: {Email=praveensheety121@gmail.com, ExpectedResult=Failure, Telephone=abcde, FirstName=Ravi, Runmode=Y, LastName=sharma, Browser=Chrome, Password=1234567, ConfirmPassword=1234567}</td>
-<td><div><pre>java.lang.AssertionError: User Was Able To Register Even With Invalid Telehone Number
-	at com.opencart.testcase.TC011_RFinvalidphonenumtest.registeringWithInvalidPhoneNumber(TC011_RFinvalidphonenumtest.java:53)
+<td><div><pre>java.lang.AssertionError: User Was Able To Register With The Application With Invalid TelephoneNumber
+	at com.opencart.testcase.TC011_RFinvalidphonenumtest.registeringWithInvalidPhoneNumber(TC011_RFinvalidphonenumtest.java:60)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace807542010", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace807542010'><pre>java.lang.AssertionError: User Was Able To Register Even With Invalid Telehone Number
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace147995864", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace147995864'><pre>java.lang.AssertionError: User Was Able To Register With The Application With Invalid TelephoneNumber
 	at org.testng.Assert.fail(Assert.java:110)
-	at com.opencart.testcase.TC011_RFinvalidphonenumtest.registeringWithInvalidPhoneNumber(TC011_RFinvalidphonenumtest.java:53)
+	at com.opencart.testcase.TC011_RFinvalidphonenumtest.registeringWithInvalidPhoneNumber(TC011_RFinvalidphonenumtest.java:60)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -123,10 +123,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.opencart.testcase.TC008_RFdifferentpasswordtest.registeringWithDifferentPassword()'><b>registeringWithDifferentPassword</b><br>Test class: com.opencart.testcase.TC008_RFdifferentpasswordtest<br>Parameters: Chrome,Ravindra,Varma,ravindra105@gmail.com,1234567890,54321,1234</td>
+<td title='com.opencart.testcase.TC015_RFemptyspacejsontest.registartionWithEmptySpaceByJSON()'><b>registartionWithEmptySpaceByJSON</b><br>Test class: com.opencart.testcase.TC015_RFemptyspacejsontest<br>Parameters: Chrome,    ,    ,     ,  ,  ,  </td>
+<td></td>
+<td>4</td>
+<td>com.opencart.testcase.TC015_RFemptyspacejsontest@315f43d5</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC003_RFallfielddatatest.registeringWithAllFileds()'><b>registeringWithAllFileds</b><br>Test class: com.opencart.testcase.TC003_RFallfielddatatest<br>Parameters: {Email=kishore150@gmail.com, ExpectedResult=Success, Telephone=1234567890, FirstName=Kishore, Runmode=Y, LastName=Sharma, Browser=Firefox, Password=12345, ConfirmPassword=12345}</td>
 <td></td>
 <td>5</td>
-<td>com.opencart.testcase.TC008_RFdifferentpasswordtest@18b0930f</td></tr>
+<td>com.opencart.testcase.TC003_RFallfielddatatest@aafcffa</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC010_RFinvalidemailtest.registrationWithInvalidEmail()'><b>registrationWithInvalidEmail</b><br>Test class: com.opencart.testcase.TC010_RFinvalidemailtest<br>Parameters: edge,Ravi,Kiran,akshaysnaik12,1234567890,123456,123456</td>
+<td></td>
+<td>24</td>
+<td>com.opencart.testcase.TC010_RFinvalidemailtest@3a1dd365</td></tr>
 <tr>
 <td title='com.opencart.testcase.TC010_RFinvalidemailtest.registrationWithInvalidEmail()'><b>registrationWithInvalidEmail</b><br>Test class: com.opencart.testcase.TC010_RFinvalidemailtest<br>Parameters: Firefox,Suraj,Varma,akshaysnaik121@,1234567890,123456,123456</td>
 <td></td>
@@ -138,20 +148,30 @@ function toggleAllBoxes() {
 <td>1</td>
 <td>com.opencart.testcase.TC018_RFhightwidthtest@2f05be7f</td></tr>
 <tr>
+<td title='com.opencart.testcase.TC008_RFdifferentpasswordtest.registeringWithDifferentPassword()'><b>registeringWithDifferentPassword</b><br>Test class: com.opencart.testcase.TC008_RFdifferentpasswordtest<br>Parameters: Chrome,Ravindra,Varma,ravindra105@gmail.com,1234567890,54321,1234</td>
+<td></td>
+<td>5</td>
+<td>com.opencart.testcase.TC008_RFdifferentpasswordtest@18b0930f</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC006_RFnewletternotest.registeringWithNewsLetterAsNoOption()'><b>registeringWithNewsLetterAsNoOption</b><br>Test class: com.opencart.testcase.TC006_RFnewletternotest<br>Parameters: {Email=kishore150@gmail.com, ExpectedResult=Success, Telephone=1234567890, FirstName=Kishore, Runmode=Y, LastName=Sharma, Browser=Firefox, Password=12345, ConfirmPassword=12345}</td>
+<td></td>
+<td>5</td>
+<td>com.opencart.testcase.TC006_RFnewletternotest@2b5f4d54</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC004_RFwithoutdatatest.registeringwithoutAnyDataInFields()'><b>registeringwithoutAnyDataInFields</b><br>Test class: com.opencart.testcase.TC004_RFwithoutdatatest</td>
+<td></td>
+<td>2</td>
+<td>com.opencart.testcase.TC004_RFwithoutdatatest@6955cb39</td></tr>
+<tr>
 <td title='com.opencart.testcase.TC016_RFprivercypolicytest.registartiontestForPrivercyPolicy()'><b>registartiontestForPrivercyPolicy</b><br>Test class: com.opencart.testcase.TC016_RFprivercypolicytest</td>
 <td></td>
 <td>1</td>
 <td>com.opencart.testcase.TC016_RFprivercypolicytest@68fa0ba8</td></tr>
 <tr>
-<td title='com.opencart.testcase.TC006_RFnewletternotest.registeringWithNewsLetterAsNoOption()'><b>registeringWithNewsLetterAsNoOption</b><br>Test class: com.opencart.testcase.TC006_RFnewletternotest<br>Parameters: {Email=kishore150@gmail.com, ExpectedResult=Success, Telephone=1234567890, FirstName=Kishore, Runmode=Y, LastName=Sharma, Browser=Firefox, Password=12345, ConfirmPassword=12345}</td>
+<td title='com.opencart.testcase.TC009_RFexistingemailtest.registeringWithDifferentPassword()'><b>registeringWithDifferentPassword</b><br>Test class: com.opencart.testcase.TC009_RFexistingemailtest<br>Parameters: Chrome,Ravi,Kiran,ravi11@gmail.com,1234567890,123456,123456</td>
 <td></td>
-<td>8</td>
-<td>com.opencart.testcase.TC006_RFnewletternotest@2b5f4d54</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC007_RFnavigatingtoregistertest.registeringByNaviagting()'><b>registeringByNaviagting</b><br>Test class: com.opencart.testcase.TC007_RFnavigatingtoregistertest<br>Parameters: Firefox,Praveen,Sharma,Praveen208@gmail.com,9876543210,A12345,A12345</td>
-<td></td>
-<td>22</td>
-<td>com.opencart.testcase.TC007_RFnavigatingtoregistertest@5f7b97da</td></tr>
+<td>3</td>
+<td>com.opencart.testcase.TC009_RFexistingemailtest@6b7906b3</td></tr>
 <tr>
 <td title='com.opencart.testcase.TC013_RFplaceholdertest.resgistringtestForPlaceholder()'><b>resgistringtestForPlaceholder</b><br>Test class: com.opencart.testcase.TC013_RFplaceholdertest</td>
 <td></td>
@@ -160,63 +180,43 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.opencart.testcase.TC019_RFrandomactivitytest.registrationRandomActivity()'><b>registrationRandomActivity</b><br>Test class: com.opencart.testcase.TC019_RFrandomactivitytest</td>
 <td></td>
-<td>1</td>
+<td>2</td>
 <td>com.opencart.testcase.TC019_RFrandomactivitytest@640f11a1</td></tr>
 <tr>
-<td title='com.opencart.testcase.TC004_RFwithoutdatatest.registeringwithoutAnyDataInFields()'><b>registeringwithoutAnyDataInFields</b><br>Test class: com.opencart.testcase.TC004_RFwithoutdatatest</td>
+<td title='com.opencart.testcase.TC001_RFmndtrydatatest.registeringWithMandatoryField()'><b>registeringWithMandatoryField</b><br>Test class: com.opencart.testcase.TC001_RFmndtrydatatest<br>Parameters: Firefox,Praveen,Sharma,Praveen208@gmail.com,9876543210,A12345,A12345</td>
 <td></td>
-<td>2</td>
-<td>com.opencart.testcase.TC004_RFwithoutdatatest@6955cb39</td></tr>
+<td>7</td>
+<td>com.opencart.testcase.TC001_RFmndtrydatatest@3fb6cf60</td></tr>
 <tr>
 <td title='com.opencart.testcase.TC017_RFpasswordtest.registrationWithPassAndEmptyPass()'><b>registrationWithPassAndEmptyPass</b><br>Test class: com.opencart.testcase.TC017_RFpasswordtest<br>Parameters: Firefox,Reshma,Priya,reshma11@gmail.com,1234567890,123456, </td>
 <td></td>
 <td>3</td>
 <td>com.opencart.testcase.TC017_RFpasswordtest@6c5945a7</td></tr>
 <tr>
-<td title='com.opencart.testcase.TC003_RFallfielddatatest.registeringWithAllFileds()'><b>registeringWithAllFileds</b><br>Test class: com.opencart.testcase.TC003_RFallfielddatatest<br>Parameters: {Email=kishore150@gmail.com, ExpectedResult=Success, Telephone=1234567890, FirstName=Kishore, Runmode=Y, LastName=Sharma, Browser=Firefox, Password=12345, ConfirmPassword=12345}</td>
+<td title='com.opencart.testcase.TC007_RFnavigatingtoregistertest.registeringByNaviagting()'><b>registeringByNaviagting</b><br>Test class: com.opencart.testcase.TC007_RFnavigatingtoregistertest<br>Parameters: Firefox,Praveen,Sharma,Praveen208@gmail.com,9876543210,A12345,A12345</td>
 <td></td>
 <td>4</td>
-<td>com.opencart.testcase.TC003_RFallfielddatatest@aafcffa</td></tr>
+<td>com.opencart.testcase.TC007_RFnavigatingtoregistertest@5f7b97da</td></tr>
 <tr>
 <td title='com.opencart.testcase.TC005_RFnewsletterfieldtest.registeringWithNewsLetter()'><b>registeringWithNewsLetter</b><br>Test class: com.opencart.testcase.TC005_RFnewsletterfieldtest<br>Parameters: {Email=kishore150@gmail.com, ExpectedResult=Success, Telephone=1234567890, FirstName=Kishore, Runmode=Y, LastName=Sharma, Browser=Firefox, Password=12345, ConfirmPassword=12345}</td>
 <td></td>
-<td>5</td>
+<td>6</td>
 <td>com.opencart.testcase.TC005_RFnewsletterfieldtest@235a0c16</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC009_RFexistingemailtest.registeringWithDifferentPassword()'><b>registeringWithDifferentPassword</b><br>Test class: com.opencart.testcase.TC009_RFexistingemailtest<br>Parameters: Chrome,Ravi,Kiran,ravi11@gmail.com,1234567890,123456,123456</td>
-<td></td>
-<td>3</td>
-<td>com.opencart.testcase.TC009_RFexistingemailtest@6b7906b3</td></tr>
 <tr>
 <td title='com.opencart.testcase.TC014_RFleadtrailspacetest.registratingWithOnlyEmptySpaces()'><b>registratingWithOnlyEmptySpaces</b><br>Test class: com.opencart.testcase.TC014_RFleadtrailspacetest<br>Parameters: {Email=       pavan12@gmail.com, ExpectedResult=Success, Telephone=    9087654321, FirstName=        Pawan     , Runmode=Y, LastName=      Suresh, Browser=Chrome, Password=      12345, ConfirmPassword=      12345}</td>
 <td></td>
 <td>4</td>
 <td>com.opencart.testcase.TC014_RFleadtrailspacetest@52d239ba</td></tr>
 <tr>
-<td title='com.opencart.testcase.TC015_RFemptyspacejsontest.registartionWithEmptySpaceByJSON()'><b>registartionWithEmptySpaceByJSON</b><br>Test class: com.opencart.testcase.TC015_RFemptyspacejsontest<br>Parameters: Chrome,    ,    ,     ,  ,  ,  </td>
-<td></td>
-<td>4</td>
-<td>com.opencart.testcase.TC015_RFemptyspacejsontest@315f43d5</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC010_RFinvalidemailtest.registrationWithInvalidEmail()'><b>registrationWithInvalidEmail</b><br>Test class: com.opencart.testcase.TC010_RFinvalidemailtest<br>Parameters: Edge,Sam,Sharma,akshaysnaik101@gmail,1234567890,123456,123456</td>
-<td></td>
-<td>3</td>
-<td>com.opencart.testcase.TC010_RFinvalidemailtest@3a1dd365</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC010_RFinvalidemailtest.registrationWithInvalidEmail()'><b>registrationWithInvalidEmail</b><br>Test class: com.opencart.testcase.TC010_RFinvalidemailtest<br>Parameters: edge,Ravi,Kiran,akshaysnaik12,1234567890,123456,123456</td>
-<td></td>
-<td>13</td>
-<td>com.opencart.testcase.TC010_RFinvalidemailtest@3a1dd365</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC001_RFmndtrydatatest.registeringWithMandatoryField()'><b>registeringWithMandatoryField</b><br>Test class: com.opencart.testcase.TC001_RFmndtrydatatest<br>Parameters: Firefox,Praveen,Sharma,Praveen208@gmail.com,9876543210,A12345,A12345</td>
-<td></td>
-<td>12</td>
-<td>com.opencart.testcase.TC001_RFmndtrydatatest@3fb6cf60</td></tr>
-<tr>
 <td title='com.opencart.testcase.TC012_RFkeyboardactiontest.registeringWithKeyboardActions()'><b>registeringWithKeyboardActions</b><br>Test class: com.opencart.testcase.TC012_RFkeyboardactiontest<br>Parameters: {Email=kishore150@gmail.com, ExpectedResult=Success, Telephone=1234567890, FirstName=Kishore, Runmode=Y, LastName=Sharma, Browser=Firefox, Password=12345, ConfirmPassword=12345}</td>
 <td></td>
 <td>4</td>
 <td>com.opencart.testcase.TC012_RFkeyboardactiontest@256f8274</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC010_RFinvalidemailtest.registrationWithInvalidEmail()'><b>registrationWithInvalidEmail</b><br>Test class: com.opencart.testcase.TC010_RFinvalidemailtest<br>Parameters: Edge,Sam,Sharma,akshaysnaik101@gmail,1234567890,123456,123456</td>
+<td></td>
+<td>5</td>
+<td>com.opencart.testcase.TC010_RFinvalidemailtest@3a1dd365</td></tr>
 </table><p>
 </body>
 </html>

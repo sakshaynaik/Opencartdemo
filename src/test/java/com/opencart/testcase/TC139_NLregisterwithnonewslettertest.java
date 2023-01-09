@@ -18,7 +18,7 @@ import com.opencart.utilities.ReadXlsxFile;
 public class TC139_NLregisterwithnonewslettertest extends BaseClass {
 
 	@Test(dataProvider = "NewsLetterData")
-	public void registeringWithNewsLetter(HashMap<String, String> hMap) {
+	public void registeringWithNoNewsLetterOption(HashMap<String, String> hMap) {
 
 		log.info("***** TC139_NLregisterwithnonewslettertest Started *****");
 

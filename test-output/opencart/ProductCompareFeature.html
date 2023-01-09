@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ProductCompareFeature</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jan 08 20:47:15 IST 2023</td>
+<td>Started on:</td><td>Mon Jan 09 15:41:35 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>218 seconds (218131 ms)</td>
+<tr><td>Total time:</td><td>120 seconds (120785 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,140 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.opencart.testcase.TC061_PCbygridviewtest.productCompareByGridView()'><b>productCompareByGridView</b><br>Test class: com.opencart.testcase.TC061_PCbygridviewtest<br>Parameters: {Runmode=Y, Product=iMac, ExpectedResult=Success, Browser=Chrome}</td>
-<td><div><pre>java.lang.AssertionError: expected [Product Comparison] but found [Search - iMac]
-	at com.opencart.testcase.TC061_PCbygridviewtest.productCompareByGridView(TC061_PCbygridviewtest.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1251724953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1251724953'><pre>java.lang.AssertionError: expected [Product Comparison] but found [Search - iMac]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.opencart.testcase.TC061_PCbygridviewtest.productCompareByGridView(TC061_PCbygridviewtest.java:50)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>2</td>
-<td>com.opencart.testcase.TC061_PCbygridviewtest@35390ee3</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC065_PCfromhomepagetest.productCompareFromHomePage()'><b>productCompareFromHomePage</b><br>Test class: com.opencart.testcase.TC065_PCfromhomepagetest</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;http://tutorialsninja.com/demo/index.php?route=product/compare&quot;&gt;...&lt;/a&gt; is not clickable at point (461, 8). Other element would receive the click: &lt;div class=&quot;container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=108.0.5359.125)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [890f8b39ddba4d5db2a6c1fbaa436ddf, clickElement {id=b110b6df-67c3-44ea-8bab-6b66d9b86eaf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51159/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (890f8b39ddba4d5db2a6c1fbaa436ddf)] -&gt; link text: product comparison]
-Session ID: 890f8b39ddba4d5db2a6c1fbaa436ddf
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
-	at com.opencart.pageobject.Homepage.clickOnProductCompareLink(Homepage.java:360)
-	at com.opencart.testcase.TC065_PCfromhomepagetest.productCompareFromHomePage(TC065_PCfromhomepagetest.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1946338463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1946338463'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;http://tutorialsninja.com/demo/index.php?route=product/compare&quot;&gt;...&lt;/a&gt; is not clickable at point (461, 8). Other element would receive the click: &lt;div class=&quot;container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=108.0.5359.125)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [890f8b39ddba4d5db2a6c1fbaa436ddf, clickElement {id=b110b6df-67c3-44ea-8bab-6b66d9b86eaf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51159}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51159/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (890f8b39ddba4d5db2a6c1fbaa436ddf)] -&gt; link text: product comparison]
-Session ID: 890f8b39ddba4d5db2a6c1fbaa436ddf
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
-	at com.opencart.pageobject.Homepage.clickOnProductCompareLink(Homepage.java:360)
-	at com.opencart.testcase.TC065_PCfromhomepagetest.productCompareFromHomePage(TC065_PCfromhomepagetest.java:25)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>com.opencart.testcase.TC065_PCfromhomepagetest@5ee2b6f9</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -210,50 +76,60 @@ Session ID: 890f8b39ddba4d5db2a6c1fbaa436ddf
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.opencart.testcase.TC067_PCproductcomparehometest.productCompareByHomePageCompareTest()'><b>productCompareByHomePageCompareTest</b><br>Test class: com.opencart.testcase.TC067_PCproductcomparehometest</td>
+<td title='com.opencart.testcase.TC063_PCsubcatgrygridtest.productCompareBySubCategoryGridView()'><b>productCompareBySubCategoryGridView</b><br>Test class: com.opencart.testcase.TC063_PCsubcatgrygridtest</td>
+<td></td>
+<td>3</td>
+<td>com.opencart.testcase.TC063_PCsubcatgrygridtest@60641ec8</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC061_PCbygridviewtest.productCompareByGridView()'><b>productCompareByGridView</b><br>Test class: com.opencart.testcase.TC061_PCbygridviewtest<br>Parameters: {Runmode=Y, Product=iMac, ExpectedResult=Success, Browser=Chrome}</td>
 <td></td>
 <td>2</td>
-<td>com.opencart.testcase.TC067_PCproductcomparehometest@704f1591</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC066_PCproductcomparetest.productCompareWithCampareLink()'><b>productCompareWithCampareLink</b><br>Test class: com.opencart.testcase.TC066_PCproductcomparetest<br>Parameters: Chrome,iMac</td>
-<td></td>
-<td>1</td>
-<td>com.opencart.testcase.TC066_PCproductcomparetest@23d1e5d0</td></tr>
+<td>com.opencart.testcase.TC061_PCbygridviewtest@40cb698e</td></tr>
 <tr>
 <td title='com.opencart.testcase.TC070_PCremovefrompctest.productCompareRemovingFromComparePage()'><b>productCompareRemovingFromComparePage</b><br>Test class: com.opencart.testcase.TC070_PCremovefrompctest<br>Parameters: Firefox,iMac,iPhone</td>
 <td></td>
 <td>4</td>
-<td>com.opencart.testcase.TC070_PCremovefrompctest@3fb6cf60</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC059_PCfromdisplaypagetest.productCompareInDisplayPage()'><b>productCompareInDisplayPage</b><br>Test class: com.opencart.testcase.TC059_PCfromdisplaypagetest<br>Parameters: Chrome,iMac</td>
-<td></td>
-<td>14</td>
-<td>com.opencart.testcase.TC059_PCfromdisplaypagetest@20b12f8a</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC060_PCbylistviewtest.productCompareByListView()'><b>productCompareByListView</b><br>Test class: com.opencart.testcase.TC060_PCbylistviewtest<br>Parameters: {Runmode=Y, Product=iMac, ExpectedResult=Success, Browser=Chrome}</td>
-<td></td>
-<td>16</td>
-<td>com.opencart.testcase.TC060_PCbylistviewtest@522a32b1</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC068_PCnavigatehometest.productCompareAndNavigateHomePage()'><b>productCompareAndNavigateHomePage</b><br>Test class: com.opencart.testcase.TC068_PCnavigatehometest</td>
-<td></td>
-<td>2</td>
-<td>com.opencart.testcase.TC068_PCnavigatehometest@58fb7731</td></tr>
+<td>com.opencart.testcase.TC070_PCremovefrompctest@75390459</td></tr>
 <tr>
 <td title='com.opencart.testcase.TC062_PCsubcategorytest.productCompareBySubCategory()'><b>productCompareBySubCategory</b><br>Test class: com.opencart.testcase.TC062_PCsubcategorytest</td>
 <td></td>
 <td>3</td>
-<td>com.opencart.testcase.TC062_PCsubcategorytest@5e01a982</td></tr>
-<tr>
-<td title='com.opencart.testcase.TC063_PCsubcatgrygridtest.productCompareBySubCategoryGridView()'><b>productCompareBySubCategoryGridView</b><br>Test class: com.opencart.testcase.TC063_PCsubcatgrygridtest</td>
-<td></td>
-<td>3</td>
-<td>com.opencart.testcase.TC063_PCsubcatgrygridtest@5ddea849</td></tr>
+<td>com.opencart.testcase.TC062_PCsubcategorytest@3382f8ae</td></tr>
 <tr>
 <td title='com.opencart.testcase.TC069_PCtwoproducttest.productCompareByOneProductAdded()'><b>productCompareByOneProductAdded</b><br>Test class: com.opencart.testcase.TC069_PCtwoproducttest<br>Parameters: Firefox,iMac,iPhone</td>
 <td></td>
 <td>4</td>
-<td>com.opencart.testcase.TC069_PCtwoproducttest@13e547a9</td></tr>
+<td>com.opencart.testcase.TC069_PCtwoproducttest@4d18aa28</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC065_PCfromhomepagetest.productCompareFromHomePage()'><b>productCompareFromHomePage</b><br>Test class: com.opencart.testcase.TC065_PCfromhomepagetest</td>
+<td></td>
+<td>1</td>
+<td>com.opencart.testcase.TC065_PCfromhomepagetest@75f65e45</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC059_PCfromdisplaypagetest.productCompareInDisplayPage()'><b>productCompareInDisplayPage</b><br>Test class: com.opencart.testcase.TC059_PCfromdisplaypagetest<br>Parameters: Chrome,iMac</td>
+<td></td>
+<td>9</td>
+<td>com.opencart.testcase.TC059_PCfromdisplaypagetest@29df4d43</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC066_PCproductcomparetest.productCompareWithCampareLink()'><b>productCompareWithCampareLink</b><br>Test class: com.opencart.testcase.TC066_PCproductcomparetest<br>Parameters: Chrome,iMac</td>
+<td></td>
+<td>1</td>
+<td>com.opencart.testcase.TC066_PCproductcomparetest@6eeade6c</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC067_PCproductcomparehometest.productCompareByHomePageCompareTest()'><b>productCompareByHomePageCompareTest</b><br>Test class: com.opencart.testcase.TC067_PCproductcomparehometest</td>
+<td></td>
+<td>1</td>
+<td>com.opencart.testcase.TC067_PCproductcomparehometest@4a891c97</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC068_PCnavigatehometest.productCompareAndNavigateHomePage()'><b>productCompareAndNavigateHomePage</b><br>Test class: com.opencart.testcase.TC068_PCnavigatehometest</td>
+<td></td>
+<td>3</td>
+<td>com.opencart.testcase.TC068_PCnavigatehometest@a5bd950</td></tr>
+<tr>
+<td title='com.opencart.testcase.TC060_PCbylistviewtest.productCompareByListView()'><b>productCompareByListView</b><br>Test class: com.opencart.testcase.TC060_PCbylistviewtest<br>Parameters: {Runmode=Y, Product=iMac, ExpectedResult=Success, Browser=Chrome}</td>
+<td></td>
+<td>2</td>
+<td>com.opencart.testcase.TC060_PCbylistviewtest@5dd91bca</td></tr>
 </table><p>
 </body>
 </html>

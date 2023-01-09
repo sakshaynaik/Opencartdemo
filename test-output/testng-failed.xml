@@ -1,10 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FailedTest]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [opencart]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.opencart.utilities.ExtentListener"/>
   </listeners>
-  <test thread-count="5" name="Run(failed)">
+  <test thread-count="5" name="RegisterFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC011_RFinvalidphonenumtest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="registeringWithInvalidPhoneNumber" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC011_RFinvalidphonenumtest -->
+    </classes>
+  </test> <!-- RegisterFeature(failed) -->
+  <test thread-count="5" name="LoginFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC033_LFloginandbrowserexittest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginAndExitBrowser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC033_LFloginandbrowserexittest -->
+      <class name="com.opencart.testcase.TC028_LFloginandbrowsebacktest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginAndBrowseBack" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC028_LFloginandbrowsebacktest -->
+    </classes>
+  </test> <!-- LoginFeature(failed) -->
+  <test thread-count="5" name="ForgotPasswordFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC038_FPresetpaswrdregistrdemailtest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="forgotPasswordWithregisteredEmail" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC038_FPresetpaswrdregistrdemailtest -->
+    </classes>
+  </test> <!-- ForgotPasswordFeature(failed) -->
+  <test thread-count="5" name="SearchFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC058_SFsearchbykeyboardtest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="searchByKeyboardActions" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC058_SFsearchbykeyboardtest -->
+    </classes>
+  </test> <!-- SearchFeature(failed) -->
+  <test thread-count="5" name="ProductDisplayFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC073_PDwithnegativeqtytest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="productCompareWithNegativeQuantity" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC073_PDwithnegativeqtytest -->
+    </classes>
+  </test> <!-- ProductDisplayFeature(failed) -->
+  <test thread-count="5" name="ShoppingCartFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC092_SCshippngtaxtest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="shoppingCartCloseWarningMesgOfCoupen" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC092_SCshippngtaxtest -->
+      <class name="com.opencart.testcase.TC088_SCupdatewthnegativeqtytest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="shopCartByAddingNegativeQtyNumber" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC088_SCupdatewthnegativeqtytest -->
+    </classes>
+  </test> <!-- ShoppingCartFeature(failed) -->
+  <test thread-count="5" name="CheckOutFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC099_COasguestusertest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="checkOutAsGuestUser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC099_COasguestusertest -->
+    </classes>
+  </test> <!-- CheckOutFeature(failed) -->
+  <test thread-count="5" name="MyAccountFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC101_MAnavigatefromordersuccesstest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="myAccountNavigationFromOrderSuccessPage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC101_MAnavigatefromordersuccesstest -->
+    </classes>
+  </test> <!-- MyAccountFeature(failed) -->
+  <test thread-count="5" name="MyAccountInfoFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC103_MAIupdateaccountdetailstest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="myAccountInfoEditAccountInfo"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC103_MAIupdateaccountdetailstest -->
+    </classes>
+  </test> <!-- MyAccountInfoFeature(failed) -->
+  <test thread-count="5" name="AddressBookFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC109_ABcreatenewaddresstest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="addressBookNewAddress" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC109_ABcreatenewaddresstest -->
+    </classes>
+  </test> <!-- AddressBookFeature(failed) -->
+  <test thread-count="5" name="DownloadsFeature(failed)">
     <classes>
       <class name="com.opencart.testcase.TC123_DLdownloadableordertest">
         <methods>
@@ -14,5 +138,70 @@
         </methods>
       </class> <!-- com.opencart.testcase.TC123_DLdownloadableordertest -->
     </classes>
-  </test> <!-- Run(failed) -->
-</suite> <!-- Failed suite [FailedTest] -->
+  </test> <!-- DownloadsFeature(failed) -->
+  <test thread-count="5" name="RewardsPointFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC126_RPrewardproductstest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="rewardPointsOfPurchasedProducts" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC126_RPrewardproductstest -->
+    </classes>
+  </test> <!-- RewardsPointFeature(failed) -->
+  <test thread-count="5" name="RecurringPaymentFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC136_RPproductpaymenttest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="recurringPaymentMakingPayment" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC136_RPproductpaymenttest -->
+    </classes>
+  </test> <!-- RecurringPaymentFeature(failed) -->
+  <test thread-count="5" name="ContactUsFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC143_CUmandtryfieldtest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="contactUsMandatoryFieldTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC143_CUmandtryfieldtest -->
+    </classes>
+  </test> <!-- ContactUsFeature(failed) -->
+  <test thread-count="5" name="HeaderMenuFooterOptionFeature(failed)">
+    <classes>
+      <class name="com.opencart.testcase.TC152_HMFaboutustest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="headerMenuAndFooterAboutUsLinkTest"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC152_HMFaboutustest -->
+      <class name="com.opencart.testcase.TC153_HMFprivercypolicylinktest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="headerMenuAndFooterPrivercyPolicyLinkTest"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC153_HMFprivercypolicylinktest -->
+      <class name="com.opencart.testcase.TC154_HMFdeliveryinfolinktest">
+        <methods>
+          <include name="setUp"/>
+          <include name="headerMenuAndFooterDeliveryInfoLinkTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC154_HMFdeliveryinfolinktest -->
+      <class name="com.opencart.testcase.TC155_HMFtermconditiontest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="headerMenuAndFooterTermsAndConditionLinkTest"/>
+        </methods>
+      </class> <!-- com.opencart.testcase.TC155_HMFtermconditiontest -->
+    </classes>
+  </test> <!-- HeaderMenuFooterOptionFeature(failed) -->
+</suite> <!-- Failed suite [opencart] -->

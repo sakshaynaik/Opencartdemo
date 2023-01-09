@@ -18,7 +18,7 @@ import com.opencart.utilities.ReadXlsxFile;
 public class TC140_NLregisteryesoptiontest extends BaseClass{
 
 	@Test(dataProvider = "NewsLetterData")
-	public void registeringWithNewsLetter(HashMap<String, String> hMap) {
+	public void registeringWithYesNewsLetter(HashMap<String, String> hMap) {
 
 		log.info("***** TC140_NLregisteryesoptiontest Started *****");
 

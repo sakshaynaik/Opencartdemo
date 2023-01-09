@@ -18,7 +18,7 @@ import com.opencart.utilities.ReadXlsxFile;
 public class TC138_NLbeforelogintest extends BaseClass {
 
 	@Test(dataProvider = "existdata")
-	public void recurringPaymentPageNavigation(HashMap<String, String> hMap) {
+	public void newsLetterBeforeLogin(HashMap<String, String> hMap) {
 
 		log.info("***** TC138_NLbeforelogintest Started *****");
 
