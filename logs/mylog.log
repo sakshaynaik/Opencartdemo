@@ -2142,4 +2142,48 @@ Telephone
 [INFO ] 2023-01-09 16:07:32.763 [main] BaseClass - ***** TC155_HMFtermconditiontest Started *****
 [INFO ] 2023-01-09 16:07:36.331 [main] BaseClass - Terms And Condition Page Title: Terms & Conditions
 [INFO ] 2023-01-09 16:07:36.332 [main] BaseClass - Test Failed:headerMenuAndFooterTermsAndConditionLinkTest
-[INFO ] 2023-01-09 16:07:37.234 [main] BaseClass - Test Completed For The Given Features
+[INFO ] 2023-01-09 16:07:37.234 [main] BaseClass - Test Completed For The Given Features[INFO ] 2023-01-11 14:24:22.853 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 14:24:24.945 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-11 14:24:27.523 [main] BaseClass - User Navigated To Product Page Title: MacBook Air
+[INFO ] 2023-01-11 14:24:28.156 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Air to your shopping cart!
+×
+[INFO ] 2023-01-11 14:24:29.694 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-11 14:25:03.177 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 14:25:04.544 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-11 14:25:06.830 [main] BaseClass - User Navigated To Product Page Title: MacBook Air
+[INFO ] 2023-01-11 14:25:07.560 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Air to your shopping cart!
+×
+[INFO ] 2023-01-11 14:25:08.226 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-11 14:28:17.964 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 14:28:19.506 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-11 14:28:23.765 [main] BaseClass - User Navigated To Product Page Title: MacBook Air
+[INFO ] 2023-01-11 14:28:24.862 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Air to your shopping cart!
+×
+[INFO ] 2023-01-11 14:28:25.476 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-11 14:28:25.592 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-11 14:28:25.592 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-11 14:30:38.704 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 14:30:40.531 [main] BaseClass - User Navigated To Search Page Title: Search - canon
+[INFO ] 2023-01-11 14:30:40.779 [main] BaseClass - User Navigated To Product Page Title: Search - canon
+[INFO ] 2023-01-11 14:32:53.822 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 14:32:55.399 [main] BaseClass - User Navigated To Search Page Title: Search - canon
+[INFO ] 2023-01-11 14:32:55.881 [main] BaseClass - User Navigated To Product Page Title: Search - canon
+[INFO ] 2023-01-11 14:40:39.671 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 14:40:41.631 [main] BaseClass - User Navigated To Search Page Title: Search - canon
+[INFO ] 2023-01-11 14:40:42.056 [main] BaseClass - User Navigated To Product Page Title: Search - canon
+[INFO ] 2023-01-11 14:42:51.324 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 14:42:53.261 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-11 14:42:58.368 [main] BaseClass - User Navigated To Product Page Title: iMac
+[INFO ] 2023-01-11 14:42:59.822 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added iMac to your shopping cart!
+×
+[INFO ] 2023-01-11 14:43:00.625 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-11 14:43:00.728 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-11 14:43:00.730 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-11 14:47:00.155 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 14:47:01.662 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-11 14:47:06.495 [main] BaseClass - User Navigated To Product Page Title: iMac
+[INFO ] 2023-01-11 14:47:07.873 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added iMac to your shopping cart!
+×
+[INFO ] 2023-01-11 14:47:08.665 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-11 14:47:08.759 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-11 14:47:08.759 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****

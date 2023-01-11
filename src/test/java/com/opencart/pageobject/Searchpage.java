@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.opencart.utilities.ReadAction;
 import com.opencart.utilities.ReadJavascriptExecutor;
 
 public class Searchpage {
@@ -103,8 +104,17 @@ public class Searchpage {
 
 	@FindBy(xpath = "//*[@id='content']/div[3]/div[4]/div")
 	private WebElement prdmacpro;
+	
+	@FindBy(xpath = "//div[@class='row']/div/div[@class='product-thumb']//h4/a")
+	private List<WebElement> elements;
 
 /////////////////////////////////////////////////////////////////////////////////
+	
+	public Productpage clickOnDynamicWebElement(String text) {
+
+		ReadAction.clickOnDynamicElement(elements , text);
+        return (new Productpage(ldriver));
+	}
 
 	public Productpage clickOnAppleCinemaLink() {
 

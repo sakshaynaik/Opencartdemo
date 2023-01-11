@@ -67,13 +67,9 @@ public class TC02_DDLoginFunctionTest extends Baseclassdatadriven {
 			Assert.assertTrue(accntpg.isDisplayedAccountLinkOnBedcrum());
 			log.info("Accont Link Displayed On BedCrum Of Accounts Page");
 
-			accntpg.clickOnMyAccountDropMenu();
 			convactualresult = accntpg.isDisplayedLogoutOption();
 			Assert.assertTrue(convactualresult);
-			log.info("Logout Option Displayed On MyAccount Drop Menu");
-
-			accntpg.clickLogoutOption();
-			log.info("User Logged Out From MyAccounts Page");
+			log.info("Logout Option Displayed On Accounts Page");
 
 		} catch (Throwable e) {
 			

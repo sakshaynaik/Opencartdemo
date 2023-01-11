@@ -53,5 +53,12 @@
 			"productname": "iMac",
 			"parentCategryName": "Desktops"
 		}
+	],
+	"dynamicprduct": [
+		{
+			"Browser": "Chrome",
+			"mutiprdt": "Mac",
+			"singleprdt": "iMac"
+		}
 	]
 }

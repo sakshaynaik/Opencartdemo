@@ -123,6 +123,9 @@ public class Productpage {
 	@FindBy(id = "input-quantity")
 	private WebElement qtybox;
 
+	@FindBy(xpath = "//body//div[@id='product-search']//div[@id='content']//div//div//div//div//button[1]")
+	private WebElement addtocartforcanon;
+	
 	@FindBy(xpath = "//*[@id='button-cart']")
 	private WebElement addtocart;
 
@@ -199,6 +202,11 @@ public class Productpage {
 	private WebElement checkoutlink;
 
 //////////////////////////////////////////////////////////////////////////////////
+	
+	public void clickOnAddToCartCanonPrdt() {
+
+		addtocartforcanon.click();
+	}
 
 	public Checkoutpage clickOnCheckoutLinkFromCartBox() {
 

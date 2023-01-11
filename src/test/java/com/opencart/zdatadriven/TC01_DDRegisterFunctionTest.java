@@ -74,7 +74,8 @@ public class TC01_DDRegisterFunctionTest extends Baseclassdatadriven {
 			log.info("Account Success Message Displayed: " + sucespg.getSubAccountSuccessMsg());
 
 			Accountpage accpg = sucespg.clickOnContinueButton();
-			Assert.assertTrue(accpg.isDisplayedEditInfoLink());
+			convertedactres = accpg.isDisplayedEditInfoLink();
+			Assert.assertTrue(convertedactres);
 			log.info("Edit your account information Link Displayed On WebPage");
 
 			Assert.assertEquals(accpg.getAccountPageTitle(), config.getAccountPageTitle());
@@ -82,12 +83,7 @@ public class TC01_DDRegisterFunctionTest extends Baseclassdatadriven {
 
 			Assert.assertTrue(accpg.isDisplayedAccountLinkOnBedcrum());
 			log.info("Account Link Displayed On Bedcrum");
-
-			convertedactres = accpg.isDisplayedEditInfoLink();
-			accpg.clickOnMyAccountDropMenu();
-			accpg.clickLogoutOption();
-			log.info("User Logged Out ");
-
+			
 		} catch (Throwable e) {
 
 			convertedactres = false;

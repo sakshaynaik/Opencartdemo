@@ -139,7 +139,7 @@ public class Loginpage {
 		loginbttn.click();
 		return (new Accountpage(ldriver));
 	}
-	
+
 	public void drawBorderEmailSentMsgForFP() {
 
 		ReadJavascriptExecutor.drawBorder(forgotpasssuccesmsg, ldriver);

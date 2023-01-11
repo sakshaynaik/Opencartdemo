@@ -107,5 +107,12 @@ public class ReadJavascriptExecutor {
 		js.executeScript("arguments[0].click();", element);
 
 	}
+	
+	// type web element
+	public static void typeElementByJavaScript(WebElement element, WebDriver driver, String textToBeTyped) {
+		JavascriptExecutor jse = ((JavascriptExecutor)driver);
+		jse.executeScript("arguments[0].value='"+textToBeTyped+"'",element);
+
+	}
 
 }

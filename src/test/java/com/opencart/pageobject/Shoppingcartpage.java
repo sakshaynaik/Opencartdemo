@@ -1,5 +1,7 @@
 package com.opencart.pageobject;
 
+import java.util.List;
+
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.opencart.utilities.ReadAction;
 import com.opencart.utilities.ReadJavascriptExecutor;
 
 public class Shoppingcartpage {
@@ -120,8 +123,16 @@ public class Shoppingcartpage {
 
 	@FindBy(xpath = "//*[@id='content']/form/div/table/tbody/tr/td[1]/a/img")
 	private WebElement imgonshopcart;
+	
+	@FindBy(xpath = "//table[@class='table table-bordered']//tbody/tr//td[@class='text-left'][1]/a")
+	private List<WebElement> elements;
 
 	///////////////////////////////////////////////////////////////////////////////
+	
+	public boolean isDisplayedDynamicWebElement(String text) {
+
+		return (ReadAction.isDisplayedDynamicElement(elements , text));
+	}
 
 	public Productpage clickOnOrderedProductImage() {
 

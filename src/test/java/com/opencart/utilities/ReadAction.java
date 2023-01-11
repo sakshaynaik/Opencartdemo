@@ -814,4 +814,28 @@ public class ReadAction {
 		return currentDate;
 	}
 
+	public static void clickOnDynamicElement(List<WebElement> elements, String text) {
+
+		for (WebElement element : elements) {
+
+			if (element.getText().equals(text)) {
+				element.click();
+				break;
+			}
+		}
+	}
+
+	public static boolean isDisplayedDynamicElement(List<WebElement> elements, String text) {
+
+		boolean flag = false;
+
+		for (WebElement element : elements) {
+
+			if (element.getText().equals(text)) {
+				flag = true;
+				break;
+			}
+		}
+		return flag;
+	}
 }
