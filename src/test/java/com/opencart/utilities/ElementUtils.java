@@ -99,7 +99,7 @@ public class ElementUtils {
 		webelement.sendKeys(value);
 	}
 	
-	public static void clickOnDynamicElement(List<WebElement> elements, String text) {
+	public void clickOnDynamicElement(List<WebElement> elements, String text) {
 
 		for (WebElement element : elements) {
 
@@ -110,7 +110,7 @@ public class ElementUtils {
 		}
 	}
 
-	public static boolean isDisplayedDynamicElement(List<WebElement> elements, String text) {
+	public boolean isDisplayedDynamicElement(List<WebElement> elements, String text) {
 
 		boolean flag = false;
 

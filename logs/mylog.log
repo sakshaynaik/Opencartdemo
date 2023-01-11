@@ -2363,3 +2363,11 @@ Telephone
 [INFO ] 2023-01-11 19:59:49.863 [main] BaseClass - User Logged Into Registration Page: Register Account
 [INFO ] 2023-01-11 19:59:50.256 [main] BaseClass - Place Holder For First Name Found :First Name
 [INFO ] 2023-01-11 19:59:50.256 [main] BaseClass - ***** TC013_RFplaceholdertest Completed *****
+[INFO ] 2023-01-11 20:10:17.131 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 20:10:19.548 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-11 20:10:22.542 [main] BaseClass - User Navigated To Product Page Title: MacBook Pro
+[INFO ] 2023-01-11 20:10:23.234 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Pro to your shopping cart!
+×
+[INFO ] 2023-01-11 20:10:24.223 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-11 20:10:24.324 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-11 20:10:24.324 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
