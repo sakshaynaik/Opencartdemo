@@ -496,7 +496,7 @@ public class Homepage {
 
 		return (ldriver.getTitle());
 	}
-	
+
 	public void clearSearchTextField() {
 
 		searchtxtfld.clear();

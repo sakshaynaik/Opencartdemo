@@ -2187,3 +2187,179 @@ Telephone
 [INFO ] 2023-01-11 14:47:08.665 [main] BaseClass - ShopCart Page Title: Shopping Cart
 [INFO ] 2023-01-11 14:47:08.759 [main] BaseClass - Product Displayed On The Shopping Cart Page
 [INFO ] 2023-01-11 14:47:08.759 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-11 17:14:47.327 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 17:14:49.409 [main] BaseClass - User Clicked On Wishlist Header Link And Diverted To A New Tab
+[INFO ] 2023-01-11 17:14:50.429 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-11 17:14:50.694 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-11 17:14:51.638 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-11 17:14:51.663 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-11 17:14:54.568 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-11 17:14:54.598 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-11 17:14:54.745 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-11 17:14:54.835 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-11 17:14:56.672 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 17:14:58.332 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 17:14:58.435 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 17:15:00.175 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 17:15:03.457 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 17:15:03.556 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 17:15:03.556 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 17:18:15.691 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 17:18:16.265 [main] BaseClass - User Clicked On Wishlist Header Link And Diverted To A New Tab
+[INFO ] 2023-01-11 17:18:17.087 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-11 17:18:17.264 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-11 17:18:17.697 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-11 17:18:17.725 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-11 17:18:19.144 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-11 17:18:19.169 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-11 17:18:19.307 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-11 17:18:19.399 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-11 17:18:20.871 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 17:18:21.807 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 17:18:21.877 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 17:18:23.421 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 17:18:23.983 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 17:18:24.071 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 17:18:24.071 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 17:19:29.215 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 17:19:29.929 [main] BaseClass - User Clicked On Wishlist Header Link And Diverted To A New Tab
+[INFO ] 2023-01-11 17:19:30.642 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-11 17:19:30.821 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-11 17:19:31.250 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-11 17:19:31.283 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-11 17:19:32.651 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-11 17:19:32.676 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-11 17:19:32.817 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-11 17:19:32.918 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-11 17:19:34.090 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 17:19:34.647 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 17:19:34.713 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 17:19:35.910 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 17:19:36.386 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 17:19:36.468 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 17:19:36.469 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 17:21:08.161 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 17:21:08.723 [main] BaseClass - User Clicked On Wishlist Header Link And Diverted To A New Tab
+[INFO ] 2023-01-11 17:21:09.594 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-11 17:21:09.758 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-11 17:21:10.139 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-11 17:21:10.176 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-11 17:21:11.466 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-11 17:21:11.497 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-11 17:21:11.661 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-11 17:21:11.778 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-11 17:21:12.866 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 17:21:13.392 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 17:21:13.466 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 17:21:14.726 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 17:21:15.177 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 17:21:15.263 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 17:21:15.264 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 17:22:28.443 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 17:22:28.973 [main] BaseClass - User Clicked On Wishlist Header Link And Diverted To A New Tab
+[INFO ] 2023-01-11 17:22:29.715 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-11 17:22:29.881 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-11 17:22:30.264 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-11 17:22:30.302 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-11 17:22:31.585 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-11 17:22:31.609 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-11 17:22:31.739 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-11 17:22:31.844 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-11 17:22:32.968 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 17:22:33.515 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 17:22:33.597 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 17:22:34.860 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 17:22:35.345 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 17:22:35.437 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 17:22:35.438 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 17:31:50.569 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 17:31:56.864 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-11 17:32:04.455 [main] BaseClass - User Navigated To Product Page Title: iMac
+[INFO ] 2023-01-11 17:32:05.084 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added iMac to your shopping cart!
+×
+[INFO ] 2023-01-11 17:32:09.060 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-11 17:32:09.143 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-11 17:32:09.144 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-11 17:33:05.431 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 17:33:06.763 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-11 17:33:09.114 [main] BaseClass - User Navigated To Product Page Title: MacBook Pro
+[INFO ] 2023-01-11 17:33:09.702 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Pro to your shopping cart!
+×
+[INFO ] 2023-01-11 17:33:10.369 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-11 17:33:10.484 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-11 17:33:10.484 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-11 17:33:42.854 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 17:33:44.037 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-11 17:33:44.305 [main] BaseClass - User Navigated To Product Page Title: Search - Mac
+[INFO ] 2023-01-11 17:34:44.037 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 17:34:45.226 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-11 17:34:45.543 [main] BaseClass - User Navigated To Product Page Title: Search - Mac
+[INFO ] 2023-01-11 17:35:36.184 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-11 17:35:37.704 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-11 17:35:40.034 [main] BaseClass - User Navigated To Product Page Title: MacBook Pro
+[INFO ] 2023-01-11 17:35:41.034 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Pro to your shopping cart!
+×
+[INFO ] 2023-01-11 17:35:41.766 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-11 17:35:41.892 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-11 17:35:41.893 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-11 19:53:21.174 [main] BaseClass - ***** TC003_RFallfieldtest Started *****
+[INFO ] 2023-01-11 19:53:24.899 [main] BaseClass - Register Option Displayed In MyAccount Drop Menu
+[INFO ] 2023-01-11 19:53:29.087 [main] BaseClass - User Logged Into Registration Page: Register Account
+[INFO ] 2023-01-11 19:53:39.869 [main] BaseClass - User Logged Into AccountSuccess Page: Your Account Has Been Created!
+[INFO ] 2023-01-11 19:53:40.030 [main] BaseClass - Logout Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-11 19:53:40.125 [main] BaseClass - Success Link Displayed On Bedcrum
+[INFO ] 2023-01-11 19:53:40.314 [main] BaseClass - Account Success Message Displayed: Congratulations! Your new account has been successfully created!
+[INFO ] 2023-01-11 19:53:41.330 [main] BaseClass - Edit your account information Link Displayed On WebPage
+[INFO ] 2023-01-11 19:53:41.354 [main] BaseClass - User Logged Into Account Page: My Account
+[INFO ] 2023-01-11 19:53:41.452 [main] BaseClass - Account Link Displayed On Bedcrum
+[INFO ] 2023-01-11 19:53:41.453 [main] BaseClass - ***** TC003_RFallfieldtest Completed *****
+[INFO ] 2023-01-11 19:54:54.560 [main] BaseClass - ***** TC003_RFallfieldtest Started *****
+[INFO ] 2023-01-11 19:54:55.925 [main] BaseClass - Register Option Displayed In MyAccount Drop Menu
+[INFO ] 2023-01-11 19:54:58.363 [main] BaseClass - User Logged Into Registration Page: Register Account
+[INFO ] 2023-01-11 19:55:04.758 [main] BaseClass - User Logged Into AccountSuccess Page: Your Account Has Been Created!
+[INFO ] 2023-01-11 19:55:04.925 [main] BaseClass - Logout Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-11 19:55:05.062 [main] BaseClass - Success Link Displayed On Bedcrum
+[INFO ] 2023-01-11 19:55:05.294 [main] BaseClass - Account Success Message Displayed: Congratulations! Your new account has been successfully created!
+[INFO ] 2023-01-11 19:55:05.939 [main] BaseClass - Edit your account information Link Displayed On WebPage
+[INFO ] 2023-01-11 19:55:05.963 [main] BaseClass - User Logged Into Account Page: My Account
+[INFO ] 2023-01-11 19:55:06.069 [main] BaseClass - Account Link Displayed On Bedcrum
+[INFO ] 2023-01-11 19:55:06.069 [main] BaseClass - ***** TC003_RFallfieldtest Completed *****
+[INFO ] 2023-01-11 19:56:05.306 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 19:56:13.344 [main] BaseClass - User Clicked On Wishlist Header Link And Diverted To A New Tab
+[INFO ] 2023-01-11 19:56:15.903 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-11 19:56:16.287 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-11 19:56:17.250 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-11 19:56:17.292 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-11 19:56:21.662 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-11 19:56:21.697 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-11 19:56:21.874 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-11 19:56:21.997 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-11 19:56:23.445 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 19:56:24.062 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 19:56:24.135 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 19:56:25.355 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 19:56:25.826 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 19:56:25.920 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 19:56:25.920 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 19:56:53.718 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 19:56:54.274 [main] BaseClass - User Clicked On Wishlist Header Link And Diverted To A New Tab
+[INFO ] 2023-01-11 19:56:55.233 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-11 19:56:55.420 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-11 19:56:55.856 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-11 19:56:55.894 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-11 19:56:57.233 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-11 19:56:57.267 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-11 19:56:57.410 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-11 19:56:57.509 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-11 19:56:58.569 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 19:56:59.040 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 19:56:59.120 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 19:57:00.289 [main] BaseClass - Success Message Of Wishlist added Displayed :true
+[INFO ] 2023-01-11 19:57:00.801 [main] BaseClass - WishList Page Title: My Wish List
+[INFO ] 2023-01-11 19:57:00.897 [main] BaseClass - IPhone Image Displayed On Wishlist Page
+[INFO ] 2023-01-11 19:57:00.898 [main] BaseClass - ***** TC084_WLonnewwindowtest Completed *****
+[INFO ] 2023-01-11 19:59:43.604 [main] BaseClass - ***** TC013_RFplaceholdertest Started *****
+[INFO ] 2023-01-11 19:59:45.771 [main] BaseClass - Register Option Displayed In MyAccount Drop Menu
+[INFO ] 2023-01-11 19:59:49.863 [main] BaseClass - User Logged Into Registration Page: Register Account
+[INFO ] 2023-01-11 19:59:50.256 [main] BaseClass - Place Holder For First Name Found :First Name
+[INFO ] 2023-01-11 19:59:50.256 [main] BaseClass - ***** TC013_RFplaceholdertest Completed *****

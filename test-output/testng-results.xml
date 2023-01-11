@@ -2,31 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-11T14:46:46 IST" name="Default suite" finished-at="2023-01-11T14:47:09 IST" duration-ms="22892">
+  <suite started-at="2023-01-11T19:59:30 IST" name="Default suite" finished-at="2023-01-11T19:59:53 IST" duration-ms="22969">
     <groups>
     </groups>
-    <test started-at="2023-01-11T14:46:46 IST" name="Default test" finished-at="2023-01-11T14:47:09 IST" duration-ms="22892">
-      <class name="com.opencart.testcase.TC156_SFforrandomprdttest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC156_SFforrandomprdttest@655ef322]" started-at="2023-01-11T14:46:46 IST" name="setUp" finished-at="2023-01-11T14:47:00 IST" duration-ms="13170" status="PASS">
+    <test started-at="2023-01-11T19:59:30 IST" name="Default test" finished-at="2023-01-11T19:59:53 IST" duration-ms="22969">
+      <class name="com.opencart.testcase.TC013_RFplaceholdertest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC013_RFplaceholdertest@4566d049]" started-at="2023-01-11T19:59:30 IST" name="setUp" finished-at="2023-01-11T19:59:43 IST" duration-ms="13339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchForDynamicProduct(java.lang.String)[pri:0, instance:com.opencart.testcase.TC156_SFforrandomprdttest@655ef322]" started-at="2023-01-11T14:47:00 IST" name="searchForDynamicProduct" data-provider="validcredentials" finished-at="2023-01-11T14:47:08 IST" duration-ms="8640" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome,Mac,iMac]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="resgistringtestForPlaceholder()[pri:0, instance:com.opencart.testcase.TC013_RFplaceholdertest@4566d049]" started-at="2023-01-11T19:59:43 IST" name="resgistringtestForPlaceholder" finished-at="2023-01-11T19:59:50 IST" duration-ms="6696" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchForDynamicProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC156_SFforrandomprdttest@655ef322]" started-at="2023-01-11T14:47:08 IST" name="tearDown" finished-at="2023-01-11T14:47:09 IST" duration-ms="849" status="PASS">
+        </test-method> <!-- resgistringtestForPlaceholder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC013_RFplaceholdertest@4566d049]" started-at="2023-01-11T19:59:51 IST" name="tearDown" finished-at="2023-01-11T19:59:53 IST" duration-ms="2027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.opencart.testcase.TC156_SFforrandomprdttest -->
+      </class> <!-- com.opencart.testcase.TC013_RFplaceholdertest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -28,14 +28,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ElementUtils {
 
 	public WebDriver ldriver;
-	public long Explicit_Wait = 30;
+	private static final long durationInSeconds = 30;
 
 	public ElementUtils(WebDriver rdriver) {
 
 		this.ldriver = rdriver;
 	}
 
-	public WebElement waitForElement(WebElement element, long durationInSeconds) {
+	public WebElement waitForElement(WebElement element) {
 
 		WebElement webElement = null;
 
@@ -50,7 +50,7 @@ public class ElementUtils {
 
 	}
 
-	public Alert waitForAlert(long durationInSeconds) {
+	public Alert waitForAlert() {
 
 		Alert alert = null;
 
@@ -65,7 +65,7 @@ public class ElementUtils {
 
 	}
 
-	public WebElement waitForVisibilityOfElement(WebElement element, long durationInSeconds) {
+	public WebElement waitForVisibilityOfElement(WebElement element) {
 
 		WebElement webElement = null;
 
@@ -80,9 +80,9 @@ public class ElementUtils {
 
 	}
 
-	public void click(WebElement element, long durationInSeconds) {
+	public void click(WebElement element) {
 
-		WebElement webelement = waitForElement(element, durationInSeconds);
+		WebElement webelement = waitForElement(element);
 		try {
 			webelement.click();
 		} catch (WebDriverException e) {
@@ -91,100 +91,170 @@ public class ElementUtils {
 		}
 	}
 
-	public void sendKeys(WebElement element, String value, long durationInSeconds) {
+	public void sendKeys(WebElement element, String value) {
 
-		WebElement webelement = waitForElement(element, durationInSeconds);
+		WebElement webelement = waitForElement(element);
 		webelement.click();
 		webelement.clear();
 		webelement.sendKeys(value);
 	}
+	
+	public static void clickOnDynamicElement(List<WebElement> elements, String text) {
 
-	public String getText(WebElement element, long durationInSeconds) {
+		for (WebElement element : elements) {
 
-		WebElement webelement = waitForElement(element, durationInSeconds);
+			if (element.getText().equals(text)) {
+				element.click();
+				break;
+			}
+		}
+	}
+
+	public static boolean isDisplayedDynamicElement(List<WebElement> elements, String text) {
+
+		boolean flag = false;
+
+		for (WebElement element : elements) {
+
+			if (element.getText().equals(text)) {
+				flag = true;
+				break;
+			}
+		}
+		return flag;
+	}
+
+	public String getText(WebElement element) {
+
+		WebElement webelement = waitForElement(element);
 		return (webelement.getText());
 	}
 
-	public boolean isDisplayed(WebElement element, long durationInSeconds) {
+	public boolean isDisplayed(WebElement element) {
 		try {
-			WebElement webelement = waitForVisibilityOfElement(element, durationInSeconds);
+			WebElement webelement = waitForVisibilityOfElement(element);
 			return (webelement.isDisplayed());
 		} catch (Throwable e) {
 			return false;
 		}
 	}
 
-	public boolean isSelected(WebElement element, long durationInSeconds) {
+	public boolean isSelected(WebElement element) {
 		try {
-			WebElement webelement = waitForVisibilityOfElement(element, durationInSeconds);
+			WebElement webelement = waitForVisibilityOfElement(element);
 			return (webelement.isSelected());
 		} catch (Throwable e) {
 			return false;
 		}
 	}
 
-	public boolean isEnabled(WebElement element, long durationInSeconds) {
+	public boolean isEnabled(WebElement element) {
 		try {
-			WebElement webelement = waitForVisibilityOfElement(element, durationInSeconds);
+			WebElement webelement = waitForVisibilityOfElement(element);
 			return (webelement.isEnabled());
 		} catch (Throwable e) {
 			return false;
 		}
 	}
+	
+	public void switchWindowByTitle(String windowTitle, int count) {
 
-	public void selectByVisibleText(WebElement element, String dropDownOption, long durationInSeconds) {
+		Set<String> windowList = ldriver.getWindowHandles();
 
-		WebElement webelement = waitForElement(element, durationInSeconds);
+		String[] array = windowList.toArray(new String[0]);
+
+		ldriver.switchTo().window(array[count - 1]);
+	}
+
+	public void switchToNewWindow() {
+
+		Set<String> s = ldriver.getWindowHandles();
+		Object popup[] = s.toArray();
+		ldriver.switchTo().window(popup[1].toString());
+	}
+	
+	public void switchToFrameByIndex(int index) {
+
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(durationInSeconds));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(index));
+	}
+
+	public void switchToFrameById(String id_name) {
+
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(durationInSeconds));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(id_name));
+	}
+
+	public void switchToFrameByWebElement(WebElement element) {
+
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(durationInSeconds));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(element));
+	}
+
+	public int getSize(List<WebElement> element) {
+
+		return (element.size());
+	}
+
+	public String getAttribute(WebElement element, String value) {
+
+		WebElement webelement = waitForVisibilityOfElement(element);
+		return (webelement.getAttribute(value));
+	}
+
+	public void selectByVisibleText(WebElement element, String dropDownOption) {
+
+		WebElement webelement = waitForElement(element);
 		Select select = new Select(webelement);
 		select.selectByVisibleText(dropDownOption);
 	}
 
-	public void selectByIndex(WebElement element, int index, long durationInSeconds) {
+	public void selectByIndex(WebElement element, int index) {
 
-		WebElement webelement = waitForElement(element, durationInSeconds);
+		WebElement webelement = waitForElement(element);
 		Select select = new Select(webelement);
 		select.selectByIndex(index);
 	}
 
-	public void selectByValue(WebElement element, String value, long durationInSeconds) {
+	public void selectByValue(WebElement element, String value) {
 
-		WebElement webelement = waitForElement(element, durationInSeconds);
+		WebElement webelement = waitForElement(element);
 		Select select = new Select(webelement);
 		select.selectByValue(value);
 	}
 
-	public void deselectAll(WebElement element, long durationInSeconds) {
+	public void deselectAll(WebElement element) {
 
-		WebElement webelement = waitForElement(element, durationInSeconds);
+		WebElement webelement = waitForElement(element);
 		Select select = new Select(webelement);
 		select.deselectAll();
 	}
 
-	public void deselectByVisibleText(WebElement element, String dropDownOption, long durationInSeconds) {
+	public void deselectByVisibleText(WebElement element, String dropDownOption) {
 
-		WebElement webelement = waitForElement(element, durationInSeconds);
+		WebElement webelement = waitForElement(element);
 		Select select = new Select(webelement);
 		select.deselectByVisibleText(dropDownOption);
 	}
 
-	public void deselectByIndex(WebElement element, int index, long durationInSeconds) {
+	public void deselectByIndex(WebElement element, int index) {
 
-		WebElement webelement = waitForElement(element, durationInSeconds);
+		WebElement webelement = waitForElement(element);
 		Select select = new Select(webelement);
 		select.deselectByIndex(index);
 	}
 
-	public void deselectByValue(WebElement element, String value, long durationInSeconds) {
+	public void deselectByValue(WebElement element, String value) {
 
-		WebElement webelement = waitForElement(element, durationInSeconds);
+		WebElement webelement = waitForElement(element);
 		Select select = new Select(webelement);
 		select.deselectByValue(value);
 	}
 
-	public boolean isMultiple(WebElement element, long durationInSeconds) {
+	public boolean isMultiple(WebElement element) {
 
 		try {
-			WebElement webelement = waitForVisibilityOfElement(element, durationInSeconds);
+			WebElement webelement = waitForVisibilityOfElement(element);
 			Select select = new Select(webelement);
 			return (select.isMultiple());
 		} catch (Throwable e) {
@@ -192,37 +262,37 @@ public class ElementUtils {
 		}
 	}
 
-	public void mouseHoverAndClick(WebElement element, long durationInSeconds) {
+	public void mouseHoverAndClick(WebElement element) {
 
-		WebElement webelement = waitForVisibilityOfElement(element, durationInSeconds);
+		WebElement webelement = waitForVisibilityOfElement(element);
 		Actions actions = new Actions(ldriver);
 		actions.moveToElement(webelement).click().build().perform();
 	}
 
-	public void actionsClick(WebElement element, long durationInSeconds) {
+	public void actionsClick(WebElement element) {
 
-		WebElement webelement = waitForVisibilityOfElement(element, durationInSeconds);
+		WebElement webelement = waitForVisibilityOfElement(element);
 		Actions actions = new Actions(ldriver);
 		actions.click(webelement).build().perform();
 	}
 
-	public void actionsMouseHover(WebElement element, long durationInSeconds) {
+	public void actionsMouseHover(WebElement element) {
 
-		WebElement webelement = waitForVisibilityOfElement(element, durationInSeconds);
+		WebElement webelement = waitForVisibilityOfElement(element);
 		Actions actions = new Actions(ldriver);
 		actions.moveToElement(webelement).build().perform();
 	}
 
-	public void actionsContextClick(WebElement element, long durationInSeconds) {
+	public void actionsContextClick(WebElement element) {
 
-		WebElement webelement = waitForVisibilityOfElement(element, durationInSeconds);
+		WebElement webelement = waitForVisibilityOfElement(element);
 		Actions actions = new Actions(ldriver);
 		actions.contextClick(webelement).build().perform();
 	}
 
-	public void actionsDoubleClick(WebElement element, long durationInSeconds) {
+	public void actionsDoubleClick(WebElement element) {
 
-		WebElement webelement = waitForVisibilityOfElement(element, durationInSeconds);
+		WebElement webelement = waitForVisibilityOfElement(element);
 		Actions actions = new Actions(ldriver);
 		actions.doubleClick(webelement).build().perform();
 	}
@@ -239,83 +309,49 @@ public class ElementUtils {
 		actions.dragAndDropBy(element, x, y).build().perform();
 	}
 
-	public void actionsKeyUpAndKeyDown(WebElement element, long durationInSeconds) {
+	public void actionsKeyDownAndKeyUp(WebElement element) {
 
-		WebElement webelement = waitForVisibilityOfElement(element, durationInSeconds);
+		WebElement webelement = waitForVisibilityOfElement(element);
 		Actions actions = new Actions(ldriver);
 		actions.keyDown(Keys.CONTROL).click(webelement).keyUp(Keys.CONTROL).build().perform();
 	}
 
-	public void actionsTargetSendKeys(WebElement element, String value, long durationInSeconds) {
+	public void actionsTargetSendKeys(WebElement element, String value) {
 
-		WebElement webelement = waitForVisibilityOfElement(element, durationInSeconds);
+		WebElement webelement = waitForVisibilityOfElement(element);
 		Actions actions = new Actions(ldriver);
 		actions.sendKeys(webelement, value).build().perform();
 	}
 
-	public void alertAccept(long durationInSeconds) {
+	public void alertAccept() {
 
-		Alert alert = waitForAlert(durationInSeconds);
+		Alert alert = waitForAlert();
 		alert.accept();
 
 	}
 
-	public void alertDismiss(long durationInSeconds) {
+	public void alertDismiss() {
 
-		Alert alert = waitForAlert(durationInSeconds);
+		Alert alert = waitForAlert();
 		alert.dismiss();
 
 	}
 
-	public String alertGetText(long durationInSeconds) {
+	public String alertGetText() {
 
-		Alert alert = waitForAlert(durationInSeconds);
+		Alert alert = waitForAlert();
 		return alert.getText();
 	}
 
-	public void alertSendKeys(String value, long durationInSeconds) {
+	public void alertSendKeys(String value) {
 
-		Alert alert = waitForAlert(durationInSeconds);
+		Alert alert = waitForAlert();
 		alert.sendKeys(value);
-	}
-
-	public void switchToFrameByIndex(int index, long durationInSeconds) {
-
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(durationInSeconds));
-		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(index));
-	}
-
-	public void switchToFrameById(String id_name, long durationInSeconds) {
-
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(durationInSeconds));
-		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(id_name));
-	}
-
-	public void switchToFrameByWebElement(WebElement element, long durationInSeconds) {
-
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(durationInSeconds));
-		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(element));
 	}
 
 	public void switchToDefaultFrame() {
 
 		ldriver.switchTo().defaultContent();
-	}
-
-	public void switchWindowByTitle(String windowTitle, int count) {
-
-		Set<String> windowList = ldriver.getWindowHandles();
-
-		String[] array = windowList.toArray(new String[0]);
-
-		ldriver.switchTo().window(array[count - 1]);
-	}
-
-	public void switchToNewWindow() {
-
-		Set<String> s = ldriver.getWindowHandles();
-		Object popup[] = s.toArray();
-		ldriver.switchTo().window(popup[1].toString());
 	}
 
 	public void switchToOldWindow() {
@@ -481,29 +517,14 @@ public class ElementUtils {
 		jse.executeScript("arguments[0].value='" + textToBeTyped + "'", element);
 
 	}
+	
+	public void closeBrowser() {
 
-	public static void clickOnDynamicElement(List<WebElement> elements, String text) {
-
-		for (WebElement element : elements) {
-
-			if (element.getText().equals(text)) {
-				element.click();
-				break;
-			}
-		}
+		ldriver.close();
 	}
 
-	public static boolean isDisplayedDynamicElement(List<WebElement> elements, String text) {
+	public void quiteBrowser() {
 
-		boolean flag = false;
-
-		for (WebElement element : elements) {
-
-			if (element.getText().equals(text)) {
-				flag = true;
-				break;
-			}
-		}
-		return flag;
+		ldriver.quit();
 	}
 }

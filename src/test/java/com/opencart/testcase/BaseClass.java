@@ -61,23 +61,18 @@ public class BaseClass {
 
 		}
 
-		// window Maximized
 		driver.manage().window().maximize();
 
-		// Implicit Wait For 10 Second
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		// PageLoad Timeout For 10 Second
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 
-		// Navigate To WebPage URL
 		driver.get(URL);
 	}
 
 	@AfterClass(groups = { "Smoke", "Regression" })
 	public void tearDown() {
 
-		// Drivers Closed
 		driver.quit();
 
 	}
@@ -141,16 +136,12 @@ public class BaseClass {
 
 		}
 
-		// window Maximized
 		driver.manage().window().maximize();
 
-		// Implicit Wait For 10 Second
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		// PageLoad Timeout For 10 Second
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 
-		// Navigate To WebPage URL
 		driver.get(URL);
 	}
 }
