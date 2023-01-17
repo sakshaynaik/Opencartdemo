@@ -107,8 +107,14 @@ public class Searchpage {
 	
 	@FindBy(xpath = "//div[@class='row']/div/div[@class='product-thumb']//h4/a")
 	private List<WebElement> elements;
+	
 
 /////////////////////////////////////////////////////////////////////////////////
+	
+	public boolean isDisplayedDynamicWebElement(String text) {
+
+        return (ReadAction.isDisplayedDynamicElement(elements , text));
+	}
 	
 	public Productpage clickOnDynamicWebElement(String text) {
 
@@ -301,6 +307,7 @@ public class Searchpage {
 
 	public void enterSearchCriteriaField(String data) {
 
+		searchcrteria.clear();
 		searchcrteria.sendKeys(data);
 	}
 

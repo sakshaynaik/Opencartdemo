@@ -35,15 +35,15 @@ public class TC03_DDCheckoutFunctionTest extends Baseclassdatadriven {
 		Assert.assertEquals(loginpg.getLoginPageTitle(), config.getLoginPageTitle());
 		log.info("Navigated To Login Page: " + loginpg.getLoginPageTitle());
 
-		hmpg.enterSearchTextField(hMap.get("Product"));
+		hmpg.enterSearchTextField(hMap.get("Brand"));
 		Searchpage srchpg = hmpg.clickOnSearchButton();
 		Assert.assertTrue(srchpg.getSearchPageTitle().contains(config.getSearchPageTitle()));
 		log.info("User Navigated To Search Page Title: " + srchpg.getSearchPageTitle());
 
-		Assert.assertTrue(srchpg.isDispalyediMacFromSearchCriteria());
-		log.info("iMac Was Displayed On Search Page: " + srchpg.getiMacFromSearchCriteria());
+		Assert.assertTrue(srchpg.isDisplayedDynamicWebElement(hMap.get("Product")));
+		log.info("Product Was Displayed On Search Page: " + srchpg.isDisplayedDynamicWebElement("Product"));
 
-		Productpage prdtpg = srchpg.clickOniMacImg();
+		Productpage prdtpg = srchpg.clickOnDynamicWebElement(hMap.get("Product"));
 		log.info("User Navigated To Product Page Title: " + prdtpg.getProductPageTitle());
 
 		Assert.assertTrue(prdtpg.isDispalyedOfProductAvailabity());

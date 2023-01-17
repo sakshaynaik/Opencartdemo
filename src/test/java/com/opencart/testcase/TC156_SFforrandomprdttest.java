@@ -42,6 +42,9 @@ public class TC156_SFforrandomprdttest extends BaseClass {
 		
 		Assert.assertTrue(shopcart.isDisplayedDynamicWebElement(data[2]));
 		log.info("Product Displayed On The Shopping Cart Page");
+		
+		shopcart.clickOnRemoveButtonFromCartPage();
+		log.info("Product Successfully Removed From Shopping CartPage Table");
 
 		log.info("***** TC156_SFforrandomprdttest Completed *****");
 

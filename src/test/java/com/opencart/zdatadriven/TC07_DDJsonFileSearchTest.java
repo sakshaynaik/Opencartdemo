@@ -1,4 +1,4 @@
-package com.opencart.testcase;
+package com.opencart.zdatadriven;
 
 import java.io.FileReader;
 
@@ -12,21 +12,22 @@ import org.testng.annotations.Test;
 import com.opencart.pageobject.Accountpage;
 import com.opencart.pageobject.Homepage;
 import com.opencart.pageobject.Loginpage;
+import com.opencart.pageobject.Productpage;
 import com.opencart.pageobject.Searchpage;
+import com.opencart.pageobject.Shoppingcartpage;
 
-public class TC046_SFloginandsearchtest extends BaseClass {
+public class TC07_DDJsonFileSearchTest extends Baseclassdatadriven {
 
 	@Test(dataProvider = "validcredentials")
-	public void searchByLogin(String validdata) {
+	public void searchForDynamicProduct(String validdata) {
 
-		log.info("***** TC046_SFloginandsearch Started *****");
+		log.info("***** TC07_DDJsonFileSearchTest Started *****");
 
 		String[] data = validdata.split(",");
 
+		setBrowser(data[0]);
 		Homepage hmpg = new Homepage(driver);
 		hmpg.clickOnMyAccountDropMenu();
-		log.info("Clicked On MyAccount Drop Menu");
-
 		Assert.assertTrue(hmpg.isDisplayedLoginOption());
 		log.info("Login Option Displayed On MyAccount Drop Menu");
 
@@ -47,18 +48,29 @@ public class TC046_SFloginandsearchtest extends BaseClass {
 		Assert.assertTrue(accntpg.isDisplayedEditInfoLink());
 		log.info("Edit Info Link Displayed On Accounts Page");
 
-		Assert.assertTrue(accntpg.isDisplayedAccountLinkOnBedcrum());
-		log.info("Accont Link Displayed On BedCrum Of Accounts Page");
-
 		hmpg.enterSearchTextField(data[3]);
 		Searchpage srchpg = hmpg.clickOnSearchButton();
 		Assert.assertTrue(srchpg.getSearchPageTitle().contains(config.getSearchPageTitle()));
 		log.info("User Navigated To Search Page Title: " + srchpg.getSearchPageTitle());
 
-		Assert.assertTrue(srchpg.isDisplayedDynamicWebElement(data[3]));
-		log.info("User Searched Product Was Displayed On Search Page: " + srchpg.getIMacProductThumb());
+		Productpage prdtpg = srchpg.clickOnDynamicWebElement(data[4]);
+		log.info("User Navigated To Product Page Title: " + prdtpg.getProductPageTitle());
 
-		log.info("***** TC046_SFloginandsearch Completed *****");
+		prdtpg.clickOnAddToCartButton();
+		Assert.assertTrue(prdtpg.isDispalyedOfWhishlistMsg());
+		log.info("Success Added To Wish-List Message Displayed: " + prdtpg.getTexOfWhishlistMsg());
+
+		Shoppingcartpage shopcart = prdtpg.clickOnShopCartMsgLink();
+		Assert.assertEquals(shopcart.getShoppingCartPageTitle(), config.getShoppingCartPageTitle());
+		log.info("ShopCart Page Title: " + shopcart.getShoppingCartPageTitle());
+
+		Assert.assertTrue(shopcart.isDisplayedDynamicWebElement(data[4]));
+		log.info("Product Displayed On The Shopping Cart Page");
+		
+		shopcart.clickOnRemoveButtonFromCartPage();
+		log.info("Product Successfully Removed From Shopping CartPage Table");
+
+		log.info("***** TC07_DDJsonFileSearchTest Completed *****");
 
 	}
 
@@ -69,14 +81,14 @@ public class TC046_SFloginandsearchtest extends BaseClass {
 		Object object = null;
 
 		try {
-			String filepath = System.getProperty("user.dir") + "//jsonfiles//Search.json";
+			String filepath = System.getProperty("user.dir") + "//jsonfiles//dynamictest.json";
 			FileReader reader = new FileReader(filepath);
 			object = parser.parse(reader);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		JSONObject jsonobject = (JSONObject) object;
-		JSONArray jsonarray = (JSONArray) jsonobject.get("loginsearch");
+		JSONArray jsonarray = (JSONArray) jsonobject.get("dynamicprduct");
 		Object[] arr = new Object[jsonarray.size()];
 
 		for (int i = 0; i < jsonarray.size(); i++) {
@@ -84,11 +96,14 @@ public class TC046_SFloginandsearchtest extends BaseClass {
 			JSONObject data = (JSONObject) jsonarray.get(i);
 			Object brows = data.get("Browser");
 			Object email = data.get("email");
-			Object passw = data.get("password");
-			Object prdna = data.get("productname");
+			Object password = data.get("password");
+			Object muti = data.get("mutiprdt");
+			Object singl = data.get("singleprdt");
 
-			arr[i] = brows + "," + email + "," + passw + "," + prdna;
+			arr[i] = brows + "," + email + "," + password + "," + muti + "," + singl;
 		}
 		return arr;
+
 	}
+
 }

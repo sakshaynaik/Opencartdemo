@@ -2371,3 +2371,166 @@ Telephone
 [INFO ] 2023-01-11 20:10:24.223 [main] BaseClass - ShopCart Page Title: Shopping Cart
 [INFO ] 2023-01-11 20:10:24.324 [main] BaseClass - Product Displayed On The Shopping Cart Page
 [INFO ] 2023-01-11 20:10:24.324 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-11 20:13:57.448 [main] BaseClass - ***** TC004_RFwithoutdatatest Started *****
+[INFO ] 2023-01-11 20:13:58.031 [main] BaseClass - Register Option Displayed In MyAccount Drop Menu
+[INFO ] 2023-01-11 20:13:59.135 [main] BaseClass - User Logged Into Registration Page :Register Account
+[INFO ] 2023-01-11 20:13:59.777 [main] BaseClass - User In Registration Page Due To Invaid Details
+[INFO ] 2023-01-11 20:13:59.970 [main] BaseClass - First Name Warning Message Displayed: First Name must be between 1 and 32 characters!
+[INFO ] 2023-01-11 20:14:00.108 [main] BaseClass - Last Name Warning Message Displayed: Last Name must be between 1 and 32 characters!
+[INFO ] 2023-01-11 20:14:00.217 [main] BaseClass - Email Warning Message Displayed: E-Mail Address does not appear to be valid!
+[INFO ] 2023-01-11 20:14:00.320 [main] BaseClass - Telephone Warning Message Displayed: Telephone must be between 3 and 32 characters!
+[INFO ] 2023-01-11 20:14:00.423 [main] BaseClass - Password Warning Message Displayed: Password must be between 4 and 20 characters!
+[INFO ] 2023-01-11 20:14:00.526 [main] BaseClass - Privercy Policy Warning Message Displayed: Warning: You must agree to the Privacy Policy!
+[INFO ] 2023-01-11 20:14:00.526 [main] BaseClass - ***** TC004_RFwithoutdatatest Completed *****
+[INFO ] 2023-01-11 20:14:36.157 [main] BaseClass - ***** TC033_LFloginandbrowserexittest Started *****
+[INFO ] 2023-01-11 20:14:36.510 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-11 20:14:36.686 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-11 20:14:37.298 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-11 20:14:37.366 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-11 20:14:38.673 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-11 20:14:38.697 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-11 20:14:38.819 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-11 20:14:38.907 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-11 20:14:39.169 [main] BaseClass - Account Success Page Window Closed
+[INFO ] 2023-01-11 20:14:46.161 [main] BaseClass - Reopened The Browser For Validating The Login Of User
+[INFO ] 2023-01-11 20:14:46.311 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-11 20:15:33.217 [main] BaseClass - ***** TC033_LFloginandbrowserexittest Started *****
+[INFO ] 2023-01-11 20:15:33.585 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-11 20:15:33.782 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-11 20:15:34.375 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-11 20:15:34.414 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-11 20:15:35.754 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-11 20:15:35.786 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-11 20:15:35.912 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-11 20:15:36.006 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-11 20:15:36.360 [main] BaseClass - Account Success Page Window Closed
+[INFO ] 2023-01-11 20:15:42.659 [main] BaseClass - Reopened The Browser For Validating The Login Of User
+[INFO ] 2023-01-11 20:15:42.813 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-16 17:20:05.636 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-16 17:20:07.896 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-16 17:20:10.925 [main] BaseClass - User Navigated To Product Page Title: MacBook Pro
+[INFO ] 2023-01-16 17:20:11.933 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Pro to your shopping cart!
+×
+[INFO ] 2023-01-16 17:20:12.765 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-16 17:20:12.885 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-16 17:20:12.886 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-16 17:20:54.297 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-16 17:20:55.447 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-16 17:20:58.482 [main] BaseClass - User Navigated To Product Page Title: iMac
+[INFO ] 2023-01-16 17:20:58.887 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added iMac to your shopping cart!
+×
+[INFO ] 2023-01-16 17:21:00.467 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-16 17:21:00.559 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-16 17:21:00.560 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-16 17:21:53.760 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-16 17:21:55.141 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-16 17:21:57.364 [main] BaseClass - User Navigated To Product Page Title: MacBook Pro
+[INFO ] 2023-01-16 17:21:58.159 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Pro to your shopping cart!
+×
+[INFO ] 2023-01-16 17:21:58.794 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-16 17:21:58.903 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-16 17:21:58.903 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-16 17:22:34.573 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-16 17:22:35.684 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-16 17:22:35.965 [main] BaseClass - User Navigated To Product Page Title: Search - Mac
+[INFO ] 2023-01-16 17:23:29.503 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-16 17:23:30.801 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-16 17:23:32.990 [main] BaseClass - User Navigated To Product Page Title: MacBook Pro
+[INFO ] 2023-01-16 17:23:33.715 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Pro to your shopping cart!
+×
+[INFO ] 2023-01-16 17:23:34.343 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-16 17:23:34.498 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-16 17:23:34.498 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-16 19:21:21.805 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-16 19:21:31.168 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-16 19:21:46.460 [main] BaseClass - User Navigated To Product Page Title: MacBook Pro
+[INFO ] 2023-01-16 19:21:50.333 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Pro to your shopping cart!
+×
+[INFO ] 2023-01-16 19:21:51.366 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-16 19:21:51.455 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-16 19:21:51.455 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-17 14:35:43.784 [main] BaseClass - ***** TC001_RFmndtrydatatest Started *****
+[INFO ] 2023-01-17 14:35:44.428 [main] BaseClass - Register Option Displayed In MyAccount Drop Menu
+[INFO ] 2023-01-17 14:35:46.247 [main] BaseClass - User Logged Into Registration Page: Register Account
+[INFO ] 2023-01-17 14:35:49.393 [main] BaseClass - User Logged Into AccountSuccess Page: Your Account Has Been Created!
+[INFO ] 2023-01-17 14:35:49.614 [main] BaseClass - Logout Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-17 14:35:49.710 [main] BaseClass - Success Link Displayed On Bedcrum
+[INFO ] 2023-01-17 14:35:50.494 [main] BaseClass - Account Success Message Displayed: Congratulations! Your new account has been successfully created!
+[INFO ] 2023-01-17 14:35:51.891 [main] BaseClass - Edit your account information Link Displayed On WebPage
+[INFO ] 2023-01-17 14:35:51.910 [main] BaseClass - User Logged Into Account Page: My Account
+[INFO ] 2023-01-17 14:35:52.012 [main] BaseClass - Account Link Displayed On Bedcrum
+[INFO ] 2023-01-17 14:35:52.012 [main] BaseClass - ***** TC001_RFmndtrydatatest Completed *****
+[INFO ] 2023-01-17 16:08:27.194 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-17 16:08:28.639 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-17 16:08:31.081 [main] BaseClass - User Navigated To Product Page Title: MacBook Pro
+[INFO ] 2023-01-17 16:08:32.031 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Pro to your shopping cart!
+×
+[INFO ] 2023-01-17 16:08:32.649 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-17 16:08:32.802 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-17 16:08:32.971 [main] BaseClass - Product Successfully Removed From Shopping CartPage
+[INFO ] 2023-01-17 16:08:32.971 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-17 16:09:12.142 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-17 16:09:13.360 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-17 16:09:15.543 [main] BaseClass - User Navigated To Product Page Title: MacBook Pro
+[INFO ] 2023-01-17 16:09:16.257 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Pro to your shopping cart!
+×
+[INFO ] 2023-01-17 16:09:16.969 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-17 16:09:17.090 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-17 16:09:17.259 [main] BaseClass - Product Successfully Removed From Shopping CartPage
+[INFO ] 2023-01-17 16:09:17.260 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-17 19:41:42.160 [main] BaseClass - ***** TC043_SFexistingproducttest Started *****
+[INFO ] 2023-01-17 19:41:43.869 [main] BaseClass - User Navigated To Search Page Title: Search - iMac
+[INFO ] 2023-01-17 19:41:44.117 [main] BaseClass - User Searched Product Was Displayed On Search Page: iMac
+Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo pro..
+$122.00
+Ex Tax: $100.00
+ADD TO CART
+[INFO ] 2023-01-17 19:41:44.118 [main] BaseClass - ***** TC043_SFexistingproducttest Completed *****
+[INFO ] 2023-01-17 19:42:19.996 [main] BaseClass - ***** TC043_SFexistingproducttest Started *****
+[INFO ] 2023-01-17 19:42:21.105 [main] BaseClass - User Navigated To Search Page Title: Search - iMac
+[INFO ] 2023-01-17 19:42:21.299 [main] BaseClass - User Searched Product Was Displayed On Search Page: iMac
+Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo pro..
+$122.00
+Ex Tax: $100.00
+ADD TO CART
+[INFO ] 2023-01-17 19:42:21.299 [main] BaseClass - ***** TC043_SFexistingproducttest Completed *****
+[INFO ] 2023-01-17 19:43:30.749 [main] BaseClass - ***** TC046_SFloginandsearch Started *****
+[INFO ] 2023-01-17 19:43:31.115 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-17 19:43:31.253 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-17 19:43:31.778 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-17 19:43:31.818 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-17 19:43:33.393 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-17 19:43:33.424 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-17 19:43:33.549 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-17 19:43:33.636 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-17 19:43:34.391 [main] BaseClass - User Navigated To Search Page Title: Search - iMac
+[INFO ] 2023-01-17 19:43:34.591 [main] BaseClass - User Searched Product Was Displayed On Search Page: iMac
+Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo pro..
+$100.00
+Ex Tax: $100.00
+ADD TO CART
+[INFO ] 2023-01-17 19:43:34.592 [main] BaseClass - ***** TC046_SFloginandsearch Completed *****
+[INFO ] 2023-01-17 19:44:00.104 [main] BaseClass - ***** TC046_SFloginandsearch Started *****
+[INFO ] 2023-01-17 19:44:00.397 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-17 19:44:00.581 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-17 19:44:01.095 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-17 19:44:01.137 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-17 19:44:02.461 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-17 19:44:02.489 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-17 19:44:02.619 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-17 19:44:02.704 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-17 19:44:03.485 [main] BaseClass - User Navigated To Search Page Title: Search - iMac
+[INFO ] 2023-01-17 19:44:03.683 [main] BaseClass - User Searched Product Was Displayed On Search Page: iMac
+Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo pro..
+$100.00
+Ex Tax: $100.00
+ADD TO CART
+[INFO ] 2023-01-17 19:44:03.684 [main] BaseClass - ***** TC046_SFloginandsearch Completed *****
+[INFO ] 2023-01-17 19:45:35.250 [main] BaseClass - ***** TC051_SFcriteriafieldtest Started *****
+[INFO ] 2023-01-17 19:45:37.408 [main] BaseClass - iMac Pro Was Displayed On Search Page: iMac
+Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo pro..
+$122.00
+Ex Tax: $100.00
+ADD TO CART
+[INFO ] 2023-01-17 19:45:38.334 [main] BaseClass - Search Warn Message Dispalyed On Search Page: There is no product that matches the search criteria.
+[INFO ] 2023-01-17 19:45:38.334 [main] BaseClass - ***** TC051_SFcriteriafieldtest Completed *****
