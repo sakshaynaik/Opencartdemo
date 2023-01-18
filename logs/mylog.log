@@ -2534,3 +2534,42 @@ Ex Tax: $100.00
 ADD TO CART
 [INFO ] 2023-01-17 19:45:38.334 [main] BaseClass - Search Warn Message Dispalyed On Search Page: There is no product that matches the search criteria.
 [INFO ] 2023-01-17 19:45:38.334 [main] BaseClass - ***** TC051_SFcriteriafieldtest Completed *****
+[INFO ] 2023-01-17 19:56:30.869 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-17 19:56:51.384 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-17 19:57:01.919 [main] BaseClass - User Navigated To Product Page Title: MacBook Pro
+[INFO ] 2023-01-17 19:57:03.753 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Pro to your shopping cart!
+×
+[INFO ] 2023-01-17 19:57:04.637 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-17 19:57:04.763 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-17 19:57:04.940 [main] BaseClass - Product Successfully Removed From Shopping CartPage Table
+[INFO ] 2023-01-17 19:57:04.941 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
+[INFO ] 2023-01-17 20:03:51.813 [main] BaseClass - ***** TC043_SFexistingproducttest Started *****
+[INFO ] 2023-01-17 20:03:57.322 [main] BaseClass - User Navigated To Search Page Title: Search - iMac
+[INFO ] 2023-01-17 20:03:58.244 [main] BaseClass - User Searched Product Was Displayed On Search Page: iMac
+Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo pro..
+$122.00
+Ex Tax: $100.00
+ADD TO CART
+[INFO ] 2023-01-17 20:03:58.246 [main] BaseClass - ***** TC043_SFexistingproducttest Completed *****
+[INFO ] 2023-01-17 20:04:37.687 [main] BaseClass - ***** TC046_SFloginandsearch Started *****
+[INFO ] 2023-01-17 20:04:38.066 [main] BaseClass - Clicked On MyAccount Drop Menu
+[INFO ] 2023-01-17 20:04:38.274 [main] BaseClass - Login Option Displayed On MyAccount Drop Menu
+[INFO ] 2023-01-17 20:04:38.869 [main] BaseClass - Clicked On Login Option From MyAccount Drop Menu
+[INFO ] 2023-01-17 20:04:38.919 [main] BaseClass - Navigated To Login Page: Account Login
+[INFO ] 2023-01-17 20:04:40.238 [main] BaseClass - User Logged Into Accounts Page 
+[INFO ] 2023-01-17 20:04:40.264 [main] BaseClass - Acconts Page Title: My Account
+[INFO ] 2023-01-17 20:04:40.402 [main] BaseClass - Edit Info Link Displayed On Accounts Page
+[INFO ] 2023-01-17 20:04:40.492 [main] BaseClass - Accont Link Displayed On BedCrum Of Accounts Page
+[INFO ] 2023-01-17 20:04:41.390 [main] BaseClass - User Navigated To Search Page Title: Search - iMac
+[INFO ] 2023-01-17 20:04:41.624 [main] BaseClass - User Searched Product Was Displayed On Search Page: iMac
+Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo pro..
+$100.00
+Ex Tax: $100.00
+ADD TO CART
+[INFO ] 2023-01-17 20:04:41.625 [main] BaseClass - ***** TC046_SFloginandsearch Completed *****
+[INFO ] 2023-01-18 01:02:01.790 [main] BaseClass - ***** TC065_PCfromhomepagetest Started *****
+[INFO ] 2023-01-18 01:02:02.268 [main] BaseClass - When Hovered Mouse On Compare Product Option The Text Displayed: Compare this Product
+[INFO ] 2023-01-18 01:02:02.920 [main] BaseClass - Success Product Compare Message Displayed: Success: You have added Canon EOS 5D to your product comparison!
+×
+[INFO ] 2023-01-18 01:02:04.161 [main] BaseClass - Product Added To Product Compare Page Was Displayed: Canon EOS 5D  Remove
+[INFO ] 2023-01-18 01:02:04.162 [main] BaseClass - ***** TC065_PCfromhomepagetest Started *****

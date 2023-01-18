@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.opencart.zdatadriven.TC07_DDJsonFileSearchTest">
+      <class name="com.opencart.testcase.TC064_PCsitemaplinktest">
         <methods>
           <include name="setUp"/>
+          <include name="siteMapLinkTest"/>
           <include name="tearDown"/>
-          <include name="searchForDynamicProduct" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.opencart.zdatadriven.TC07_DDJsonFileSearchTest -->
+      </class> <!-- com.opencart.testcase.TC064_PCsitemaplinktest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
