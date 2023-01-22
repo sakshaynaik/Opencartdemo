@@ -2,24 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-18T01:01:50 IST" name="Default suite" finished-at="2023-01-18T01:02:04 IST" duration-ms="14304">
+  <suite started-at="2023-01-22T14:45:55 IST" name="Default suite" finished-at="2023-01-22T14:48:16 IST" duration-ms="141668">
     <groups>
     </groups>
-    <test started-at="2023-01-18T01:01:50 IST" name="Default test" finished-at="2023-01-18T01:02:04 IST" duration-ms="14304">
-      <class name="com.opencart.testcase.TC065_PCfromhomepagetest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC065_PCfromhomepagetest@1c3b9394]" started-at="2023-01-18T01:01:50 IST" name="setUp" finished-at="2023-01-18T01:02:01 IST" duration-ms="11167" status="PASS">
+    <test started-at="2023-01-22T14:45:55 IST" name="Default test" finished-at="2023-01-22T14:48:16 IST" duration-ms="141668">
+      <class name="com.opencart.testcase.TC156_SFforrandomprdttest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.testcase.TC156_SFforrandomprdttest@655ef322]" started-at="2023-01-22T14:45:55 IST" name="setUp" finished-at="2023-01-22T14:47:48 IST" duration-ms="113362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="productCompareFromHomePage()[pri:0, instance:com.opencart.testcase.TC065_PCfromhomepagetest@1c3b9394]" started-at="2023-01-18T01:02:01 IST" name="productCompareFromHomePage" finished-at="2023-01-18T01:02:04 IST" duration-ms="2393" status="PASS">
+        <test-method signature="searchForDynamicProduct(java.lang.String)[pri:0, instance:com.opencart.testcase.TC156_SFforrandomprdttest@655ef322]" started-at="2023-01-22T14:47:49 IST" name="searchForDynamicProduct" data-provider="validcredentials" finished-at="2023-01-22T14:48:12 IST" duration-ms="23475" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome,Mac,MacBook Pro]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- productCompareFromHomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC065_PCfromhomepagetest@1c3b9394]" started-at="2023-01-18T01:02:04 IST" name="tearDown" finished-at="2023-01-18T01:02:04 IST" duration-ms="612" status="PASS">
+        </test-method> <!-- searchForDynamicProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcase.TC156_SFforrandomprdttest@655ef322]" started-at="2023-01-22T14:48:12 IST" name="tearDown" finished-at="2023-01-22T14:48:16 IST" duration-ms="3834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.opencart.testcase.TC065_PCfromhomepagetest -->
+      </class> <!-- com.opencart.testcase.TC156_SFforrandomprdttest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

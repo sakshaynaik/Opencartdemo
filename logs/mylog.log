@@ -2573,3 +2573,12 @@ ADD TO CART
 ×
 [INFO ] 2023-01-18 01:02:04.161 [main] BaseClass - Product Added To Product Compare Page Was Displayed: Canon EOS 5D  Remove
 [INFO ] 2023-01-18 01:02:04.162 [main] BaseClass - ***** TC065_PCfromhomepagetest Started *****
+[INFO ] 2023-01-22 14:47:49.490 [main] BaseClass - ***** TC156_SFforrandomprdttest Started *****
+[INFO ] 2023-01-22 14:47:57.236 [main] BaseClass - User Navigated To Search Page Title: Search - Mac
+[INFO ] 2023-01-22 14:48:08.925 [main] BaseClass - User Navigated To Product Page Title: MacBook Pro
+[INFO ] 2023-01-22 14:48:11.307 [main] BaseClass - Success Added To Wish-List Message Displayed: Success: You have added MacBook Pro to your shopping cart!
+×
+[INFO ] 2023-01-22 14:48:12.594 [main] BaseClass - ShopCart Page Title: Shopping Cart
+[INFO ] 2023-01-22 14:48:12.709 [main] BaseClass - Product Displayed On The Shopping Cart Page
+[INFO ] 2023-01-22 14:48:12.909 [main] BaseClass - Product Successfully Removed From Shopping CartPage Table
+[INFO ] 2023-01-22 14:48:12.910 [main] BaseClass - ***** TC156_SFforrandomprdttest Completed *****
